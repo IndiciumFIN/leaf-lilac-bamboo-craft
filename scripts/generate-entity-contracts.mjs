@@ -105,7 +105,14 @@ const files = {
         tool_kind: m.kind === "escala" ? "ESCALA" : "CALCULADORA",
         status: m.status ?? "CANDIDATE",
         publicacao: m.publicacao === "publicada" && (m.sourceIds?.length ?? 0) > 0 ? "publicada" : "candidata",
-        holds: m.holds ?? [],
+        holds:
+          (m.holds ?? []).length || m.publicacao === "publicada"
+            ? (m.holds ?? [])
+            : [
+                "Sem fonte com hash verificado.",
+                "Sem vetor de teste.",
+                "Sem evidência declarada. Não homologar.",
+              ],
         source_ids: m.sourceIds ?? [],
         authority_binding_refs: binds.map((b) => b.canonical_id),
         field_definition_refs: campos.map((c) => c.canonical_id),

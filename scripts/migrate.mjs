@@ -2,9 +2,8 @@
 /**
  * Deploy-time database migrator (node-postgres, `pg`).
  *
- * Runs during `npm run build` — on every Vercel deploy — applying pending files
- * in ../migrations to DATABASE_URL. Each file is applied in one transaction and
- * recorded in a `_migrations` table, so it runs once and is safe to re-run.
+ * Não faz parte de `npm run build`. O deploy que precisa migrar chama
+ * `npm run db:migrate` à parte. Sem DATABASE_URL, este script não conecta.
  *
  * The read is non-recursive, so migrations/auth/ and migrations/preview/ stay
  * out of a remote deploy. Preview publication is applied only by the PGLite

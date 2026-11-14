@@ -3,6 +3,7 @@ import { acceptedCatalogTool } from "@/lib/tools/catalog-list";
 import { examesLaboratoriais } from "@/lib/tools/exames-laboratoriais";
 import { implanted } from "@/lib/tools/implanted";
 import { frozenScales } from "@/lib/tools/frozen-scales";
+import { dimensionamento } from "@/lib/tools/dimensionamento";
 
 const braden: ClinicalTool = {
   slug: "braden",
@@ -294,7 +295,7 @@ const aldrete: ClinicalTool = {
 export const tools: ClinicalTool[] = [braden, morse, apgar, gotejamento, imc];
 
 /** Fora do menu publicado das cinco. A rota abre quando a fonte marca a capa. */
-export const candidateTools: ClinicalTool[] = [aldrete, examesLaboratoriais, ...implanted, ...frozenScales];
+export const candidateTools: ClinicalTool[] = [aldrete, examesLaboratoriais, dimensionamento, ...implanted, ...frozenScales];
 
 export function getTool(slug: string) {
   const found = tools.find((tool) => tool.slug === slug) ?? candidateTools.find((tool) => tool.slug === slug);

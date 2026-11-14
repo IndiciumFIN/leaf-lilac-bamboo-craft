@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "AUDIT-FHIR-R4-VITALS",
+  "profile": "http://hl7.org/fhir/R4/observation-vitalsigns.html",
+  "version": "4.0.1",
+  "conformant": false,
+  "parserOnThisMain": true,
+  "parserPath": "packages/cli/parsers/fhir.py",
+  "candidateBranch": "integrate/p0-cko-existing-source-parsers-20261114",
+  "candidateRepository": "calculadorasdeenfermagem",
+  "localShape": "src/lib/sbar/types.ts VitalSigns",
+  "gaps": [
+    "O parser é o subconjunto candidato: Observation e Bundle, sem rede e sem publicação.",
+    "VitalSigns do SBAR continua um tipo local, não uma Observation.",
+    "O gate estrito permanece reprovado enquanto houver parser ausente.",
+    "Glasgow não faz parte do perfil de sinais vitais do FHIR R4."
+  ]
+}

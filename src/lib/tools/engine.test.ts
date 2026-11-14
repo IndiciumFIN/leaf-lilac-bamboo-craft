@@ -12,10 +12,34 @@ test("escala incompleta não produz escore", () => {
   if (!result.ok) assert.ok((result.missing?.length ?? 0) > 0);
 });
 
+test("dimensionamento de 10 pacientes mínimos usa o fator 1,15", () => {
+  const tool = getTool("dimensionamento");
+  assert.ok(tool);
+  assert.equal(tool.publicacao, "candidata");
+  const result = evaluateFormula(tool, {
+    pcm: "10", pci: "0", pcad: "0", pcsi: "0", pcit: "0", ds: "7", chs: "36", ist: "15",
+  });
+  assert.equal(result.ok, true);
+  if (result.ok) {
+    assert.equal(result.outputs?.find((item) => item.id === "horas")?.value, 40);
+    assert.equal(result.outputs?.find((item) => item.id === "qp")?.value, 8.94);
+    assert.equal(result.outputs?.find((item) => item.id === "enfermeiros")?.value, 2.95);
+  }
+});
+
 test("número fora do limite não calcula", () => {
   const tool = getTool("imc");
   assert.ok(tool);
   const result = evaluateFormula(tool, { peso: "900", altura: "170" });
+  assert.equal(result.ok, false);
+});
+
+test("dimensionamento recusa índice abaixo de 15%", () => {
+  const tool = getTool("dimensionamento");
+  assert.ok(tool);
+  const result = evaluateFormula(tool, {
+    pcm: "10", pci: "0", pcad: "0", pcsi: "0", pcit: "0", ds: "7", chs: "36", ist: "14",
+  });
   assert.equal(result.ok, false);
 });
 

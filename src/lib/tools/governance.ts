@@ -10,6 +10,8 @@
  * diferentes — e e exatamente isso que o modelo por ferramenta nao permitia.
  */
 import type { AuthorityBinding, CampoDefinido, FonteNormativa, PrivacyProfile } from "./contracts";
+import { implanted } from "./implanted.ts";
+import { frozenScales } from "./frozen-scales.ts";
 
 const HOJE = "2026-10-22";
 const VERSAO = "1.2.0";
@@ -305,6 +307,33 @@ campoNumerico("gotejamento", "fator", "ORDINAL_SCORE", "SRC-GOTEJAMENTO-FORMULA-
 /* ── IMC: peso e altura, cortes da OMS ───────────────────────────────────── */
 campoNumerico("imc", "peso", "QUANTITY", "SRC-OMS-OBESIDADE-2000", "kg");
 campoNumerico("imc", "altura", "QUANTITY", "SRC-OMS-OBESIDADE-2000", "cm");
+
+/** Campo de escala ainda sem fonte verificada. Não é evidência e não homologa. */
+function campoEmEspera(tool: string, campoId: string) {
+  const campoPath = `tool.${tool}.criteria.${campoId}`;
+  BINDINGS.push({
+    schema_version: "0.1.0",
+    canonical_id: `AB-HOLD-${tool.toUpperCase()}-${campoId.toUpperCase()}`,
+    version: VERSAO,
+    status: "HOLD_HUMAN",
+    updated_at: HOJE,
+    provenance_refs: ["HOLD-SEM-FONTE-VERIFICADA"],
+    field_path: campoPath,
+    requirement_id: "UTC-002",
+    source_ids: [],
+    authority_class: "CLINICAL",
+    validity: { jurisdiction: "BR" },
+    decision: "HOLD",
+    validator_ids: [],
+    evidence_bundle_ids: [],
+    exception_reason: "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta.",
+  });
+}
+
+for (const tool of [...implanted, ...frozenScales]) {
+  if (tool.kind !== "escala") continue;
+  for (const criterion of tool.criteria ?? []) campoEmEspera(tool.slug, criterion.id);
+}
 
 
 /* ═══════════════════════════════════════════════════════════════════════════

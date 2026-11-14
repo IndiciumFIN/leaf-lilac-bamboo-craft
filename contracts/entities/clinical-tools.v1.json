@@ -13,7 +13,11 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [
         "AB-BRADEN-SENSORIAL",
@@ -74,7 +78,11 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [
         "AB-MORSE-QUEDAS",
@@ -131,7 +139,11 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [
         "AB-APGAR-APARENCIA",
@@ -186,7 +198,11 @@
       "tool_kind": "CALCULADORA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [
         "AB-GOTEJAMENTO-VOLUME",
@@ -229,7 +245,11 @@
       "tool_kind": "CALCULADORA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [
         "AB-IMC-PESO",
@@ -372,14 +392,58 @@
       "authority": "src/lib/tools/catalog.ts#exames-laboratoriais"
     },
     {
+      "id": "CE-TOOL-dimensionamento",
+      "slug": "dimensionamento",
+      "tool_kind": "CALCULADORA",
+      "status": "CANDIDATE",
+      "publicacao": "candidata",
+      "holds": [
+        "Sem snapshot com hash do parecer.",
+        "A legenda do quadro usa (1+IST)=1,15; o multiplicador impresso diz IST.",
+        "Proporções lidas da página pública, sem vetor oficial de teste.",
+        "Decisões judiciais sobre dimensionamento não foram incorporadas. Não homologar."
+      ],
+      "source_ids": [],
+      "authority_binding_refs": [],
+      "field_definition_refs": [],
+      "formula_ref": "FORMULA-DIMENSIONAMENTO",
+      "rule_refs": [],
+      "interpretation_ref": "INTERP-DIMENSIONAMENTO",
+      "result_ref": "RESULT-DIMENSIONAMENTO",
+      "component_refs": [],
+      "privacy_profile": "PRIVACY-TOOL-PROFILE",
+      "safety_profile": "SAFETY-DIMENSIONAMENTO",
+      "release_gate": "HOLD_HUMAN",
+      "test_vector_refs": [],
+      "seo_profile_ref": "SEO-PROFILE-SITE",
+      "i18n_profile_ref": "I18N-PROFILE-SITE",
+      "analytics_profile_ref": "ANALYTICS-PROFILE-SITE",
+      "about_tool": null,
+      "visibility": null,
+      "evidence_refs": [],
+      "patient_safety": {
+        "certs": [],
+        "goals": []
+      },
+      "faixa": null,
+      "referenciasOriginais": 2,
+      "authority": "src/lib/tools/catalog.ts#dimensionamento"
+    },
+    {
       "id": "CE-TOOL-escalanumerica",
       "slug": "escalanumerica",
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-ESCALANUMERICA-DOR"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-ESCALANUMERICA",
       "rule_refs": [],
@@ -413,7 +477,11 @@
       "tool_kind": "CALCULADORA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [],
       "field_definition_refs": [],
@@ -446,7 +514,11 @@
       "tool_kind": "CALCULADORA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [],
       "field_definition_refs": [],
@@ -479,7 +551,11 @@
       "tool_kind": "CALCULADORA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
       "authority_binding_refs": [],
       "field_definition_refs": [],
@@ -512,9 +588,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-GOSNELL-MENTAL",
+        "AB-HOLD-GOSNELL-CONTINENCIA",
+        "AB-HOLD-GOSNELL-MOBILIDADE",
+        "AB-HOLD-GOSNELL-ATIVIDADE",
+        "AB-HOLD-GOSNELL-NUTRICAO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-GOSNELL",
       "rule_refs": [],
@@ -548,9 +634,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-NORTON-PHYSICAL_CONDITION",
+        "AB-HOLD-NORTON-MENTAL_CONDITION",
+        "AB-HOLD-NORTON-ACTIVITY",
+        "AB-HOLD-NORTON-MOBILITY",
+        "AB-HOLD-NORTON-INCONTINENCE"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-NORTON",
       "rule_refs": [],
@@ -584,9 +680,29 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-WATERLOW-BUILD",
+        "AB-HOLD-WATERLOW-SKIN",
+        "AB-HOLD-WATERLOW-SEX",
+        "AB-HOLD-WATERLOW-AGE_BAND",
+        "AB-HOLD-WATERLOW-CONTINENCE",
+        "AB-HOLD-WATERLOW-MOBILITY",
+        "AB-HOLD-WATERLOW-APPETITE",
+        "AB-HOLD-WATERLOW-ORGAN",
+        "AB-HOLD-WATERLOW-VASCULAR",
+        "AB-HOLD-WATERLOW-ANEMIA",
+        "AB-HOLD-WATERLOW-SMOKING",
+        "AB-HOLD-WATERLOW-NEUROLOGIC",
+        "AB-HOLD-WATERLOW-ORTHOPEDIC",
+        "AB-HOLD-WATERLOW-SURGERY",
+        "AB-HOLD-WATERLOW-MEDICATIONS"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-WATERLOW",
       "rule_refs": [],
@@ -620,9 +736,28 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-BERG-SIT_TO_STAND",
+        "AB-HOLD-BERG-STAND_UNSUPPORTED",
+        "AB-HOLD-BERG-SIT_UNSUPPORTED",
+        "AB-HOLD-BERG-STAND_TO_SIT",
+        "AB-HOLD-BERG-TRANSFERS",
+        "AB-HOLD-BERG-EYES_CLOSED",
+        "AB-HOLD-BERG-FEET_TOGETHER",
+        "AB-HOLD-BERG-FORWARD_REACH",
+        "AB-HOLD-BERG-PICK_UP",
+        "AB-HOLD-BERG-LOOK_BEHIND",
+        "AB-HOLD-BERG-TURN_360",
+        "AB-HOLD-BERG-STEP_ALTERNATE",
+        "AB-HOLD-BERG-TANDEM",
+        "AB-HOLD-BERG-SINGLE_LEG"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-BERG",
       "rule_refs": [],
@@ -656,9 +791,25 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-DOWNTON-QUEDAS",
+        "AB-HOLD-DOWNTON-SEDATIVOS",
+        "AB-HOLD-DOWNTON-DIURETICOS",
+        "AB-HOLD-DOWNTON-ANTI_HIPERTENSIVOS",
+        "AB-HOLD-DOWNTON-ANTI_PARKINSON",
+        "AB-HOLD-DOWNTON-ANTIDEPRESSIVOS",
+        "AB-HOLD-DOWNTON-VISAO",
+        "AB-HOLD-DOWNTON-AUDICAO",
+        "AB-HOLD-DOWNTON-MEMBROS",
+        "AB-HOLD-DOWNTON-MENTAL",
+        "AB-HOLD-DOWNTON-MARCHA"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-DOWNTON",
       "rule_refs": [],
@@ -692,9 +843,22 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-HENDRICH-CONFUSAO",
+        "AB-HOLD-HENDRICH-DEPRESSAO",
+        "AB-HOLD-HENDRICH-ELIMINACAO",
+        "AB-HOLD-HENDRICH-VERTIGEM",
+        "AB-HOLD-HENDRICH-SEXO_MASCULINO",
+        "AB-HOLD-HENDRICH-ANTIEPILEPTICO",
+        "AB-HOLD-HENDRICH-BENZODIAZEPINICO",
+        "AB-HOLD-HENDRICH-GET_UP_GO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-HENDRICH",
       "rule_refs": [],
@@ -728,9 +892,21 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-HUMPTY-IDADE",
+        "AB-HOLD-HUMPTY-SEXO",
+        "AB-HOLD-HUMPTY-DIAGNOSTICO",
+        "AB-HOLD-HUMPTY-COGNICAO",
+        "AB-HOLD-HUMPTY-AMBIENTE",
+        "AB-HOLD-HUMPTY-CIRURGIA",
+        "AB-HOLD-HUMPTY-MEDICAMENTOS"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-HUMPTY",
       "rule_refs": [],
@@ -764,9 +940,34 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-TINETTI-SITTING",
+        "AB-HOLD-TINETTI-RISING",
+        "AB-HOLD-TINETTI-ATTEMPT",
+        "AB-HOLD-TINETTI-IMMEDIATE",
+        "AB-HOLD-TINETTI-STANDING",
+        "AB-HOLD-TINETTI-NUDGE",
+        "AB-HOLD-TINETTI-EYES",
+        "AB-HOLD-TINETTI-TURN_STEPS",
+        "AB-HOLD-TINETTI-TURN_STABILITY",
+        "AB-HOLD-TINETTI-SIT_DOWN",
+        "AB-HOLD-TINETTI-GAIT_START",
+        "AB-HOLD-TINETTI-STEP_RIGHT_LEN",
+        "AB-HOLD-TINETTI-STEP_RIGHT_HEIGHT",
+        "AB-HOLD-TINETTI-STEP_LEFT_LEN",
+        "AB-HOLD-TINETTI-STEP_LEFT_HEIGHT",
+        "AB-HOLD-TINETTI-SYMMETRY",
+        "AB-HOLD-TINETTI-CONTINUITY",
+        "AB-HOLD-TINETTI-PATH",
+        "AB-HOLD-TINETTI-TRUNK",
+        "AB-HOLD-TINETTI-STANCE"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-TINETTI",
       "rule_refs": [],
@@ -800,9 +1001,18 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-CAM-RASS",
+        "AB-HOLD-CAM-F1",
+        "AB-HOLD-CAM-F2",
+        "AB-HOLD-CAM-F4"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-CAM",
       "rule_refs": [],
@@ -833,9 +1043,17 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-CINCINNATI-FACE",
+        "AB-HOLD-CINCINNATI-ARM",
+        "AB-HOLD-CINCINNATI-SPEECH"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-CINCINNATI",
       "rule_refs": [],
@@ -869,9 +1087,17 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-FAST-FACE",
+        "AB-HOLD-FAST-ARM",
+        "AB-HOLD-FAST-SPEECH"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-FAST",
       "rule_refs": [],
@@ -905,9 +1131,18 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-FOUR-OCULAR",
+        "AB-HOLD-FOUR-MOTORA",
+        "AB-HOLD-FOUR-TRONCO",
+        "AB-HOLD-FOUR-RESPIRACAO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-FOUR",
       "rule_refs": [],
@@ -941,9 +1176,17 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-GLASGOW-EYE",
+        "AB-HOLD-GLASGOW-VERBAL",
+        "AB-HOLD-GLASGOW-MOTOR"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-GLASGOW",
       "rule_refs": [],
@@ -977,9 +1220,29 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-NIHSS-LOC",
+        "AB-HOLD-NIHSS-LOCQ",
+        "AB-HOLD-NIHSS-LOCC",
+        "AB-HOLD-NIHSS-GAZE",
+        "AB-HOLD-NIHSS-VISUAL",
+        "AB-HOLD-NIHSS-FACIAL",
+        "AB-HOLD-NIHSS-ARM_L",
+        "AB-HOLD-NIHSS-ARM_R",
+        "AB-HOLD-NIHSS-LEG_L",
+        "AB-HOLD-NIHSS-LEG_R",
+        "AB-HOLD-NIHSS-ATAXIA",
+        "AB-HOLD-NIHSS-SENSORY",
+        "AB-HOLD-NIHSS-LANGUAGE",
+        "AB-HOLD-NIHSS-DYSARTHRIA",
+        "AB-HOLD-NIHSS-NEGLECT"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-NIHSS",
       "rule_refs": [],
@@ -1013,9 +1276,15 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-RANCHOLOSAMIGOS-NIVEL"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-RANCHOLOSAMIGOS",
       "rule_refs": [],
@@ -1049,9 +1318,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-CAPURRO-PELE",
+        "AB-HOLD-CAPURRO-ORELHA",
+        "AB-HOLD-CAPURRO-GLANDULA",
+        "AB-HOLD-CAPURRO-PLANTA",
+        "AB-HOLD-CAPURRO-MAMILO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-CAPURRO",
       "rule_refs": [],
@@ -1082,9 +1361,20 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-NIPS-EXPRESSAO_FACIAL",
+        "AB-HOLD-NIPS-CHORO",
+        "AB-HOLD-NIPS-RESPIRACAO",
+        "AB-HOLD-NIPS-BRACOS",
+        "AB-HOLD-NIPS-PERNAS",
+        "AB-HOLD-NIPS-ESTADO_CONSCIENCIA"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-NIPS",
       "rule_refs": [],
@@ -1118,9 +1408,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-SILVERMAN-THORACOABDOMINAL",
+        "AB-HOLD-SILVERMAN-LOWER_CHEST",
+        "AB-HOLD-SILVERMAN-XIPHOID",
+        "AB-HOLD-SILVERMAN-NASAL_FLARING",
+        "AB-HOLD-SILVERMAN-EXPIRATORY_GRUNT"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-SILVERMAN",
       "rule_refs": [],
@@ -1154,9 +1454,15 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-RAMSAY-RAMSAY_LEVEL"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-RAMSAY",
       "rule_refs": [],
@@ -1190,9 +1496,15 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-RICHMOND-RASS_LEVEL"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-RICHMOND",
       "rule_refs": [],
@@ -1226,9 +1538,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-CURB-65-CONFUSAO",
+        "AB-HOLD-CURB-65-UREIA",
+        "AB-HOLD-CURB-65-RESPIRACAO",
+        "AB-HOLD-CURB-65-PRESSAO",
+        "AB-HOLD-CURB-65-IDADE"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-CURB-65",
       "rule_refs": [],
@@ -1262,9 +1584,17 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-QSOFA-MENTAL",
+        "AB-HOLD-QSOFA-PA",
+        "AB-HOLD-QSOFA-FR"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-QSOFA",
       "rule_refs": [],
@@ -1298,9 +1628,20 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-SOFA-RESPIRATORIO",
+        "AB-HOLD-SOFA-PLAQUETAS",
+        "AB-HOLD-SOFA-BILIRRUBINA",
+        "AB-HOLD-SOFA-CARDIOVASCULAR",
+        "AB-HOLD-SOFA-GLASCOW",
+        "AB-HOLD-SOFA-RENAL"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-SOFA",
       "rule_refs": [],
@@ -1334,9 +1675,17 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-BPS-FACE",
+        "AB-HOLD-BPS-ARMS",
+        "AB-HOLD-BPS-VENTILATOR"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-BPS",
       "rule_refs": [],
@@ -1370,9 +1719,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-CRIES-CHORO",
+        "AB-HOLD-CRIES-OXIGENIO",
+        "AB-HOLD-CRIES-SINAIS",
+        "AB-HOLD-CRIES-EXPRESSAO",
+        "AB-HOLD-CRIES-SONO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-CRIES",
       "rule_refs": [],
@@ -1406,9 +1765,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-FLACC-FACE",
+        "AB-HOLD-FLACC-LEGS",
+        "AB-HOLD-FLACC-ACTIVITY",
+        "AB-HOLD-FLACC-CRY",
+        "AB-HOLD-FLACC-CONSOLABILITY"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-FLACC",
       "rule_refs": [],
@@ -1442,9 +1811,21 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-LANSS-SENSACOES",
+        "AB-HOLD-LANSS-COR",
+        "AB-HOLD-LANSS-HIPERSENSIBILIDADE",
+        "AB-HOLD-LANSS-PAROXISTICA",
+        "AB-HOLD-LANSS-TEMPERATURA",
+        "AB-HOLD-LANSS-ALODINIA",
+        "AB-HOLD-LANSS-LIMIAR"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-LANSS",
       "rule_refs": [],
@@ -1478,9 +1859,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-PAINAD-RESPIRACAO",
+        "AB-HOLD-PAINAD-VOCALIZACAO",
+        "AB-HOLD-PAINAD-EXPRESSAO",
+        "AB-HOLD-PAINAD-CORPO",
+        "AB-HOLD-PAINAD-CONSOLABILIDADE"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-PAINAD",
       "rule_refs": [],
@@ -1514,9 +1905,24 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-BARTHEL-FEEDING",
+        "AB-HOLD-BARTHEL-BATHING",
+        "AB-HOLD-BARTHEL-GROOMING",
+        "AB-HOLD-BARTHEL-DRESSING",
+        "AB-HOLD-BARTHEL-BOWEL",
+        "AB-HOLD-BARTHEL-BLADDER",
+        "AB-HOLD-BARTHEL-TOILET",
+        "AB-HOLD-BARTHEL-TRANSFERS",
+        "AB-HOLD-BARTHEL-MOBILITY",
+        "AB-HOLD-BARTHEL-STAIRS"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-BARTHEL",
       "rule_refs": [],
@@ -1550,9 +1956,20 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-KATZ-BANHO",
+        "AB-HOLD-KATZ-VESTIR",
+        "AB-HOLD-KATZ-SANITARIO",
+        "AB-HOLD-KATZ-TRANSFERENCIA",
+        "AB-HOLD-KATZ-CONTINENCIA",
+        "AB-HOLD-KATZ-ALIMENTACAO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-KATZ",
       "rule_refs": [],
@@ -1586,9 +2003,25 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-LACHS-VISAO",
+        "AB-HOLD-LACHS-AUDICAO",
+        "AB-HOLD-LACHS-CONTINENCIA",
+        "AB-HOLD-LACHS-AVD_AIVD",
+        "AB-HOLD-LACHS-MEMBROS_SUPERIORES",
+        "AB-HOLD-LACHS-MEMBROS_INFERIORES",
+        "AB-HOLD-LACHS-NUTRICAO",
+        "AB-HOLD-LACHS-COGNICAO",
+        "AB-HOLD-LACHS-HUMOR",
+        "AB-HOLD-LACHS-AMBIENTE",
+        "AB-HOLD-LACHS-REDE_APOIO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-LACHS",
       "rule_refs": [],
@@ -1622,9 +2055,22 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-LAWTON-TELEFONE",
+        "AB-HOLD-LAWTON-COMPRAS",
+        "AB-HOLD-LAWTON-REFEICOES",
+        "AB-HOLD-LAWTON-CASA",
+        "AB-HOLD-LAWTON-ROUPAS",
+        "AB-HOLD-LAWTON-TRANSPORTE",
+        "AB-HOLD-LAWTON-MEDICAMENTOS",
+        "AB-HOLD-LAWTON-FINANCAS"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-LAWTON",
       "rule_refs": [],
@@ -1658,9 +2104,19 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-BISHOP-DILATION",
+        "AB-HOLD-BISHOP-EFFACEMENT",
+        "AB-HOLD-BISHOP-STATION",
+        "AB-HOLD-BISHOP-CONSISTENCY",
+        "AB-HOLD-BISHOP-POSITION"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-BISHOP",
       "rule_refs": [],
@@ -1694,9 +2150,15 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-ASA-ASA_PHYSICAL_STATUS"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-ASA",
       "rule_refs": [],
@@ -1730,9 +2192,17 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-CLASSIFICACAO_WIFI-WOUND",
+        "AB-HOLD-CLASSIFICACAO_WIFI-ISCHEMIA",
+        "AB-HOLD-CLASSIFICACAO_WIFI-INFECTION"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-CLASSIFICACAO_WIFI",
       "rule_refs": [],
@@ -1766,9 +2236,20 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-SISTEMA_SINBAD-SITE",
+        "AB-HOLD-SISTEMA_SINBAD-ISQUEMIA",
+        "AB-HOLD-SISTEMA_SINBAD-NEUROPATIA",
+        "AB-HOLD-SISTEMA_SINBAD-INFECCAO",
+        "AB-HOLD-SISTEMA_SINBAD-AREA",
+        "AB-HOLD-SISTEMA_SINBAD-PROFUNDIDADE"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-SISTEMA_SINBAD",
       "rule_refs": [],
@@ -1802,9 +2283,28 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-HAMILTON-ANSIEDADE",
+        "AB-HOLD-HAMILTON-TENSAO",
+        "AB-HOLD-HAMILTON-MEDOS",
+        "AB-HOLD-HAMILTON-INSONIA",
+        "AB-HOLD-HAMILTON-COGNICAO",
+        "AB-HOLD-HAMILTON-HUMOR_DEPRIMIDO",
+        "AB-HOLD-HAMILTON-MUSCULAR",
+        "AB-HOLD-HAMILTON-SENSORIAL",
+        "AB-HOLD-HAMILTON-CARDIOVASCULAR",
+        "AB-HOLD-HAMILTON-RESPIRATORIO",
+        "AB-HOLD-HAMILTON-GASTROINTESTINAL",
+        "AB-HOLD-HAMILTON-GENITURINARIO",
+        "AB-HOLD-HAMILTON-AUTONOMICO",
+        "AB-HOLD-HAMILTON-ENTREVISTA"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-HAMILTON",
       "rule_refs": [],
@@ -1838,9 +2338,29 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-GDS-GDS_1",
+        "AB-HOLD-GDS-GDS_2",
+        "AB-HOLD-GDS-GDS_3",
+        "AB-HOLD-GDS-GDS_4",
+        "AB-HOLD-GDS-GDS_5",
+        "AB-HOLD-GDS-GDS_6",
+        "AB-HOLD-GDS-GDS_7",
+        "AB-HOLD-GDS-GDS_8",
+        "AB-HOLD-GDS-GDS_9",
+        "AB-HOLD-GDS-GDS_10",
+        "AB-HOLD-GDS-GDS_11",
+        "AB-HOLD-GDS-GDS_12",
+        "AB-HOLD-GDS-GDS_13",
+        "AB-HOLD-GDS-GDS_14",
+        "AB-HOLD-GDS-GDS_15"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-GDS",
       "rule_refs": [],
@@ -1874,9 +2394,26 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-FUGULIN-MENTAL",
+        "AB-HOLD-FUGULIN-OXIGENACAO",
+        "AB-HOLD-FUGULIN-SINAIS_VITAIS",
+        "AB-HOLD-FUGULIN-MOTILIDADE",
+        "AB-HOLD-FUGULIN-DEAMBULACAO",
+        "AB-HOLD-FUGULIN-ALIMENTACAO",
+        "AB-HOLD-FUGULIN-CUIDADO_CORPORAL",
+        "AB-HOLD-FUGULIN-ELIMINACOES",
+        "AB-HOLD-FUGULIN-TERAPEUTICA",
+        "AB-HOLD-FUGULIN-PELE",
+        "AB-HOLD-FUGULIN-CURATIVO",
+        "AB-HOLD-FUGULIN-TEMPO_CURATIVO"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-FUGULIN",
       "rule_refs": [],
@@ -1910,9 +2447,21 @@
       "tool_kind": "ESCALA",
       "status": "CANDIDATE",
       "publicacao": "candidata",
-      "holds": [],
+      "holds": [
+        "Sem fonte com hash verificado.",
+        "Sem vetor de teste.",
+        "Sem evidência declarada. Não homologar."
+      ],
       "source_ids": [],
-      "authority_binding_refs": [],
+      "authority_binding_refs": [
+        "AB-HOLD-ELPO-POSICAO_CIRURGICA",
+        "AB-HOLD-ELPO-TEMPO_CIRURGIA",
+        "AB-HOLD-ELPO-ANESTESIA",
+        "AB-HOLD-ELPO-SUPERFICIE",
+        "AB-HOLD-ELPO-MEMBROS",
+        "AB-HOLD-ELPO-COMORBIDADES",
+        "AB-HOLD-ELPO-FAIXA_ETARIA"
+      ],
       "field_definition_refs": [],
       "formula_ref": "FORMULA-ELPO",
       "rule_refs": [],

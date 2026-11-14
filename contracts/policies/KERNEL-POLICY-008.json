@@ -1,0 +1,27 @@
+{
+  "schema": "CE-KERNEL-POLICY-1.0.0",
+  "id": "KERNEL-POLICY-008",
+  "name": "Sinais Vitais FHIR",
+  "description": "Valida FHIR R4 de sinais vitais como candidatos sem promoção; exige proveniência, revisão humana, política e WO antes do uso clínico.",
+  "source_contract": "contracts/fontes/fhir_vitais.json",
+  "validators": [
+    "schema_validator",
+    "loinc_validator"
+  ],
+  "atoms_output": "data/canonical/atoms/sinais_vitais/",
+  "quarentena_output": "data/quarentena/sinais_vitais/",
+  "sha256_required": true,
+  "fail_closed": true,
+  "requires_human_review": true,
+  "review_policy": {
+    "min_sample_size": 1,
+    "approval_required": true,
+    "reviewed_by_in_commit": true
+  },
+  "wo_required": true,
+  "wo_template": null,
+  "version": "1.1.0",
+  "updated_at": "2026-11-14T00:00:00Z",
+  "processing_scope": "SYNTHETIC_ONLY_PENDING_LGPD_CLINICAL_REVIEW",
+  "publication_allowed": false
+}

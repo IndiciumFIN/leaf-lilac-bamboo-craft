@@ -117,5 +117,7 @@ insert into file_binding (path, kind, alvo, canonico, anterior_ds) values
   ('src/lib/master-binding.test.ts', 'arquivo', 'src', false, false),
   ('src/lib/master-binding.ts', 'arquivo', 'src', false, false),
   ('src/lib/policy-catalog.test.ts', 'arquivo', 'src', false, false),
+  ('registers/governance/fhir-r4-vitals-audit.v1.json', 'arquivo', 'suporte', false, false),
+  ('scripts/fhir-r4-vitals-audit.test.mjs', 'arquivo', 'scripts', false, false),
   ('migrations/0096_amarracao_restante.sql', 'arquivo', 'migrations', false, false)
 on conflict (path) do nothing;

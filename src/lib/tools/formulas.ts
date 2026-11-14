@@ -59,6 +59,22 @@ export const formulas: Record<string, (values: Record<string, number>) => Comput
     ];
     return { outputs: { leitura: values.ph }, texts: { leitura: linhas.join(" ") } };
   },
+  dimensionamento: (values) => {
+    if (values.ist < 15) return { error: "O parecer fixa o índice de segurança técnica em no mínimo 15%." };
+    if (values.ds <= 0 || values.chs <= 0) return { error: "Dias e carga horária precisam ser maiores que zero." };
+    const horas = values.pcm * 4 + values.pci * 6 + values.pcad * 10 + values.pcsi * 10 + values.pcit * 18;
+    const qp = (horas * values.ds * (1 + values.ist / 100)) / values.chs;
+    const categorias = [
+      [values.pcm * 4, 0.33],
+      [values.pci * 6, 0.33],
+      [values.pcad * 10, 0.36],
+      [values.pcsi * 10, 0.42],
+      [values.pcit * 18, 0.52],
+    ].filter(([carga]) => carga > 0);
+    const maior = categorias.reduce((melhor, atual) => (atual[0] > melhor[0] ? atual : melhor), [0, 0.33]);
+    const percentual = maior[1];
+    return { outputs: { horas, qp, enfermeiros: qp * percentual, tecnicos: qp * (1 - percentual) } };
+  },
 };
 
 function dataUtc(ano: number, mes: number, dia: number) {

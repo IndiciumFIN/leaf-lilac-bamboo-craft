@@ -933,6 +933,5760 @@
     },
     {
       "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ESCALANUMERICA-DOR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.escalanumerica.criteria.dor",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GOSNELL-MENTAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gosnell.criteria.mental",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GOSNELL-CONTINENCIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gosnell.criteria.continencia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GOSNELL-MOBILIDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gosnell.criteria.mobilidade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GOSNELL-ATIVIDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gosnell.criteria.atividade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GOSNELL-NUTRICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gosnell.criteria.nutricao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NORTON-PHYSICAL_CONDITION",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.norton.criteria.physical_condition",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NORTON-MENTAL_CONDITION",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.norton.criteria.mental_condition",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NORTON-ACTIVITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.norton.criteria.activity",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NORTON-MOBILITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.norton.criteria.mobility",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NORTON-INCONTINENCE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.norton.criteria.incontinence",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-BUILD",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.build",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-SKIN",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.skin",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-SEX",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.sex",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-AGE_BAND",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.age_band",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-CONTINENCE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.continence",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-MOBILITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.mobility",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-APPETITE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.appetite",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-ORGAN",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.organ",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-VASCULAR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.vascular",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-ANEMIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.anemia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-SMOKING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.smoking",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-NEUROLOGIC",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.neurologic",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-ORTHOPEDIC",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.orthopedic",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-SURGERY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.surgery",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-WATERLOW-MEDICATIONS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.waterlow.criteria.medications",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-SIT_TO_STAND",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.sit_to_stand",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-STAND_UNSUPPORTED",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.stand_unsupported",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-SIT_UNSUPPORTED",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.sit_unsupported",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-STAND_TO_SIT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.stand_to_sit",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-TRANSFERS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.transfers",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-EYES_CLOSED",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.eyes_closed",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-FEET_TOGETHER",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.feet_together",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-FORWARD_REACH",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.forward_reach",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-PICK_UP",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.pick_up",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-LOOK_BEHIND",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.look_behind",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-TURN_360",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.turn_360",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-STEP_ALTERNATE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.step_alternate",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-TANDEM",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.tandem",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BERG-SINGLE_LEG",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.berg.criteria.single_leg",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-QUEDAS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.quedas",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-SEDATIVOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.sedativos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-DIURETICOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.diureticos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-ANTI_HIPERTENSIVOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.anti_hipertensivos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-ANTI_PARKINSON",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.anti_parkinson",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-ANTIDEPRESSIVOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.antidepressivos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-VISAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.visao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-AUDICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.audicao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-MEMBROS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.membros",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-MENTAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.mental",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-DOWNTON-MARCHA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.downton.criteria.marcha",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-CONFUSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.confusao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-DEPRESSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.depressao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-ELIMINACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.eliminacao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-VERTIGEM",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.vertigem",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-SEXO_MASCULINO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.sexo_masculino",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-ANTIEPILEPTICO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.antiepileptico",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-BENZODIAZEPINICO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.benzodiazepinico",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HENDRICH-GET_UP_GO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hendrich.criteria.get_up_go",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-IDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.idade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-SEXO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.sexo",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-DIAGNOSTICO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.diagnostico",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-COGNICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.cognicao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-AMBIENTE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.ambiente",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-CIRURGIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.cirurgia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HUMPTY-MEDICAMENTOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.humpty.criteria.medicamentos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-SITTING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.sitting",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-RISING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.rising",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-ATTEMPT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.attempt",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-IMMEDIATE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.immediate",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-STANDING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.standing",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-NUDGE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.nudge",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-EYES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.eyes",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-TURN_STEPS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.turn_steps",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-TURN_STABILITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.turn_stability",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-SIT_DOWN",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.sit_down",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-GAIT_START",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.gait_start",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-STEP_RIGHT_LEN",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.step_right_len",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-STEP_RIGHT_HEIGHT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.step_right_height",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-STEP_LEFT_LEN",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.step_left_len",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-STEP_LEFT_HEIGHT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.step_left_height",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-SYMMETRY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.symmetry",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-CONTINUITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.continuity",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-PATH",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.path",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-TRUNK",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.trunk",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-TINETTI-STANCE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.tinetti.criteria.stance",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAM-RASS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cam.criteria.rass",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAM-F1",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cam.criteria.f1",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAM-F2",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cam.criteria.f2",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAM-F4",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cam.criteria.f4",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CINCINNATI-FACE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cincinnati.criteria.face",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CINCINNATI-ARM",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cincinnati.criteria.arm",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CINCINNATI-SPEECH",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cincinnati.criteria.speech",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FAST-FACE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fast.criteria.face",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FAST-ARM",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fast.criteria.arm",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FAST-SPEECH",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fast.criteria.speech",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FOUR-OCULAR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.four.criteria.ocular",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FOUR-MOTORA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.four.criteria.motora",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FOUR-TRONCO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.four.criteria.tronco",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FOUR-RESPIRACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.four.criteria.respiracao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GLASGOW-EYE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.glasgow.criteria.eye",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GLASGOW-VERBAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.glasgow.criteria.verbal",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GLASGOW-MOTOR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.glasgow.criteria.motor",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-LOC",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.loc",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-LOCQ",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.locq",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-LOCC",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.locc",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-GAZE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.gaze",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-VISUAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.visual",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-FACIAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.facial",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-ARM_L",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.arm_l",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-ARM_R",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.arm_r",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-LEG_L",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.leg_l",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-LEG_R",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.leg_r",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-ATAXIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.ataxia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-SENSORY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.sensory",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-LANGUAGE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.language",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-DYSARTHRIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.dysarthria",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIHSS-NEGLECT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nihss.criteria.neglect",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-RANCHOLOSAMIGOS-NIVEL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.rancholosamigos.criteria.nivel",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAPURRO-PELE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.capurro.criteria.pele",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAPURRO-ORELHA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.capurro.criteria.orelha",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAPURRO-GLANDULA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.capurro.criteria.glandula",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAPURRO-PLANTA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.capurro.criteria.planta",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CAPURRO-MAMILO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.capurro.criteria.mamilo",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIPS-EXPRESSAO_FACIAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nips.criteria.expressao_facial",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIPS-CHORO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nips.criteria.choro",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIPS-RESPIRACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nips.criteria.respiracao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIPS-BRACOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nips.criteria.bracos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIPS-PERNAS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nips.criteria.pernas",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-NIPS-ESTADO_CONSCIENCIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.nips.criteria.estado_consciencia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SILVERMAN-THORACOABDOMINAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.silverman.criteria.thoracoabdominal",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SILVERMAN-LOWER_CHEST",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.silverman.criteria.lower_chest",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SILVERMAN-XIPHOID",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.silverman.criteria.xiphoid",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SILVERMAN-NASAL_FLARING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.silverman.criteria.nasal_flaring",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SILVERMAN-EXPIRATORY_GRUNT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.silverman.criteria.expiratory_grunt",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-RAMSAY-RAMSAY_LEVEL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.ramsay.criteria.ramsay_level",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-RICHMOND-RASS_LEVEL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.richmond.criteria.rass_level",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CURB-65-CONFUSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.curb-65.criteria.confusao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CURB-65-UREIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.curb-65.criteria.ureia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CURB-65-RESPIRACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.curb-65.criteria.respiracao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CURB-65-PRESSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.curb-65.criteria.pressao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CURB-65-IDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.curb-65.criteria.idade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-QSOFA-MENTAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.qsofa.criteria.mental",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-QSOFA-PA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.qsofa.criteria.pa",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-QSOFA-FR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.qsofa.criteria.fr",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SOFA-RESPIRATORIO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sofa.criteria.respiratorio",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SOFA-PLAQUETAS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sofa.criteria.plaquetas",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SOFA-BILIRRUBINA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sofa.criteria.bilirrubina",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SOFA-CARDIOVASCULAR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sofa.criteria.cardiovascular",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SOFA-GLASCOW",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sofa.criteria.glascow",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SOFA-RENAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sofa.criteria.renal",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BPS-FACE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bps.criteria.face",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BPS-ARMS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bps.criteria.arms",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BPS-VENTILATOR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bps.criteria.ventilator",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CRIES-CHORO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cries.criteria.choro",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CRIES-OXIGENIO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cries.criteria.oxigenio",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CRIES-SINAIS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cries.criteria.sinais",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CRIES-EXPRESSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cries.criteria.expressao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CRIES-SONO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.cries.criteria.sono",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FLACC-FACE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.flacc.criteria.face",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FLACC-LEGS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.flacc.criteria.legs",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FLACC-ACTIVITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.flacc.criteria.activity",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FLACC-CRY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.flacc.criteria.cry",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FLACC-CONSOLABILITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.flacc.criteria.consolability",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-SENSACOES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.sensacoes",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-COR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.cor",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-HIPERSENSIBILIDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.hipersensibilidade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-PAROXISTICA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.paroxistica",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-TEMPERATURA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.temperatura",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-ALODINIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.alodinia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LANSS-LIMIAR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lanss.criteria.limiar",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-PAINAD-RESPIRACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.painad.criteria.respiracao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-PAINAD-VOCALIZACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.painad.criteria.vocalizacao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-PAINAD-EXPRESSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.painad.criteria.expressao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-PAINAD-CORPO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.painad.criteria.corpo",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-PAINAD-CONSOLABILIDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.painad.criteria.consolabilidade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-FEEDING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.feeding",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-BATHING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.bathing",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-GROOMING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.grooming",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-DRESSING",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.dressing",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-BOWEL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.bowel",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-BLADDER",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.bladder",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-TOILET",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.toilet",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-TRANSFERS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.transfers",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-MOBILITY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.mobility",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BARTHEL-STAIRS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.barthel.criteria.stairs",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-KATZ-BANHO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.katz.criteria.banho",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-KATZ-VESTIR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.katz.criteria.vestir",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-KATZ-SANITARIO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.katz.criteria.sanitario",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-KATZ-TRANSFERENCIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.katz.criteria.transferencia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-KATZ-CONTINENCIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.katz.criteria.continencia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-KATZ-ALIMENTACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.katz.criteria.alimentacao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-VISAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.visao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-AUDICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.audicao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-CONTINENCIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.continencia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-AVD_AIVD",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.avd_aivd",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-MEMBROS_SUPERIORES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.membros_superiores",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-MEMBROS_INFERIORES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.membros_inferiores",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-NUTRICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.nutricao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-COGNICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.cognicao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-HUMOR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.humor",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-AMBIENTE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.ambiente",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LACHS-REDE_APOIO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lachs.criteria.rede_apoio",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-TELEFONE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.telefone",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-COMPRAS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.compras",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-REFEICOES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.refeicoes",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-CASA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.casa",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-ROUPAS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.roupas",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-TRANSPORTE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.transporte",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-MEDICAMENTOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.medicamentos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-LAWTON-FINANCAS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.lawton.criteria.financas",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BISHOP-DILATION",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bishop.criteria.dilation",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BISHOP-EFFACEMENT",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bishop.criteria.effacement",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BISHOP-STATION",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bishop.criteria.station",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BISHOP-CONSISTENCY",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bishop.criteria.consistency",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-BISHOP-POSITION",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.bishop.criteria.position",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ASA-ASA_PHYSICAL_STATUS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.asa.criteria.asa_physical_status",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CLASSIFICACAO_WIFI-WOUND",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.classificacao_wifi.criteria.wound",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CLASSIFICACAO_WIFI-ISCHEMIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.classificacao_wifi.criteria.ischemia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-CLASSIFICACAO_WIFI-INFECTION",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.classificacao_wifi.criteria.infection",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SISTEMA_SINBAD-SITE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sistema_sinbad.criteria.site",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SISTEMA_SINBAD-ISQUEMIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sistema_sinbad.criteria.isquemia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SISTEMA_SINBAD-NEUROPATIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sistema_sinbad.criteria.neuropatia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SISTEMA_SINBAD-INFECCAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sistema_sinbad.criteria.infeccao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SISTEMA_SINBAD-AREA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sistema_sinbad.criteria.area",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-SISTEMA_SINBAD-PROFUNDIDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.sistema_sinbad.criteria.profundidade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-ANSIEDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.ansiedade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-TENSAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.tensao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-MEDOS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.medos",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-INSONIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.insonia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-COGNICAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.cognicao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-HUMOR_DEPRIMIDO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.humor_deprimido",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-MUSCULAR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.muscular",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-SENSORIAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.sensorial",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-CARDIOVASCULAR",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.cardiovascular",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-RESPIRATORIO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.respiratorio",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-GASTROINTESTINAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.gastrointestinal",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-GENITURINARIO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.geniturinario",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-AUTONOMICO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.autonomico",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-HAMILTON-ENTREVISTA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.hamilton.criteria.entrevista",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_1",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_1",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_2",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_2",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_3",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_3",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_4",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_4",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_5",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_5",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_6",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_6",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_7",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_7",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_8",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_8",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_9",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_9",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_10",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_10",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_11",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_11",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_12",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_12",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_13",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_13",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_14",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_14",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-GDS-GDS_15",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.gds.criteria.gds_15",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-MENTAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.mental",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-OXIGENACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.oxigenacao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-SINAIS_VITAIS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.sinais_vitais",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-MOTILIDADE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.motilidade",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-DEAMBULACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.deambulacao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-ALIMENTACAO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.alimentacao",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-CUIDADO_CORPORAL",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.cuidado_corporal",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-ELIMINACOES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.eliminacoes",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-TERAPEUTICA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.terapeutica",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-PELE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.pele",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-CURATIVO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.curativo",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-FUGULIN-TEMPO_CURATIVO",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.fugulin.criteria.tempo_curativo",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-POSICAO_CIRURGICA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.posicao_cirurgica",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-TEMPO_CIRURGIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.tempo_cirurgia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-ANESTESIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.anestesia",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-SUPERFICIE",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.superficie",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-MEMBROS",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.membros",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-COMORBIDADES",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.comorbidades",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
+      "canonical_id": "AB-HOLD-ELPO-FAIXA_ETARIA",
+      "version": "1.2.0",
+      "status": "HOLD_HUMAN",
+      "updated_at": "2026-10-22",
+      "provenance_refs": [
+        "HOLD-SEM-FONTE-VERIFICADA"
+      ],
+      "field_path": "tool.elpo.criteria.faixa_etaria",
+      "requirement_id": "UTC-002",
+      "source_ids": [],
+      "authority_class": "CLINICAL",
+      "validity": {
+        "jurisdiction": "BR"
+      },
+      "decision": "HOLD",
+      "validator_ids": [],
+      "evidence_bundle_ids": [],
+      "exception_reason": "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta."
+    },
+    {
+      "schema_version": "0.1.0",
       "canonical_id": "AB-CTX-NOME",
       "version": "1.2.0",
       "status": "EVIDENCE_BOUND",
