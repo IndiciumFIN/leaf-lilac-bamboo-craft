@@ -255,7 +255,7 @@ if (existsSync(driftPath)) {
       area: "Conclusao",
       titulo: "Contratos CKO fora do vocabulário",
       estado: `${drift.totalEnumDrift} DIVERGENTES · ${drift.incompatibleEnumEntries?.length ?? 0} GRUPOS`,
-      detalhe: "Não reescrever o enum. Os maiores grupos são decision=BOUND, authority_class=CLINICAL e privacy_policy=NOT_APPLICABLE.",
+      detalhe: `Não reescrever o enum. Aberto: ${(drift.incompatibleEnumEntries ?? []).slice(0, 3).map((item) => `${item.field}=${item.legacyValue} (${item.count})`).join("; ") || "nenhum"}.`,
       evidencia: driftPath,
     });
   }
@@ -292,7 +292,7 @@ for (const it of itens) (porArea[it.area] ??= []).push(it);
 let md = `# Pendencias — branch-bibliotecas\n\n`;
 md += `Gerado por \`scripts/generate-pendencias.mjs\` a partir do estado MEDIDO em **${agora}**.\n`;
 md += `Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.\n\n`;
-md += `> A lista so cresce quando algo esta de fato por fazer. Se um gate passa, o item desaparece.\n\n`;
+md += `> Estes numeros sao o subconjunto local deste gerador. Nao sao o pipeline geral do GitHub Actions. Zero vermelho aqui nao e release, nao e homologacao clinica e nao admite a plataforma.\n\n`;
 md += `## Estado apurado\n\n`;
 md += `| Medida | Valor |\n|---|---|\n`;
 for (const [k, v] of Object.entries(contagem)) md += `| ${k} | **${v}** |\n`;
@@ -319,7 +319,7 @@ md += `- Vancomicina está em contracts/cko-bibliotecas/bindings/content/vancomi
 md += `- src/lib/tools/formulas.ts e src/lib/tools/engine.test.ts. O vetor não está no schema da fórmula.\n`;
 md += `- src/lib/research/abnt.ts cobre NBR 6023 e citação no texto. src/lib/tools/numeric-rule.ts cobre o arredondamento usado no motor.\n`;
 md += `- audit-run tem sondas Playwright. Não há suíte scripts/e2e/.\n`;
-md += `- packages/cli/parsers tem fhir.py, mesh.py e medlineplus.py. O gate estrito continua fechado pelos parsers que faltam.\n`;
+md += `- packages/cli/parsers tem os 20 caminhos do gate estrutural, inclusive fhir.py, mesh.py e medlineplus.py. Presença de arquivo não é validação semântica nem terminologia homologada.\n`;
 md += `- src/lib/tools/dimensionamento.ts calcula pelo fator 1,15 e permanece candidata.\n`;
 
 writeFileSync(alvo, md);

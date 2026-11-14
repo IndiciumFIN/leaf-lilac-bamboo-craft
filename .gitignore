@@ -18,6 +18,8 @@ screenshots
 intake/mirrors
 intake/objetos
 
-.grok
+__pycache__/
+*.pyc
+*.pyo
 docs/db
 artifacts/calculadoras-smart-bruto.dump

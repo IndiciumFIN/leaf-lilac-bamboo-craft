@@ -1,0 +1,12 @@
+{
+  "schema": "CE-OPA-BINARY-1.0.0",
+  "programa": "opa",
+  "versao": "1.4.2",
+  "arquivo": "bin/opa",
+  "plataforma": "linux/amd64",
+  "sha256": "2c0ccdbbe0b8e2a5d12d9c42d92f1f34f494ffb32d1f3c4ddc36101be637d66f",
+  "origem": "https://github.com/open-policy-agent/opa/releases/download/v1.4.2/opa_linux_amd64_static.sha256",
+  "checksum_confere": true,
+  "admissao": false,
+  "nota": "O binario confere com o checksum publicado. Isso nao admite ordem nem substitui uma decisao Rego auditada em producao."
+}

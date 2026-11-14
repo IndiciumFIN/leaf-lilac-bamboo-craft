@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500 700;
+      font-display: block;
+      src: url("og-fonts/inter-latin.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 500 600;
+      font-display: block;
+      src: url("og-fonts/nunito-latin.woff2") format("woff2");
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #163269;
+    }
+    .card {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #F9FAFB;
+      background:
+        radial-gradient(980px 520px at 92% 118%, rgba(74, 144, 226, 0.28), transparent 62%),
+        radial-gradient(640px 420px at -8% -20%, rgba(74, 144, 226, 0.16), transparent 58%),
+        linear-gradient(162deg, #163269 0%, #1A3E74 46%, #1E4D8C 100%);
+    }
+    .frame {
+      position: absolute;
+      inset: 28px;
+      border: 1px solid rgba(249, 250, 251, 0.14);
+      border-radius: 18px;
+      pointer-events: none;
+    }
+    .watermark {
+      position: absolute;
+      right: -40px;
+      bottom: -70px;
+      width: 420px;
+      height: 420px;
+      opacity: 0.055;
+      pointer-events: none;
+    }
+    .grain {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.18;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+    .lockup {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 920px;
+      padding: 0 48px;
+    }
+    .mark {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 28px;
+      filter: drop-shadow(0 8px 18px rgba(15, 36, 64, 0.28));
+    }
+    h1 {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 58px;
+      line-height: 1.05;
+      letter-spacing: -0.032em;
+      color: #F9FAFB;
+      white-space: nowrap;
+    }
+    .rule {
+      width: 52px;
+      height: 3px;
+      margin: 22px 0 18px;
+      border-radius: 99px;
+      background: #4A90E2;
+    }
+    p {
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 1.25;
+      letter-spacing: 0.004em;
+      color: rgba(249, 250, 251, 0.86);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <svg class="watermark" viewBox="0 0 100 100" aria-hidden="true">
+      <path fill="#F9FAFB" d="M38 8h24v30h30v24H62v30H38V62H8V38h30V8z"/>
+    </svg>
+    <svg class="grain" aria-hidden="true">
+      <filter id="n">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#n)"/>
+    </svg>
+    <div class="frame"></div>
+    <div class="lockup">
+      <svg class="mark" viewBox="0 0 72 72" aria-hidden="true">
+        <rect width="72" height="72" rx="18" fill="#0F2440"/>
+        <rect x="1.25" y="1.25" width="69.5" height="69.5" rx="16.75" fill="none" stroke="#4A90E2" stroke-width="1.5" opacity="0.85"/>
+        <path fill="#F9FAFB" d="M30 14h12v16h16v12H42v16H30V42H14V30h16V14z"/>
+      </svg>
+      <h1>Calculadoras de Enfermagem</h1>
+      <div class="rule"></div>
+      <p>Escalas, protocolos e calculadoras clínicas</p>
+    </div>
+  </div>
+</body>
+</html>

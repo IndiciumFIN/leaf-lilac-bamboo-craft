@@ -1,9 +1,9 @@
 # Pendencias — branch-bibliotecas
 
-Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 22:46Z**.
+Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 23:22Z**.
 Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
-> A lista so cresce quando algo esta de fato por fazer. Se um gate passa, o item desaparece.
+> Estes numeros sao o subconjunto local deste gerador. Nao sao o pipeline geral do GitHub Actions. Zero vermelho aqui nao e release, nao e homologacao clinica e nao admite a plataforma.
 
 ## Estado apurado
 
@@ -207,7 +207,7 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 ### Contratos CKO fora do vocabulário
 - **Estado:** 310 DIVERGENTES · 1 GRUPOS
-- **Detalhe:** Não reescrever o enum. Os maiores grupos são decision=BOUND, authority_class=CLINICAL e privacy_policy=NOT_APPLICABLE.
+- **Detalhe:** Não reescrever o enum. Aberto: authority_class=CLINICAL (310).
 - **Evidencia:** `audit-evidence/ncos-canonical-source-lineage/schema-drift-delta.v1.json`
 
 ### Normativo transversal atômico
@@ -243,5 +243,5 @@ Isto não admite a plataforma. O gerador anterior dizia que não existia.
 - src/lib/tools/formulas.ts e src/lib/tools/engine.test.ts. O vetor não está no schema da fórmula.
 - src/lib/research/abnt.ts cobre NBR 6023 e citação no texto. src/lib/tools/numeric-rule.ts cobre o arredondamento usado no motor.
 - audit-run tem sondas Playwright. Não há suíte scripts/e2e/.
-- packages/cli/parsers tem fhir.py, mesh.py e medlineplus.py. O gate estrito continua fechado pelos parsers que faltam.
+- packages/cli/parsers tem os 20 caminhos do gate estrutural, inclusive fhir.py, mesh.py e medlineplus.py. Presença de arquivo não é validação semântica nem terminologia homologada.
 - src/lib/tools/dimensionamento.ts calcula pelo fator 1,15 e permanece candidata.
