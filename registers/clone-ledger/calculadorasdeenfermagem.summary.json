@@ -1,0 +1,816 @@
+{
+  "repo": "calculadorasdeenfermagem",
+  "refs": 69,
+  "rows": 66635,
+  "faces": {
+    "divergente": 411,
+    "so_na_origem": 66224
+  },
+  "unique_blobs_not_equal_to_local": 9818,
+  "local_tracked_files": 6225,
+  "unequal_roots": [
+    [
+      "migration",
+      36568
+    ],
+    [
+      "data",
+      17755
+    ],
+    [
+      "contracts",
+      4348
+    ],
+    [
+      "docs",
+      2593
+    ],
+    [
+      "packages",
+      2504
+    ],
+    [
+      "src",
+      414
+    ],
+    [
+      "evidence",
+      404
+    ],
+    [
+      ".github",
+      305
+    ],
+    [
+      "tests",
+      284
+    ],
+    [
+      "prompts",
+      209
+    ],
+    [
+      "supabase",
+      142
+    ],
+    [
+      "governance",
+      131
+    ],
+    [
+      "scripts",
+      80
+    ],
+    [
+      ".env.example",
+      69
+    ],
+    [
+      ".gitignore",
+      69
+    ],
+    [
+      "README.md",
+      69
+    ],
+    [
+      "package.json",
+      69
+    ],
+    [
+      "tsconfig.json",
+      69
+    ],
+    [
+      "config",
+      67
+    ],
+    [
+      "package-lock.json",
+      66
+    ],
+    [
+      "test.txt",
+      63
+    ],
+    [
+      "01_ACAO_branch_protection.md",
+      62
+    ],
+    [
+      "02_ACAO_clone_pat.md",
+      62
+    ],
+    [
+      "03_ACAO_human_approver.md",
+      62
+    ],
+    [
+      "04_ACAO_workflow_gui.md",
+      62
+    ],
+    [
+      "pilots",
+      30
+    ],
+    [
+      "policies",
+      27
+    ],
+    [
+      "gates",
+      17
+    ],
+    [
+      "staging",
+      10
+    ],
+    [
+      "tools",
+      8
+    ],
+    [
+      ".gitleaks.toml",
+      2
+    ],
+    [
+      "agents",
+      2
+    ],
+    [
+      "wf_probe.md",
+      1
+    ],
+    [
+      "CE_PLANO_MESTRE_EVIDENCIAS",
+      1
+    ],
+    [
+      "gate-aggregador-yml.txt",
+      1
+    ],
+    [
+      "gate.yml",
+      1
+    ],
+    [
+      "drive-wf-test.yml",
+      1
+    ],
+    [
+      "sz_100.txt",
+      1
+    ],
+    [
+      "sz_1000.txt",
+      1
+    ],
+    [
+      "sz_1500.txt",
+      1
+    ],
+    [
+      "sz_200.txt",
+      1
+    ],
+    [
+      "sz_2000.txt",
+      1
+    ],
+    [
+      "sz_2500.txt",
+      1
+    ],
+    [
+      "sz_500.txt",
+      1
+    ],
+    [
+      "test_10k.txt",
+      1
+    ]
+  ],
+  "refs_detail": [
+    {
+      "refkind": "branch",
+      "ref": "IndiciumFIN-patch-1",
+      "commit": "ccb21b7814211b80071dc0fd5f866aea7f285238",
+      "files": 177,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 171
+    },
+    {
+      "refkind": "branch",
+      "ref": "audit/ce04-reconciliation-tasks-20261017",
+      "commit": "2a1250d2d5c8c159be2ede462306822c0cb70943",
+      "files": 238,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 232
+    },
+    {
+      "refkind": "branch",
+      "ref": "audit/cko-crossnorms-branches-20261114",
+      "commit": "c98db053a273d5ee68d052b7f974c68a47ed8547",
+      "files": 182,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 176
+    },
+    {
+      "refkind": "branch",
+      "ref": "audit/cko-g6-github-review-verification-20261114",
+      "commit": "cc9bbb493b11e413a50a25264a2230ba5b035c2e",
+      "files": 172,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 166
+    },
+    {
+      "refkind": "branch",
+      "ref": "audit/p0-intake-dedup-gates-20261114",
+      "commit": "23ed1aa288f16e70694b51f36dc2df9993603b2e",
+      "files": 185,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 179
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-drive-kernel-bd1a",
+      "commit": "d173b6dea0b48091b83f82655a4edf63776262ad",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-047a",
+      "commit": "33e1d0c87198a2b600b805860331f176b087c461",
+      "files": 182,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 176
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-2277",
+      "commit": "b8ad73613d6d3cd9162606e08edd6450b9df749e",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-4c40",
+      "commit": "ad69ee7b5ea266b56546c68e2f4a951f13133f4e",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-510d",
+      "commit": "77821f1e2a2097a352047dcd6e647e80c408120e",
+      "files": 183,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 177
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-5d44",
+      "commit": "33c267dbf0d14e6413c9cecd0dc454eac85f50fc",
+      "files": 178,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 172
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-6190",
+      "commit": "30f22ec3cf6a2065391aba4bed679f5b4ae5cffb",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-6bf4",
+      "commit": "e6ad352c883209d42f7df34f672ad65b9d4e9009",
+      "files": 183,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 177
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-6e94",
+      "commit": "9b432f86dd5ba14556301503e9531c25668c327b",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-6eb4",
+      "commit": "b94d7f4338f00a60a2a5a9995f2a7287b30c1382",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-6ebf",
+      "commit": "4612a81473c3766f89219021f603ff26bafa9e56",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-7314",
+      "commit": "494a1fc54659ad2fb400b7994603aa44f2e63758",
+      "files": 179,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 173
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-7f24",
+      "commit": "ecd84bf36eaca278cfe83de4fd2f6035f0d1f7f0",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-8061",
+      "commit": "ce23049f8c0d40a8dc0a1489a31ca3ffd3ec3b2e",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-8968",
+      "commit": "065188b5f0efcb8a57d6fcb0d9831e9176894e05",
+      "files": 189,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 183
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-935e",
+      "commit": "864e45b6f803fa5af8f90b3518703f18f569597f",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-9b80",
+      "commit": "c6ac2f97003ce14592d7354e03ed86b233938d42",
+      "files": 183,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 177
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-a061",
+      "commit": "a06cff3198188f18f5afe6b50b2a749cd2896a82",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-a8a8",
+      "commit": "e0d874f211be68cca1383872866cb848342df7b6",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-a8c5",
+      "commit": "b06ce58dda387aaa6bfe59e0dec6c4f405b20878",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-aad4",
+      "commit": "add5c88cd3a73b6d2b78bad8a23a8ca0e6c087a7",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-b772",
+      "commit": "cf458370c1503e91a0c3607c4b6441aa9f161757",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-c8d7",
+      "commit": "d4a7a3c8fde5b2fb97bbd97a2c35dcb445f83674",
+      "files": 182,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 176
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-c8ed",
+      "commit": "7f4e0c34c0230f14e5cbee375c639439ce041cfd",
+      "files": 183,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 177
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-d5b0",
+      "commit": "53c9fc7b189a5851f289efb8e472bdb74310a8da",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-d7f8",
+      "commit": "164c7174a0a2f8cdb17da2be5db861702023e6bc",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-e3fe",
+      "commit": "2a3a13402e1659287ec8dd44746cdb2a1c34b582",
+      "files": 182,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 176
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-kernel-pol-ticas-f5e4",
+      "commit": "fa6e5441da8bf242d520d5c413b4a26c0e7d5f08",
+      "files": 182,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 176
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/arquivos-pol-ticas-kernel-735c",
+      "commit": "53826bfee5550e415e7b170c106810fafef2edba",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/atomiza-o-arquivos-drive-eca9",
+      "commit": "b2b0748799c8ad350028154fa34368cb965d01fa",
+      "files": 181,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 175
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/atomiza-o-arquivos-kernel-ebc1",
+      "commit": "f98902cb564ffb0c33ab75ab8eea30433a93f617",
+      "files": 179,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 173
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/bc-9d850a48-4546-4657-aa8a-75d3095ffdd8-91a5",
+      "commit": "93a7131a8a0ffdc9aaadc7be4b2ad4a75a0ee130",
+      "files": 180,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 174
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/drive-sa-key-refactor",
+      "commit": "750d094568b5ff7226c1dce57878aab3ad99a5d5",
+      "files": 9022,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 9016
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/fix-governance-gaps-ec54",
+      "commit": "b6d3b48f34c131c9f935084eae09dad953bd64e9",
+      "files": 9043,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 9037
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/wf-gdrive-sakey",
+      "commit": "4e3d4979e3da82c9fc7ff71beaf87fba73aa8702",
+      "files": 78,
+      "igual": 0,
+      "divergente": 5,
+      "so_na_origem": 73
+    },
+    {
+      "refkind": "branch",
+      "ref": "cursor/wf-v3",
+      "commit": "8056d08a35cfb7932933fa330d8c902e5a465710",
+      "files": 69,
+      "igual": 0,
+      "divergente": 5,
+      "so_na_origem": 64
+    },
+    {
+      "refkind": "branch",
+      "ref": "feat/ce-local-agent-assurance-20261019",
+      "commit": "ee4556b131c45a6898d00fb3a570914d8a83064d",
+      "files": 315,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 309
+    },
+    {
+      "refkind": "branch",
+      "ref": "feat/cko-catalog-metamodel-automated-20261114",
+      "commit": "d0197788d2453066d738c48441a2ad7a0ad32f73",
+      "files": 164,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 158
+    },
+    {
+      "refkind": "branch",
+      "ref": "feat/cko-m08-m09-corpus-atomic-20261114",
+      "commit": "d395f6e69e935570d5355ba930745bf8cd91f537",
+      "files": 184,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 178
+    },
+    {
+      "refkind": "branch",
+      "ref": "feat/cko-parser-fhir-vitals-r4-20261114",
+      "commit": "2e732cfb10585fabf7928c7ac1f453feb32d8d3f",
+      "files": 164,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 158
+    },
+    {
+      "refkind": "branch",
+      "ref": "feat/cko-parser-medlineplus-xml-20261114",
+      "commit": "ef8b6edafc8ab0ffaa650932919143035ead6e52",
+      "files": 164,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 158
+    },
+    {
+      "refkind": "branch",
+      "ref": "feat/cko-parser-mesh-xml-20261114",
+      "commit": "cc3c307771522b070636bd6e702f6a0861774987",
+      "files": 164,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 158
+    },
+    {
+      "refkind": "branch",
+      "ref": "fix/canonical-structural-cli-registry-20261114",
+      "commit": "14fdc8a30369001bf0e0a0d37c80ab7e43b6eb2e",
+      "files": 161,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 155
+    },
+    {
+      "refkind": "branch",
+      "ref": "fix/ce05-kernel-ci-security-20261017",
+      "commit": "e1c9ace498b66ac831849ad1df51ee14e11e3efc",
+      "files": 185,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 179
+    },
+    {
+      "refkind": "branch",
+      "ref": "fix/cko-ci-no-masked-checks-20261114",
+      "commit": "12d41a620eb5a62fed3d97f2edd3ced213986a7b",
+      "files": 162,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 156
+    },
+    {
+      "refkind": "branch",
+      "ref": "fix/cko-wo-g6-preflight-20261114",
+      "commit": "c8760221930023faae2a4f0e730b208dcd9a5f0e",
+      "files": 167,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 161
+    },
+    {
+      "refkind": "branch",
+      "ref": "fix/p0-cko-cofen-cor-safe-intake-20261114",
+      "commit": "f636ca88cd2f587866b4b350111b02ea6c374d78",
+      "files": 191,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 185
+    },
+    {
+      "refkind": "branch",
+      "ref": "integrate/p0-cko-existing-source-parsers-20261114",
+      "commit": "a2b57abf244aeac42139c5f94d8cddff1575b8a6",
+      "files": 179,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 173
+    },
+    {
+      "refkind": "branch",
+      "ref": "integration/canonical-main-20261017",
+      "commit": "c704c3cf9241cde7697acb860e598bd01bd58cf5",
+      "files": 134,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 128
+    },
+    {
+      "refkind": "branch",
+      "ref": "integration/cko-p0-ci-g6-20261114",
+      "commit": "5589d7cf7dbdef8ea988d4acef44bd8c8fe0a1bf",
+      "files": 168,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 162
+    },
+    {
+      "refkind": "branch",
+      "ref": "integration/cko-parsers-catalog-20261114",
+      "commit": "04b7cd9ef82cab32f2107a1b3ce762420fd50842",
+      "files": 255,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 249
+    },
+    {
+      "refkind": "branch",
+      "ref": "main",
+      "commit": "e0f62491b104f4a97c6025a6393cabc2e7ada30e",
+      "files": 176,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 170
+    },
+    {
+      "refkind": "branch",
+      "ref": "migration/candidate-f08-20261017",
+      "commit": "be69c19fce79e4c30b42b12369935e4ca6a4584e",
+      "files": 18458,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 18452
+    },
+    {
+      "refkind": "branch",
+      "ref": "migration/ce01-historical-evidence-b01-20261017",
+      "commit": "4206865dc5f07f3ef4b36f04c2572b7224f713c1",
+      "files": 182,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 176
+    },
+    {
+      "refkind": "branch",
+      "ref": "migration/full-directory-20261017",
+      "commit": "1b1a268595c85fecd2dc02a7cc6b5f078b027b7b",
+      "files": 18441,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 18435
+    },
+    {
+      "refkind": "branch",
+      "ref": "migration/pilot-policies-20261017",
+      "commit": "2fc555f854c64b9d44f778805fbfca7675bd3cce",
+      "files": 185,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 179
+    },
+    {
+      "refkind": "branch",
+      "ref": "pmo/recovery-controlled-20261019",
+      "commit": "cbae3fead8bddaace32207a50949bcce4d88ecc0",
+      "files": 283,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 277
+    },
+    {
+      "refkind": "branch",
+      "ref": "review/cko-w1-w2-editorial-20261114",
+      "commit": "cf0865add19879d1194c7f37e50cf411af82a035",
+      "files": 185,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 179
+    },
+    {
+      "refkind": "branch",
+      "ref": "review/cko-w3-pe736-20261114",
+      "commit": "d18a3acb53e90fc460a8fa5ed173390f8d65612b",
+      "files": 179,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 173
+    },
+    {
+      "refkind": "branch",
+      "ref": "review/cko-w4-reuso-especialidades-20261114",
+      "commit": "4378a7cdf78ccbc2493f7e229745518ca4ff1d92",
+      "files": 185,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 179
+    },
+    {
+      "refkind": "branch",
+      "ref": "review/cko-w5-cme-independente-20261114",
+      "commit": "bb882bc69a9e62d58b2ee2ced8d5838ad4c45f83",
+      "files": 191,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 185
+    },
+    {
+      "refkind": "branch",
+      "ref": "review/cko-w6-centro-cirurgico-srpa-20261114",
+      "commit": "a3b0a2aee7e9b4fbadb82968cf4b7402cf714ee7",
+      "files": 195,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 189
+    },
+    {
+      "refkind": "branch",
+      "ref": "staging/cko-migracao-2026-10-23",
+      "commit": "e0f62491b104f4a97c6025a6393cabc2e7ada30e",
+      "files": 176,
+      "igual": 0,
+      "divergente": 6,
+      "so_na_origem": 170
+    },
+    {
+      "refkind": "branch",
+      "ref": "staging/wo-kernel-normativos-cli-20261016",
+      "commit": "c54d416b7f4c8a465798ccbebad9973799dd07ab",
+      "files": 79,
+      "igual": 0,
+      "divergente": 5,
+      "so_na_origem": 74
+    }
+  ]
+}

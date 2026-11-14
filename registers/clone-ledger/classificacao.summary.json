@@ -1,0 +1,103 @@
+{
+  "linhas": 219002,
+  "linhas_esperadas": 219002,
+  "linhas_sem_classe": 0,
+  "versoes_unicas": 46890,
+  "linhas_por_classe": {
+    "fora_do_conteudo": 129,
+    "suporte": 2504,
+    "extracao": 27846,
+    "conteudo": 55703,
+    "governanca": 39025,
+    "auditoria": 7932,
+    "chaveamento": 4996,
+    "contrato": 40463,
+    "opa": 184,
+    "kernel": 3755,
+    "estrutura": 1312,
+    "aplicativo": 12055,
+    "acervo": 23097,
+    "nao_nomeado": 1
+  },
+  "versoes_por_classe": {
+    "fora_do_conteudo": 11,
+    "suporte": 186,
+    "extracao": 9849,
+    "conteudo": 8967,
+    "governanca": 10950,
+    "auditoria": 898,
+    "chaveamento": 426,
+    "contrato": 4040,
+    "opa": 17,
+    "kernel": 537,
+    "estrutura": 136,
+    "aplicativo": 873,
+    "acervo": 9999,
+    "nao_nomeado": 1
+  },
+  "versoes_por_face": {
+    "igual": 6033,
+    "divergente": 629,
+    "so_na_origem": 40228
+  },
+  "cadeia": {
+    "sem_opa_nem_kernel": 46336,
+    "nenhuma": 17352,
+    "extracao_sem_conteudo": 19431,
+    "conteudo_sem_extracao": 10035,
+    "chave_sem_contrato": 490,
+    "chave_com_contrato": 379,
+    "extracao_com_conteudo": 72,
+    "so_opa": 6,
+    "so_kernel": 537,
+    "opa_e_kernel": 11
+  },
+  "nao_nomeado_raizes": [
+    [
+      "calculadorasdeenfermagem:drive-wf-test.yml",
+      1
+    ]
+  ],
+  "flags_em_linhas": {
+    "fora_do_conteudo": 131,
+    "suporte": 2706,
+    "extracao": 49099,
+    "conteudo": 76983,
+    "governanca": 39962,
+    "auditoria": 25071,
+    "chaveamento": 14230,
+    "contrato": 45368,
+    "opa": 184,
+    "kernel": 3824,
+    "estrutura": 37973,
+    "aplicativo": 41081,
+    "acervo": 67641
+  },
+  "por_repositorio": {
+    "dev-chatgpt-workspace:fora_do_conteudo": 52,
+    "dev-chatgpt-workspace:suporte": 1588,
+    "dev-chatgpt-workspace:extracao": 9416,
+    "dev-chatgpt-workspace:conteudo": 55703,
+    "dev-chatgpt-workspace:governanca": 17473,
+    "dev-chatgpt-workspace:auditoria": 7534,
+    "dev-chatgpt-workspace:chaveamento": 4992,
+    "dev-chatgpt-workspace:contrato": 37593,
+    "dev-chatgpt-workspace:opa": 184,
+    "dev-chatgpt-workspace:kernel": 1719,
+    "dev-chatgpt-workspace:estrutura": 1158,
+    "dev-chatgpt-workspace:aplicativo": 9319,
+    "dev-chatgpt-workspace:acervo": 5636,
+    "calculadorasdeenfermagem:fora_do_conteudo": 77,
+    "calculadorasdeenfermagem:suporte": 916,
+    "calculadorasdeenfermagem:governanca": 21552,
+    "calculadorasdeenfermagem:contrato": 2870,
+    "calculadorasdeenfermagem:kernel": 2036,
+    "calculadorasdeenfermagem:acervo": 17461,
+    "calculadorasdeenfermagem:auditoria": 398,
+    "calculadorasdeenfermagem:aplicativo": 2736,
+    "calculadorasdeenfermagem:extracao": 18430,
+    "calculadorasdeenfermagem:estrutura": 154,
+    "calculadorasdeenfermagem:nao_nomeado": 1,
+    "calculadorasdeenfermagem:chaveamento": 4
+  }
+}

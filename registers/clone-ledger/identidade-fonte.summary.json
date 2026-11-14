@@ -1,0 +1,50 @@
+{
+  "versoes": 46890,
+  "soma_status": 46890,
+  "status": {
+    "fora_do_escopo": 7,
+    "so_hash": 10960,
+    "sem_identidade": 14478,
+    "parcial_sem_catalogo": 3007,
+    "parcial_catalogada": 24,
+    "completa_nao_catalogada": 136,
+    "completa_catalogada": 1,
+    "copia_de_branch": 18277
+  },
+  "leitura": {
+    "nao_aplica": 18284,
+    "nao_texto_ou_grande": 10960,
+    "inicio": 17646
+  },
+  "por_face": {
+    "divergente:completa_catalogada": 1,
+    "divergente:fora_do_escopo": 1,
+    "divergente:parcial_catalogada": 14,
+    "divergente:parcial_sem_catalogo": 118,
+    "divergente:sem_identidade": 451,
+    "divergente:so_hash": 44,
+    "igual:completa_nao_catalogada": 43,
+    "igual:fora_do_escopo": 3,
+    "igual:parcial_catalogada": 5,
+    "igual:parcial_sem_catalogo": 373,
+    "igual:sem_identidade": 4856,
+    "igual:so_hash": 753,
+    "so_na_origem:completa_nao_catalogada": 93,
+    "so_na_origem:copia_de_branch": 18277,
+    "so_na_origem:fora_do_escopo": 3,
+    "so_na_origem:parcial_catalogada": 5,
+    "so_na_origem:parcial_sem_catalogo": 2516,
+    "so_na_origem:sem_identidade": 9171,
+    "so_na_origem:so_hash": 10163
+  },
+  "blobs_lidos": 24897,
+  "catalogo_local": {
+    "itens": 6,
+    "hash_zero": 6,
+    "snapshot_pendente": 6,
+    "status": {
+      "SOURCE_QUALIFIED": 6
+    }
+  },
+  "catalogo_ids": 6
+}

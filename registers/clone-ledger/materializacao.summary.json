@@ -1,0 +1,14 @@
+{
+  "blobs_unicos_desiguais": 21067,
+  "ja_no_git_local": 11107,
+  "extraidos": 9817,
+  "bytes_extraidos": 4560123123,
+  "linhas": {
+    "igual_nao_copiado": 95476,
+    "ja_no_git_local": 56827,
+    "extraido": 66699,
+    "divergente": 6208,
+    "so_na_origem": 117318
+  },
+  "faltando": 0
+}

@@ -19,6 +19,10 @@ audit/visual
 audit-evidence
 backups
 
+# Clones completos. O inventário fica em registers/clone-ledger. O histórico não sobe.
+intake/mirrors
+intake/objetos
+
 # Credenciais nunca sobem, mesmo com dotenv.
 .env
 .env.*

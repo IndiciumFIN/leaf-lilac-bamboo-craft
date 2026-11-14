@@ -4,7 +4,7 @@ const packageId = "acesso";
 
 export async function decide(
   sql: Sql,
-  input: { action: string; role: string; actorId: string },
+  input: { action: string; role: string; actorId: string; trail?: boolean },
 ) {
   const rules = await sql.query<{ id: string; effect: string }>(
     `select id, effect
@@ -16,11 +16,27 @@ export async function decide(
   );
   const effect = rules[0]?.effect === "allow" ? "allow" : "deny";
   const ruleId = rules[0]?.id ?? null;
+  const decisionId = crypto.randomUUID();
   await sql.query(
     `insert into policy_decision (id, package_id, rule_id, action, subject_role, effect, actor_id)
      values ($1, $2, $3, $4, $5, $6, $7)`,
-    [crypto.randomUUID(), packageId, ruleId, input.action, input.role, effect, input.actorId],
+    [decisionId, packageId, ruleId, input.action, input.role, effect, input.actorId],
   );
+  if (input.trail) {
+    await sql.query(
+      `insert into activity_event (id, actor_id, action, decision_id, subject, outcome, note)
+       values ($1, $2, $3, $4, $5, $6, $7)`,
+      [
+        crypto.randomUUID(),
+        input.actorId,
+        input.action,
+        decisionId,
+        input.action,
+        effect === "allow" ? "registrado" : "negado",
+        ruleId ?? "sem regra",
+      ],
+    );
+  }
   if (effect === "deny") throw new Error("A regra de acesso nega esta ação.");
-  return { effect, ruleId };
+  return { effect, ruleId, decisionId };
 }
