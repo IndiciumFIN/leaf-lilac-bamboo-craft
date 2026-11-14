@@ -285,7 +285,7 @@ export const curiosityCatalog: CuriosityMeta[] = [
     "section_count": 6,
     "reference_count": 1,
     "content_status": "BLOCKED_SOURCE",
-    "review_reason": null,
+    "review_reason": "A Resolução 358/2009 não é a norma atual da SAE nem a base da prescrição.",
     "updated_at": "2026-10-10 07:52:17.179791+00"
   },
   {

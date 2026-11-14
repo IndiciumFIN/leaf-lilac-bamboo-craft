@@ -1,6 +1,8 @@
 # Análise das pendências por camada
 
-Data: 2026-11-01. Escopo: a mesa local `grook_10_26` no commit `bb08b21f`, mais o que está no disco e ainda não foi commitado, e as pontas abertas no GitHub. Isto não homologa conteúdo clínico e não executa a suíte da PR #31.
+Fotografia de 2026-11-01. Não é a lista atual. A lista medida está em [PENDENCIAS.md](PENDENCIAS.md).
+
+O que este texto afirmava e já não vale: havia 54 migrations; agora há 96. O teste do dicionário não para mais em `0034_ops_record.sql`; ele aplica todos os arquivos de `migrations/`. O restante fica como registro daquele dia.
 
 A autorização humana de continuidade não muda o resultado de um teste e não transforma rascunho em conteúdo homologado. Nesta mesa, `admit()` recusa aprovador `kernel` e devolve `hold` com o motivo `human-approval-required`.
 

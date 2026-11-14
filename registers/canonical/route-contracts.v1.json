@@ -203,6 +203,126 @@
       "role": "public",
       "surface": "page",
       "templateKind": "biblioteca"
+    },
+    "$.tsx": {
+      "path": "/$",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "home"
+    },
+    "album.tsx": {
+      "path": "/album",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "blog.mary-eliza-mahoney.tsx": {
+      "path": "/blog/mary-eliza-mahoney",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "artigo"
+    },
+    "bolsas.tsx": {
+      "path": "/bolsas",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "calculadoras-trabalhistas.tsx": {
+      "path": "/calculadoras-trabalhistas",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "concurso.tsx": {
+      "path": "/concurso",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "concursos.tsx": {
+      "path": "/concursos",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "curiosidades.tsx": {
+      "path": "/curiosidades",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "cursos-sus.tsx": {
+      "path": "/cursos-sus",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "doencas-compulsorias.tsx": {
+      "path": "/doencas-compulsorias",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "estudo.tsx": {
+      "path": "/estudo",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "exames-laboratoriais.tsx": {
+      "path": "/exames-laboratoriais",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "ferramentas-pesquisa.tsx": {
+      "path": "/ferramentas-pesquisa",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "forum.tsx": {
+      "path": "/forum",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "kids.colorir.tsx": {
+      "path": "/kids/colorir",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "kids.jogos.tsx": {
+      "path": "/kids/jogos",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "oportunidades.tsx": {
+      "path": "/oportunidades",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "residencias.tsx": {
+      "path": "/residencias",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "sbar.tsx": {
+      "path": "/sbar",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
+    },
+    "vagas.tsx": {
+      "path": "/vagas",
+      "role": "public",
+      "surface": "page",
+      "templateKind": "area"
     }
   }
 }

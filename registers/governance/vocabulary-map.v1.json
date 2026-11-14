@@ -1,0 +1,31 @@
+{
+  "schema": "CE-VOCABULARY-MAP-1.0.0",
+  "enum_alterado": false,
+  "admissao": false,
+  "mapas": [
+    {"de": "HOLD", "para": "HOLD_HUMAN", "motivo": "o mesmo bloqueio, no token do schema"},
+    {"de": "BOUND", "para": "HOLD_HUMAN", "motivo": "amarrar uma fonte nao autoriza"},
+    {"de": "BOUND em contexto", "para": "NOT_APPLICABLE_JUSTIFIED", "motivo": "o campo de contexto nao e decisao clinica"},
+    {"de": "TECHNICAL", "para": "TECHNICAL_STANDARD"},
+    {"de": "INTERNAL_CONFIG", "para": "INTERNAL_NONCLINICAL"},
+    {"de": "ORDINAL_SCORE", "para": "integer"},
+    {"de": "QUANTITY", "para": "quantity"},
+    {"de": "FREE_TEXT", "para": "string"},
+    {"de": "NOT_APPLICABLE", "para": "NEVER_PERSIST", "motivo": "nao passa a gravar"},
+    {"de": "EPHEMERAL_NOT_CAPTURED", "para": "NEVER_PERSIST"},
+    {"de": "NORMATIVA", "para": "REGULATOR", "motivo": "CFM e OMS sao reguladores, nao lei"},
+    {"de": "VALIDACAO", "para": "PRIMARY_STUDY"},
+    {"de": "ARTIGO", "para": "PRIMARY_STUDY"},
+    {"de": "GUIA", "para": "GUIDELINE"},
+    {"de": "TECNICA", "para": "STANDARD"}
+  ],
+  "recusas": [
+    {
+      "valor": "CLINICAL",
+      "campo": "authority_class",
+      "nao_mapeado_para": "CLINICAL_EVIDENCE",
+      "motivo": "criterio de escala nao e evidencia clinica verificada",
+      "dono": null
+    }
+  ]
+}

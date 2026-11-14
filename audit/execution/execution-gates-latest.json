@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "scope": "CE_PUBLIC_BACKUP_ONLY",
   "base": "v2.6.9",
-  "generatedAt": "2026-11-14T19:55:10.903Z",
+  "generatedAt": "2026-11-14T22:46:36.417Z",
   "remoteIntegration": "PROHIBITED",
   "results": [
     {
@@ -40,10 +40,10 @@
     {
       "id": "surface-bindings",
       "command": "node scripts/audit-surface-bindings-v2.mjs",
-      "status": "FAIL",
-      "exitCode": 1,
+      "status": "PASS",
+      "exitCode": 0,
       "error": null,
-      "output": "\": \"UNKNOWN_ROUTE\",\n    \"route\": \"kids.colorir.tsx\"\n  },\n  {\n    \"id\": \"UNKNOWN_ROUTE\",\n    \"route\": \"kids.jogos.tsx\"\n  },\n  {\n    \"id\": \"UNKNOWN_ROUTE\",\n    \"route\": \"oportunidades.tsx\"\n  },\n  {\n    \"id\": \"UNKNOWN_ROUTE\",\n    \"route\": \"residencias.tsx\"\n  },\n  {\n    \"id\": \"UNKNOWN_ROUTE\",\n    \"route\": \"sbar.tsx\"\n  },\n  {\n    \"id\": \"UNKNOWN_ROUTE\",\n    \"route\": \"vagas.tsx\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"admin.tsx\",\n    \"import\": \"@/components/local/local-workbench-page\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"assinante.ferramentas.$slug.tsx\",\n    \"import\": \"@/lib/local-canonical\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"assinante.tsx\",\n    \"import\": \"@/lib/local-canonical\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"assinante.tsx\",\n    \"import\": \"@/components/site/page-hero\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"ferramentas.$slug.tsx\",\n    \"import\": \"@/lib/local-canonical\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"kids.$section.tsx\",\n    \"import\": \"@/components/vila/vila-hub\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"kids.index.tsx\",\n    \"import\": \"@/components/vila/vila-hub\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"modelos.$id.tsx\",\n    \"import\": \"@/lib/templates\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"modelos.index.tsx\",\n    \"import\": \"@/lib/templates\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"pacote.tsx\",\n    \"import\": \"@/lib/site-data\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"secao.$slug.tsx\",\n    \"import\": \"@/lib/sections\"\n  },\n  {\n    \"id\": \"MISSING_REQUIRED_IMPORT\",\n    \"route\": \"viladocuidado.tsx\",\n    \"import\": \"@/components/vila/vila-page\"\n  }\n]\n"
+      "output": "{\"total\":53,\"withExplicitContracts\":53,\"findings\":0,\"visualHomologations\":0}\n"
     },
     {
       "id": "header-p0",
@@ -96,10 +96,10 @@
     {
       "id": "template-contract",
       "command": "node --experimental-strip-types --import ./scripts/alias-hook.mjs scripts/check-template-contract.mjs",
-      "status": "FAIL",
-      "exitCode": 1,
+      "status": "PASS",
+      "exitCode": 0,
       "error": null,
-      "output": "node:internal/modules/package_json_reader:314\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package '@/lib' imported from /workspace/scripts/check-template-contract.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)\n    at packageResolve (node:internal/modules/esm/resolve:772:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:989:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)\n    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v22.23.3\n"
+      "output": "PASS nao-aplicavel-tem-justificativa-e-evidencia — 1 kind(s) nao aplicavel(is)\nPASS todo-kind-tem-pagina-ou-nao-aplicavel — 10 com pagina, 1 nao aplicavel\nPASS uma-pagina-por-kind\nPASS exemplos-referem-se-a-kinds-existentes\nPASS nenhuma-dimensao-do-contrato-e-morta — 7 dimensoes consumidas pelo codigo\nPASS frame-e-note-nao-sao-dimensoes-do-frame — frame e note descrevem a PAGINA; vivem em template-examples.ts\nPASS exemplos-declaram-frame-e-note — 10/10 exemplos declaram frame e note\nPASS todo-template-do-catalogo-declara-a-sua-materia-prima — 34 templates com materia-prima declarada\nPASS toda-pagina-do-catalogo-tem-kind-com-exemplo — 34 paginas com kind conhecido\nPASS frame-e-note-do-catalogo-sao-validos — todos os frames e notas sao validos\nPASS recursos-governados-pelo-contrato — formulario e laudo sao renderizados por decisao do contrato\n\nContrato de template: tudo consistente.\n"
     },
     {
       "id": "vite-bin",

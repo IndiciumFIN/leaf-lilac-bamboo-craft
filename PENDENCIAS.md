@@ -1,6 +1,8 @@
 # Pendências
 
-Backup de 1º de novembro de 2026. Branch `grook_10_26`, commit de base `bb08b21f`. Há alterações locais que não foram commitadas. Este arquivo lista o que o backup não fecha.
+Fotografia de 1º de novembro de 2026. Não é a lista atual. A lista medida está em [docs/PENDENCIAS.md](docs/PENDENCIAS.md).
+
+Backup da branch `grook_10_26`, commit de base `bb08b21f`. O texto abaixo descreve aquele disco, não as migrations nem os gates de agora.
 
 ## Não commitado
 

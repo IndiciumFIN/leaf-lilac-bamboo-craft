@@ -27,10 +27,10 @@ export const FONTES: FonteNormativa[] = [
     schema_version: "0.1.0",
     canonical_id: "SRC-CFM-PARECER-28-2020",
     version: "1.0.0",
-    status: "SOURCE_QUALIFIED",
+    status: "REVIEW_REQUIRED",
     updated_at: HOJE,
     provenance_refs: ["SRC-CKO-POL-UT-001", "CKO-POL-UT-001@1.2.0"],
-    source_type: "NORMATIVA",
+    source_type: "REGULATOR",
     title: "Critérios para alta da sala de recuperação pós-anestésica",
     authority: "Conselho Federal de Medicina (CFM)",
     locator: {
@@ -51,10 +51,10 @@ export const FONTES: FonteNormativa[] = [
     schema_version: "0.1.0",
     canonical_id: "SRC-REV-ENF-USP-BRADEN-1999",
     version: "1.0.0",
-    status: "SOURCE_QUALIFIED",
+    status: "REVIEW_REQUIRED",
     updated_at: HOJE,
     provenance_refs: ["SRC-CKO-POL-UT-001"],
-    source_type: "VALIDACAO",
+    source_type: "PRIMARY_STUDY",
     title: "Avaliação de risco para úlceras de pressão por meio da escala de Braden, na língua portuguesa",
     authority: "Revista de Enfermagem da USP",
     locator: {
@@ -75,10 +75,10 @@ export const FONTES: FonteNormativa[] = [
     schema_version: "0.1.0",
     canonical_id: "SRC-CAPES-MEC-MANUAL-CONSULTA-RAPIDA",
     version: "1.0.0",
-    status: "SOURCE_QUALIFIED",
+    status: "REVIEW_REQUIRED",
     updated_at: HOJE,
     provenance_refs: ["SRC-CKO-POL-UT-001"],
-    source_type: "GUIA",
+    source_type: "GUIDELINE",
     title: "Manual de Consulta Rápida em Enfermagem — Escala de Morse",
     authority: "CAPES/MEC",
     locator: {
@@ -97,10 +97,10 @@ export const FONTES: FonteNormativa[] = [
     schema_version: "0.1.0",
     canonical_id: "SRC-OMS-OBESIDADE-2000",
     version: "1.0.0",
-    status: "SOURCE_QUALIFIED",
+    status: "REVIEW_REQUIRED",
     updated_at: HOJE,
     provenance_refs: ["SRC-CKO-POL-UT-001"],
-    source_type: "NORMATIVA",
+    source_type: "REGULATOR",
     title: "Obesity: preventing and managing the global epidemic — cortes de IMC",
     authority: "Organização Mundial da Saúde (OMS/WHO)",
     locator: {
@@ -121,10 +121,10 @@ export const FONTES: FonteNormativa[] = [
     schema_version: "0.1.0",
     canonical_id: "SRC-APGAR-1953",
     version: "1.0.0",
-    status: "SOURCE_QUALIFIED",
+    status: "REVIEW_REQUIRED",
     updated_at: HOJE,
     provenance_refs: ["SRC-CKO-POL-UT-001"],
-    source_type: "ARTIGO",
+    source_type: "PRIMARY_STUDY",
     title: "A proposal for a new method of evaluation of the newborn infant",
     authority: "Current Researches in Anesthesia & Analgesia",
     locator: { uri: "https://pubmed.ncbi.nlm.nih.gov/", pinpoint: "Apgar V. Curr Res Anesth Analg. 1953;32(4):260-267" },
@@ -140,10 +140,10 @@ export const FONTES: FonteNormativa[] = [
     schema_version: "0.1.0",
     canonical_id: "SRC-GOTEJAMENTO-FORMULA-CLASSICA",
     version: "1.0.0",
-    status: "SOURCE_QUALIFIED",
+    status: "REVIEW_REQUIRED",
     updated_at: HOJE,
     provenance_refs: ["SRC-CKO-POL-UT-001"],
-    source_type: "TECNICA",
+    source_type: "STANDARD",
     title: "Fórmula clássica de gotejamento",
     authority: "Prática assistencial de gotejamento",
     locator: { uri: "", pinpoint: "gts/min = (volume em mL × fator do equipo) / tempo em minutos" },
@@ -180,7 +180,7 @@ function criterioClinico(tool: string, criterioId: string, rotulo: string, sourc
     source_ids: [sourceId],
     authority_class: "CLINICAL",
     validity: { jurisdiction: "BR" },
-    decision: "BOUND",
+    decision: "HOLD_HUMAN",
     validator_ids: [],
     evidence_bundle_ids: [],
   });
@@ -193,9 +193,9 @@ function criterioClinico(tool: string, criterioId: string, rotulo: string, sourc
     provenance_refs: [sourceId],
     field_path: campoPath,
     semantic_concept_ref: `MD-${criterioId.toUpperCase()}`,
-    value_type: "ORDINAL_SCORE",
+    value_type: "integer",
     authority_binding_ref: bindingId,
-    privacy_policy: "NOT_APPLICABLE",
+    privacy_policy: "NEVER_PERSIST",
     applicability_ref: "POP-ADULTO-GERAL",
     message_key: `${tool}.${criterioId}.help`,
   });
@@ -219,7 +219,7 @@ function faixaClinica(tool: string, faixaId: string, fonteId: string, fonteRef: 
     source_ids: [fonteRef],
     authority_class: "CLINICAL",
     validity: { jurisdiction: "BR" },
-    decision: "BOUND",
+    decision: "HOLD_HUMAN",
     validator_ids: [],
     evidence_bundle_ids: [],
   });
@@ -274,9 +274,9 @@ function campoNumerico(tool: string, campoId: string, valueType: string, sourceI
     field_path: campoPath,
     requirement_id: "UTC-018",
     source_ids: [sourceId],
-    authority_class: "TECHNICAL",
+    authority_class: "TECHNICAL_STANDARD",
     validity: { jurisdiction: "BR" },
-    decision: "BOUND",
+    decision: "HOLD_HUMAN",
     validator_ids: [],
     evidence_bundle_ids: [],
   });
@@ -291,7 +291,7 @@ function campoNumerico(tool: string, campoId: string, valueType: string, sourceI
     semantic_concept_ref: `MD-${campoId.toUpperCase()}`,
     value_type: valueType,
     authority_binding_ref: bindingId,
-    privacy_policy: "NOT_APPLICABLE",
+    privacy_policy: "NEVER_PERSIST",
     applicability_ref: "POP-ADULTO-GERAL",
     message_key: `${tool}.${campoId}.help`,
     unit_ref: unidade,
@@ -299,14 +299,14 @@ function campoNumerico(tool: string, campoId: string, valueType: string, sourceI
 }
 
 /* ── Gotejamento: formula classica, campos em mL e minutos ───────────────── */
-campoNumerico("gotejamento", "volume", "QUANTITY", "SRC-GOTEJAMENTO-FORMULA-CLASSICA", "mL");
-campoNumerico("gotejamento", "horas", "QUANTITY", "SRC-GOTEJAMENTO-FORMULA-CLASSICA", "h");
-campoNumerico("gotejamento", "minutos", "QUANTITY", "SRC-GOTEJAMENTO-FORMULA-CLASSICA", "min");
-campoNumerico("gotejamento", "fator", "ORDINAL_SCORE", "SRC-GOTEJAMENTO-FORMULA-CLASSICA");
+campoNumerico("gotejamento", "volume", "quantity", "SRC-GOTEJAMENTO-FORMULA-CLASSICA", "mL");
+campoNumerico("gotejamento", "horas", "quantity", "SRC-GOTEJAMENTO-FORMULA-CLASSICA", "h");
+campoNumerico("gotejamento", "minutos", "quantity", "SRC-GOTEJAMENTO-FORMULA-CLASSICA", "min");
+campoNumerico("gotejamento", "fator", "integer", "SRC-GOTEJAMENTO-FORMULA-CLASSICA");
 
 /* ── IMC: peso e altura, cortes da OMS ───────────────────────────────────── */
-campoNumerico("imc", "peso", "QUANTITY", "SRC-OMS-OBESIDADE-2000", "kg");
-campoNumerico("imc", "altura", "QUANTITY", "SRC-OMS-OBESIDADE-2000", "cm");
+campoNumerico("imc", "peso", "quantity", "SRC-OMS-OBESIDADE-2000", "kg");
+campoNumerico("imc", "altura", "quantity", "SRC-OMS-OBESIDADE-2000", "cm");
 
 /** Campo de escala ainda sem fonte verificada. Não é evidência e não homologa. */
 function campoEmEspera(tool: string, campoId: string) {
@@ -323,7 +323,7 @@ function campoEmEspera(tool: string, campoId: string) {
     source_ids: [],
     authority_class: "CLINICAL",
     validity: { jurisdiction: "BR" },
-    decision: "HOLD",
+    decision: "HOLD_HUMAN",
     validator_ids: [],
     evidence_bundle_ids: [],
     exception_reason: "O campo existe na escala. Nenhuma fonte com hash verificado o sustenta.",
@@ -356,9 +356,9 @@ export const CAMPOS_CONTEXTO: CampoDefinido[] = [
   provenance_refs: ["CKO-POL-UT-001@1.2.0"],
   field_path: `tool.contexto.${id}`,
   semantic_concept_ref: `CTX-${classe}`,
-  value_type: "FREE_TEXT",
+  value_type: "string",
   authority_binding_ref: `AB-CTX-${String(id).toUpperCase()}`,
-  privacy_policy: "EPHEMERAL_NOT_CAPTURED",
+  privacy_policy: "NEVER_PERSIST",
   applicability_ref: "NOT_APPLICABLE_JUSTIFIED",
   message_key: `contexto.${id}.ajuda`,
 }));
@@ -374,9 +374,9 @@ for (const c of CAMPOS_CONTEXTO) {
     field_path: c.field_path,
     requirement_id: "UTC-016",
     source_ids: [],
-    authority_class: "INTERNAL_CONFIG",
+    authority_class: "INTERNAL_NONCLINICAL",
     validity: { jurisdiction: "BR" },
-    decision: "BOUND",
+    decision: "NOT_APPLICABLE_JUSTIFIED",
     validator_ids: [],
     evidence_bundle_ids: [],
   });

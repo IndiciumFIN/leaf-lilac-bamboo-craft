@@ -1,6 +1,6 @@
 # Pendencias — branch-bibliotecas
 
-Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 19:55Z**.
+Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 22:46Z**.
 Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 > A lista so cresce quando algo esta de fato por fazer. Se um gate passa, o item desaparece.
@@ -9,8 +9,8 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 | Medida | Valor |
 |---|---|
-| GATE VERDE | **10** |
-| GATE VERMELHO | **2** |
+| GATE VERDE | **12** |
+| GATE VERMELHO | **0** |
 | DESVIO DE TEMPLATE | **0** |
 | TEMPLATE SEM PAGINA | **0** |
 | UTC EM ABERTO | **12** |
@@ -31,47 +31,47 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 ### UTC-024 — formula declarativa + test vectors
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** src/lib/tools/formulas.ts existe, sem vetores
+- **Detalhe:** formulas.ts e engine.test.ts existem. O contrato formula.schema.json ainda não recebe test_vector_refs.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-028 — contrato de resultado
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** resultado nao tem contrato proprio
+- **Detalhe:** o motor devolve outputs. clinical_result.schema.json não é lido em runtime.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-053 — regras de pontuacao
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** nao coberto
+- **Detalhe:** as escalas somam no motor. clinical_rule.schema.json não é lido.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-056 — faixas de referencia por faixa etaria
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** nao coberto
+- **Detalhe:** exames-laboratoriais tem faixa. Não há faixa etária governada.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-071 — reconhecimento do consumidor
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** parcial
+- **Detalhe:** parcial: route-registry e contract-index existem.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-072 — E2E
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** scripts/e2e/ nao entregue
+- **Detalhe:** audit-run tem sondas Playwright. O diretório scripts/e2e/ não existe.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-080 — ABNT NBR 6023
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** verificador nao entregue
+- **Detalhe:** src/lib/research/abnt.ts formata referência. Não há teste no gate.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-081 — ABNT NBR 10520
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** verificador nao entregue
+- **Detalhe:** formatInText existe no mesmo arquivo. Não há teste no gate.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-082 — ABNT NBR 5891
 - **Estado:** NAO COBERTO PELO GATE
-- **Detalhe:** verificador nao entregue
+- **Detalhe:** numeric-rule.ts executa roundTiesToEven. O texto da norma não foi depositado.
 - **Evidencia:** `docs/CKO-POL-UT-001.md`
 
 ### UTC-097 — disclaimer de emergencia
@@ -159,18 +159,6 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 - **Detalhe:** enquanto fechado, nada pode ir a RELEASED — a Aldrete segue como candidata, fora do indice
 - **Evidencia:** `registers/governance/find-register.v1.json`
 
-## Gate de release (2)
-
-### surface-bindings
-- **Estado:** FAIL
-- **Detalhe:** ver gate
-- **Evidencia:** `scripts/audit-execution-gates.mjs`
-
-### template-contract
-- **Estado:** FAIL
-- **Detalhe:** ver gate
-- **Evidencia:** `scripts/audit-execution-gates.mjs`
-
 ## Design system (3)
 
 ### Token mapping do pacote CKO
@@ -207,7 +195,7 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 ### biblioteca `medicamentos` — conteudo ausente na origem
 - **Estado:** NULL_IN_SOURCE nas 4 camadas
-- **Detalhe:** a biblioteca de medicamentos nao foi entregue; bloqueia Calculadoras Trabalhistas no material do CKO
+- **Detalhe:** a ficha da biblioteca está scope_only. A monografia de vancomicina já existe em bindings/content. Não é homologação.
 - **Evidencia:** `contracts/cko-bibliotecas/validation/validation.json#null_bindings`
 
 ### 8 perfis UE-LTS com manifest ausente
@@ -215,15 +203,10 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 - **Detalhe:** article, case, flashcard, quiz, infographic, pdf, pocket_guide, slides — os 8 referenciam profiles/*.json que nao existem no pacote
 - **Evidencia:** `contracts/cko-skeleton/catalog/profiles/`
 
-## Caminho ate a conclusao (5)
-
-### OPA executável
-- **Estado:** AUSENTE
-- **Detalhe:** O programa opa não responde. A decisão gravada continua opa=nao_executado e o pedido fica em_espera.
-- **Evidencia:** `scripts/ce-check.mjs`
+## Caminho ate a conclusao (4)
 
 ### Contratos CKO fora do vocabulário
-- **Estado:** 162 DIVERGENTES · 14 GRUPOS
+- **Estado:** 310 DIVERGENTES · 1 GRUPOS
 - **Detalhe:** Não reescrever o enum. Os maiores grupos são decision=BOUND, authority_class=CLINICAL e privacy_policy=NOT_APPLICABLE.
 - **Evidencia:** `audit-evidence/ncos-canonical-source-lineage/schema-drift-delta.v1.json`
 
@@ -249,3 +232,16 @@ Itens conferidos pelo arquivo que os prova. Contagem antiga de teste e de build 
 - Amarração de arquivo — migrations/0092_amarracao_arquivo.sql. Arquivo rastreado não nasce canônico. Canônicos são só os oito tokens congelados.
 - Bloqueio de camada — migrations/0091_camada_anterior.sql. Dado não entra se a camada anterior não tem tabela.
 - Plano detalhado — docs/PLANO-ATE-CONCLUSAO.md
+
+## Fora da ordem, e ja existe
+
+Isto não admite a plataforma. O gerador anterior dizia que não existia.
+
+- 56 arquivos em contracts/cko-schemas. A paridade 0/41 mede leitura em runtime, não ausência do arquivo.
+- 27 bibliotecas com binding de conteúdo. Nenhuma está review_status diferente de not_reviewed.
+- Vancomicina está em contracts/cko-bibliotecas/bindings/content/vancomicina.content.json. A ficha medicamentos continua scope_only.
+- src/lib/tools/formulas.ts e src/lib/tools/engine.test.ts. O vetor não está no schema da fórmula.
+- src/lib/research/abnt.ts cobre NBR 6023 e citação no texto. src/lib/tools/numeric-rule.ts cobre o arredondamento usado no motor.
+- audit-run tem sondas Playwright. Não há suíte scripts/e2e/.
+- packages/cli/parsers tem fhir.py, mesh.py e medlineplus.py. O gate estrito continua fechado pelos parsers que faltam.
+- src/lib/tools/dimensionamento.ts calcula pelo fator 1,15 e permanece candidata.

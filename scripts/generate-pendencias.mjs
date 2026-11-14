@@ -66,15 +66,15 @@ for (const d of desvios) {
 const UTCS_AINDA = [
   ["UTC-003", "verdade clinica governada em runtime", "primeiro na ordem: esta na lista de HOLDs da Aldrete"],
   ["UTC-023", "os 7 estados de uma ferramenta", "a pagina tem 2 (Aguardando / Calculado)"],
-  ["UTC-024", "formula declarativa + test vectors", "src/lib/tools/formulas.ts existe, sem vetores"],
-  ["UTC-028", "contrato de resultado", "resultado nao tem contrato proprio"],
-  ["UTC-053", "regras de pontuacao", "nao coberto"],
-  ["UTC-056", "faixas de referencia por faixa etaria", "nao coberto"],
-  ["UTC-071", "reconhecimento do consumidor", "parcial"],
-  ["UTC-072", "E2E", "scripts/e2e/ nao entregue"],
-  ["UTC-080", "ABNT NBR 6023", "verificador nao entregue"],
-  ["UTC-081", "ABNT NBR 10520", "verificador nao entregue"],
-  ["UTC-082", "ABNT NBR 5891", "verificador nao entregue"],
+  ["UTC-024", "formula declarativa + test vectors", "formulas.ts e engine.test.ts existem. O contrato formula.schema.json ainda não recebe test_vector_refs."],
+  ["UTC-028", "contrato de resultado", "o motor devolve outputs. clinical_result.schema.json não é lido em runtime."],
+  ["UTC-053", "regras de pontuacao", "as escalas somam no motor. clinical_rule.schema.json não é lido."],
+  ["UTC-056", "faixas de referencia por faixa etaria", "exames-laboratoriais tem faixa. Não há faixa etária governada."],
+  ["UTC-071", "reconhecimento do consumidor", "parcial: route-registry e contract-index existem."],
+  ["UTC-072", "E2E", "audit-run tem sondas Playwright. O diretório scripts/e2e/ não existe."],
+  ["UTC-080", "ABNT NBR 6023", "src/lib/research/abnt.ts formata referência. Não há teste no gate."],
+  ["UTC-081", "ABNT NBR 10520", "formatInText existe no mesmo arquivo. Não há teste no gate."],
+  ["UTC-082", "ABNT NBR 5891", "numeric-rule.ts executa roundTiesToEven. O texto da norma não foi depositado."],
   ["UTC-097", "disclaimer de emergencia", "DECISAO DO DONO"],
 ];
 for (const [utc, oQue, obs] of UTCS_AINDA) {
@@ -92,8 +92,15 @@ const g = roda("node scripts/audit-execution-gates.mjs");
 const gates = linhasGate(g.saida);
 const gatesFalha = gates.filter((x) => x.estado === "FAIL");
 if (gatesFalha.length) {
+  const superficie = existsSync("registers/canonical/surface-binding-register.v2.json")
+    ? JSON.parse(readFileSync("registers/canonical/surface-binding-register.v2.json", "utf8"))
+    : null;
   for (const x of gatesFalha) {
-    itens.push({ area: "Gate", titulo: x.texto, estado: "FAIL", detalhe: "ver gate", evidencia: "scripts/audit-execution-gates.mjs" });
+    const diag = g.saida.split("\n").find((l) => l.startsWith(`GATE_DIAGNOSTIC ${x.texto}`)) ?? "";
+    const detalhe = x.texto === "surface-bindings" && superficie
+      ? `${superficie.summary.findings} achados em ${superficie.summary.total} rotas. ${superficie.findings.filter((f) => f.id === "UNKNOWN_ROUTE").length} rotas sem contrato e ${superficie.findings.filter((f) => f.id === "MISSING_REQUIRED_IMPORT").length} imports exigidos que o arquivo não tem.`
+      : diag.replace(/^GATE_DIAGNOSTIC\s+\S+:\s*/, "") || "ver a saída do gate";
+    itens.push({ area: "Gate", titulo: x.texto, estado: "FAIL", detalhe, evidencia: "scripts/audit-execution-gates.mjs" });
   }
 }
 
@@ -158,7 +165,7 @@ if (existsSync("contracts/cko-bibliotecas")) {
     area: "Conteudo",
     titulo: "biblioteca `medicamentos` — conteudo ausente na origem",
     estado: "NULL_IN_SOURCE nas 4 camadas",
-    detalhe: "a biblioteca de medicamentos nao foi entregue; bloqueia Calculadoras Trabalhistas no material do CKO",
+    detalhe: "a ficha da biblioteca está scope_only. A monografia de vancomicina já existe em bindings/content. Não é homologação.",
     evidencia: "contracts/cko-bibliotecas/validation/validation.json#null_bindings",
   });
   itens.push({
@@ -230,7 +237,8 @@ const contagem = {
 };
 // ── 8. o caminho medido até a conclusão ─────────────────────────────────────
 const opa = spawnSync("opa", ["version"], { timeout: 1500, encoding: "utf8" });
-if (opa.status !== 0) {
+const opaLocal = opa.status === 0 ? opa : spawnSync("bin/opa", ["version"], { timeout: 1500, encoding: "utf8" });
+if (opaLocal.status !== 0) {
   itens.push({
     area: "Conclusao",
     titulo: "OPA executável",
@@ -303,6 +311,16 @@ md += `Itens conferidos pelo arquivo que os prova. Contagem antiga de teste e de
 md += `- Amarração de arquivo — migrations/0092_amarracao_arquivo.sql. Arquivo rastreado não nasce canônico. Canônicos são só os oito tokens congelados.\n`;
 md += `- Bloqueio de camada — migrations/0091_camada_anterior.sql. Dado não entra se a camada anterior não tem tabela.\n`;
 md += `- Plano detalhado — docs/PLANO-ATE-CONCLUSAO.md\n`;
+md += `\n## Fora da ordem, e ja existe\n\n`;
+md += `Isto não admite a plataforma. O gerador anterior dizia que não existia.\n\n`;
+md += `- 56 arquivos em contracts/cko-schemas. A paridade 0/41 mede leitura em runtime, não ausência do arquivo.\n`;
+md += `- 27 bibliotecas com binding de conteúdo. Nenhuma está review_status diferente de not_reviewed.\n`;
+md += `- Vancomicina está em contracts/cko-bibliotecas/bindings/content/vancomicina.content.json. A ficha medicamentos continua scope_only.\n`;
+md += `- src/lib/tools/formulas.ts e src/lib/tools/engine.test.ts. O vetor não está no schema da fórmula.\n`;
+md += `- src/lib/research/abnt.ts cobre NBR 6023 e citação no texto. src/lib/tools/numeric-rule.ts cobre o arredondamento usado no motor.\n`;
+md += `- audit-run tem sondas Playwright. Não há suíte scripts/e2e/.\n`;
+md += `- packages/cli/parsers tem fhir.py, mesh.py e medlineplus.py. O gate estrito continua fechado pelos parsers que faltam.\n`;
+md += `- src/lib/tools/dimensionamento.ts calcula pelo fator 1,15 e permanece candidata.\n`;
 
 writeFileSync(alvo, md);
 console.log(`PENDENCIAS.md escrito: ${itens.length} itens`);

@@ -1,0 +1,30 @@
+{
+  "recordId": "CE-PMO-QUEUE-CANDIDATE-DB-SKELETON-20261101",
+  "recordType": "CANDIDATE_NOT_BASELINE",
+  "baselineQueueBlob": "c713557a808857eab9952e511d1f2a10bfa6f828",
+  "amendsRevision18": false,
+  "kernelAdmission": "NOT_VERIFIED",
+  "releaseGate": "HOLD_HUMAN",
+  "item": {
+    "id": "WO-CE-DB-SKELETON-001",
+    "order": 10,
+    "owner": "Agentes determinísticos CE (Maker/Checker/Auditor segregados)",
+    "priority": "P0",
+    "status": "QUEUED",
+    "title": "Reconstrução Supabase → Git canônico → skeleton completo → reconciliação de branches → conteúdo",
+    "updatedOn": "2026-11-01",
+    "criteria": "Snapshots estruturais completos de banco com readback e hash; skeleton gerado e cobertura provada; 100% branches reconciliadas; gates independentes e autorização Kernel para promoção",
+    "dependencies": [],
+    "evidence": [
+      "https://github.com/IndiciumFIN/dev-chatgpt-workspace/issues/33"
+    ],
+    "next": "Executar extrator somente leitura; gerador estrutural; checker separado; auditor de branches; manter promoção bloqueada até provas e admissão Kernel."
+  },
+  "event": {
+    "seq": 21,
+    "workId": "WO-CE-DB-SKELETON-001",
+    "to": "QUEUED",
+    "date": "2026-11-01",
+    "reason": "Escopo autorizado em conversa: executar com agentes especializados/determinísticos, sem escrita manual de SQL/inventários; baseline Supabase no Git, skeleton antes de conteúdo; status candidato sem admissão Kernel."
+  }
+}

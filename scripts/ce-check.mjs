@@ -10,10 +10,19 @@ import { join } from "node:path";
 const root = fileURLToPath(new URL("..", import.meta.url));
 
 function opaPresent() {
+  const candidates = ["opa", join(root, "bin/opa")];
   return new Promise((resolve) => {
-    execFile("opa", ["version"], { timeout: 1500 }, (error, stdout) => {
-      resolve(error ? { present: false } : { present: true, version: stdout.trim().split("\n")[0] });
-    });
+    const tryAt = (index) => {
+      if (index >= candidates.length) {
+        resolve({ present: false });
+        return;
+      }
+      execFile(candidates[index], ["version"], { timeout: 1500 }, (error, stdout) => {
+        if (error) tryAt(index + 1);
+        else resolve({ present: true, version: stdout.trim().split("\n")[0] });
+      });
+    };
+    tryAt(0);
   });
 }
 

@@ -20,7 +20,8 @@
       "role": "administrator-local",
       "templateKind": "area",
       "requiredImports": [
-        "@/components/local/local-workbench-page"
+        "@/components/admin/shell",
+        "@/components/site/areas"
       ],
       "assertion": "static-import-presence"
     },
@@ -38,9 +39,9 @@
       "role": "subscriber",
       "templateKind": "ferramenta",
       "requiredImports": [
-        "@/lib/local-canonical",
+        "@/components/site/areas",
         "@/components/tools/clinical-tool",
-        "@/components/site/areas"
+        "@/lib/source.functions"
       ],
       "assertion": "static-import-presence"
     },
@@ -49,9 +50,10 @@
       "role": "subscriber",
       "templateKind": "area",
       "requiredImports": [
-        "@/lib/local-canonical",
+        "@/components/article/article-page",
         "@/components/site/areas",
-        "@/components/site/page-hero"
+        "@/components/site/community",
+        "@/lib/source.functions"
       ],
       "assertion": "static-import-presence"
     },
@@ -60,14 +62,13 @@
       "role": "public",
       "templateKind": "artigo",
       "requiredImports": [
-        "@/components/article/article-page",
-        "@/components/site/related-content",
         "@/components/site/shell",
         "@/components/templates/biography-view",
+        "@/components/article/article-page",
+        "@/components/site/related-content",
         "@/lib/content/articles/index",
         "@/lib/seo",
-        "@/lib/translate",
-        "@tanstack/react-router"
+        "@/lib/translate"
       ],
       "assertion": "static-import-presence"
     },
@@ -76,10 +77,9 @@
       "role": "public",
       "templateKind": "secao",
       "requiredImports": [
-        "@/components/article/article-page",
         "@/components/site/shell",
-        "@/lib/content/curiosidades/catalog",
-        "@tanstack/react-router"
+        "@/components/article/article-page",
+        "@/lib/content/curiosidades/catalog"
       ],
       "assertion": "static-import-presence"
     },
@@ -88,11 +88,7 @@
       "role": "administrator-local",
       "templateKind": "area",
       "requiredImports": [
-        "@/lib/central-command-tables",
-        "@/styles/command-center.css",
-        "@tanstack/react-router",
-        "../../registers/governance/imports/cko-coren-cofen-20261023/pending-candidates.v1.json",
-        "../../registers/pmo/queue.v1.json"
+        "@/lib/central-command-tables"
       ],
       "assertion": "static-import-presence"
     },
@@ -108,9 +104,10 @@
       "role": "public",
       "templateKind": "ferramenta",
       "requiredImports": [
-        "@/lib/local-canonical",
         "@/components/tools/clinical-tool",
-        "@/components/site/shell"
+        "@/components/site/shell",
+        "@/lib/seo",
+        "@/lib/source.functions"
       ],
       "assertion": "static-import-presence"
     },
@@ -170,7 +167,8 @@
       "role": "public",
       "templateKind": "area",
       "requiredImports": [
-        "@/components/vila/vila-hub"
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
       "assertion": "static-import-presence"
     },
@@ -179,7 +177,8 @@
       "role": "public",
       "templateKind": "area",
       "requiredImports": [
-        "@/components/vila/vila-hub"
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
       "assertion": "static-import-presence"
     },
@@ -207,10 +206,24 @@
       "role": "public",
       "templateKind": "biblioteca",
       "requiredImports": [
-        "@/lib/templates",
         "@/components/templates/editorial-view",
         "@/components/templates/form-view",
-        "@/components/site/shell"
+        "@/components/templates/guide-view",
+        "@/components/templates/institutional-template",
+        "@/components/templates/library-view",
+        "@/components/templates/norm-view",
+        "@/components/templates/report-view",
+        "@/components/templates/slide-deck",
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/site/related-content",
+        "@/lib/stored.functions",
+        "@/lib/stored",
+        "@/lib/lorem",
+        "@/components/templates/contract-view",
+        "@/components/templates/recovered-templates",
+        "@/lib/template-catalog",
+        "@/lib/translate"
       ],
       "assertion": "static-import-presence"
     },
@@ -219,9 +232,11 @@
       "role": "public",
       "templateKind": "biblioteca",
       "requiredImports": [
-        "@/lib/templates",
+        "@/components/site/shell",
         "@/components/article/article-page",
-        "@/components/site/shell"
+        "@/lib/stored",
+        "@/lib/template-catalog",
+        "@/lib/translate"
       ],
       "assertion": "static-import-presence"
     },
@@ -246,9 +261,11 @@
       "role": "public",
       "templateKind": "area",
       "requiredImports": [
-        "@/lib/site-data",
+        "@/components/site/shell",
         "@/components/article/article-page",
-        "@/components/site/shell"
+        "@/lib/stored",
+        "@/lib/tools/catalog",
+        "@/lib/translate"
       ],
       "assertion": "static-import-presence"
     },
@@ -257,9 +274,11 @@
       "role": "public",
       "templateKind": "secao",
       "requiredImports": [
-        "@/lib/sections",
         "@/components/site/section-page",
-        "@/components/site/shell"
+        "@/components/site/shell",
+        "@/lib/stored.functions",
+        "@/lib/translate",
+        "@/lib/seo"
       ],
       "assertion": "static-import-presence"
     },
@@ -328,8 +347,233 @@
       "role": "public",
       "templateKind": "area",
       "requiredImports": [
-        "@/components/vila/vila-page",
-        "@tanstack/react-router"
+        "@/components/vila-page"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "$.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "home",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/home-page",
+        "@/components/site/shell",
+        "@/lib/content-object.functions",
+        "@/lib/sitemap-kind",
+        "@/lib/seo",
+        "@/lib/translate"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "album.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/editorial/album.seed"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "blog.mary-eliza-mahoney.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "artigo",
+      "requiredImports": [
+        "@/components/site/shell",
+        "@/components/templates/biography-view",
+        "@/lib/content-object.functions",
+        "@/lib/seo",
+        "@/lib/translate"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "bolsas.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "calculadoras-trabalhistas.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "concurso.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/career/curriculum-editor"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "concursos.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "curiosidades.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/editorial/fun-facts.seed",
+        "@/lib/editorial/types"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "cursos-sus.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "doencas-compulsorias.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/saude-publica/doencas-compulsorias.data"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "estudo.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/education/quizzes-panel",
+        "@/components/education/flashcards-panel",
+        "@/components/education/simulados-panel",
+        "@/lib/education/store"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "exames-laboratoriais.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/tools/exames-laboratoriais.data"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "ferramentas-pesquisa.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/research/sources-panel",
+        "@/components/research/references-panel",
+        "@/components/research/pico-panel",
+        "@/lib/research/store"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "forum.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/lib/cookie-banner",
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/editorial/forum.store",
+        "@/lib/editorial/forum-types"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "kids.colorir.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "kids.jogos.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "oportunidades.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "residencias.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "sbar.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/sbar/sbar-editor"
+      ],
+      "assertion": "static-import-presence"
+    },
+    "vagas.tsx": {
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
       "assertion": "static-import-presence"
     }

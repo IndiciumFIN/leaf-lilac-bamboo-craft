@@ -326,7 +326,7 @@ check("CE-CONTRACTS:sem-orfao", orphans.length === 0,
   // ── UTC-016: contexto assistencial opcional, mascarado e sem captura LGPD
   const contexto = bindings.filter((b) => (b.canonical_id ?? "").startsWith("AB-CTX-"));
   const contextoRuim = contexto.filter(
-    (b) => b.authority_class !== "INTERNAL_CONFIG" || b.decision !== "BOUND",
+    (b) => b.authority_class !== "INTERNAL_NONCLINICAL" || b.decision !== "NOT_APPLICABLE_JUSTIFIED",
   );
   check("CE-TOOLS:contexto-como-config-interna-governada", contextoRuim.length === 0,
     contextoRuim.length ? contextoRuim.map((b) => b.canonical_id).join(", ") : `${contexto.length} campos de contexto como configuracao interna governada`);

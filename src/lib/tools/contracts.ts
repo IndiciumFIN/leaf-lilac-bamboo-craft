@@ -52,14 +52,17 @@ export type IdentidadeContrato = {
 
 /* ── source.schema.json ─────────────────────────────────────────────────── */
 export type TipoFonte =
-  | "NORMATIVA"
-  | "VALIDACAO"
-  | "GUIA"
-  | "PROTOCOLO"
-  | "TECNICA"
-  | "ARTIGO"
-  | "MANUAL"
-  | "PAGINA_OFICIAL";
+  | "OFFICIAL_LAW"
+  | "REGULATOR"
+  | "STANDARD"
+  | "TERMINOLOGY"
+  | "PRIMARY_STUDY"
+  | "GUIDELINE"
+  | "TEXTBOOK"
+  | "DATASET_API"
+  | "SOFTWARE"
+  | "IMAGE"
+  | "INTERNAL_GOVERNED";
 
 export type FonteNormativa = IdentidadeContrato & {
   source_type: TipoFonte;
@@ -88,10 +91,10 @@ export type AuthorityBinding = IdentidadeContrato & {
   requirement_id: string;
   /** `source_ids` referencia `FonteNormativa.canonical_id`. */
   source_ids: string[];
-  /** "CLINICAL" | "REGULATORY" | "TECHNICAL" | "EDITORIAL" | "INTERNAL_CONFIG". */
+  /** Valores de authority_binding.schema.json. CLINICAL nao e um deles e nao vira CLINICAL_EVIDENCE. */
   authority_class: string;
   validity: { from?: string; until?: string; jurisdiction?: string };
-  /** "BOUND" | "HOLD" | "NOT_APPLICABLE_JUSTIFIED" | "PENDING". */
+  /** "ALLOW" | "HOLD_HUMAN" | "REJECT" | "NOT_APPLICABLE_JUSTIFIED". */
   decision: string;
   validator_ids?: string[];
   evidence_bundle_ids?: string[];
@@ -104,7 +107,7 @@ export type CampoDefinido = IdentidadeContrato & {
   semantic_concept_ref: string;
   value_type: string;
   authority_binding_ref: string;
-  /** "EPHEMERAL_NOT_CAPTURED" | "NOT_APPLICABLE" | "PERSISTED_NON_SENSITIVE". */
+  /** "NEVER_PERSIST" | "SESSION_ONLY" | "LOCAL_NON_SENSITIVE" | "LOCAL_WITH_CONSENT". */
   privacy_policy: string;
   applicability_ref: string;
   unit_ref?: string;

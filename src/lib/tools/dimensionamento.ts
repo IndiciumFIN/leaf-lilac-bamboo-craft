@@ -45,6 +45,8 @@ export const dimensionamento: ClinicalTool = {
   holds: [
     "Sem snapshot com hash do parecer.",
     "A legenda do quadro usa (1+IST)=1,15; o multiplicador impresso diz IST.",
+    "A proporção usa a maior carga de horas, não um critério separado de prevalência. Quantidade de pacientes e carga podem apontar categorias diferentes.",
+    "Não inclui o acréscimo institucional de educação permanente, taxa de ocupação, restrição de trabalho nem atividades gerenciais.",
     "Proporções lidas da página pública, sem vetor oficial de teste.",
     "Decisões judiciais sobre dimensionamento não foram incorporadas. Não homologar.",
   ],

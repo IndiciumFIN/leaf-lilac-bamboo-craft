@@ -1,15 +1,33 @@
 {
   "schemaVersion": "2.0.0",
   "scope": "CE_PUBLIC_BACKUP_ONLY",
-  "generatedAt": "2026-11-14T19:55:10.647Z",
-  "status": "FAIL",
+  "generatedAt": "2026-11-14T22:46:36.108Z",
+  "status": "STATIC_PASS_NOT_VISUAL",
   "summary": {
     "total": 53,
-    "withExplicitContracts": 33,
-    "findings": 32,
+    "withExplicitContracts": 53,
+    "findings": 0,
     "visualHomologations": 0
   },
   "records": [
+    {
+      "file": "$.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "home",
+      "sourceSha256": "75e3e7cf83d39811056d67c3449862ce4d0f05bae9426f0474443546a42843ea",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/home-page",
+        "@/components/site/shell",
+        "@/lib/content-object.functions",
+        "@/lib/sitemap-kind",
+        "@/lib/seo",
+        "@/lib/translate"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
     {
       "file": "__root.tsx",
       "kind": "shell",
@@ -31,12 +49,25 @@
       "templateKind": "area",
       "sourceSha256": "d023178f32034e811cc0a7e94865bd848a4b6a3f80a17854d70dfa2b9f8abb1e",
       "requiredImports": [
-        "@/components/local/local-workbench-page"
+        "@/components/admin/shell",
+        "@/components/site/areas"
       ],
-      "missingImports": [
-        "@/components/local/local-workbench-page"
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "album.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "1a5a9d3a3710b73619f7e77151521c5ec6c7c48361886c710ea00a198f0e224d",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/editorial/album.seed"
       ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "api/auth/$.ts",
@@ -57,14 +88,12 @@
       "templateKind": "ferramenta",
       "sourceSha256": "14f2115cfa6ede8a351fd02278a5c7cbedc3fcabd925fa5bd05786c40330c4c1",
       "requiredImports": [
-        "@/lib/local-canonical",
+        "@/components/site/areas",
         "@/components/tools/clinical-tool",
-        "@/components/site/areas"
+        "@/lib/source.functions"
       ],
-      "missingImports": [
-        "@/lib/local-canonical"
-      ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "assinante.tsx",
@@ -73,15 +102,13 @@
       "templateKind": "area",
       "sourceSha256": "f2bcbb668e7757c64dbbbd895c2e3778f3e3e3276868e110a1775775972cfcb0",
       "requiredImports": [
-        "@/lib/local-canonical",
+        "@/components/article/article-page",
         "@/components/site/areas",
-        "@/components/site/page-hero"
+        "@/components/site/community",
+        "@/lib/source.functions"
       ],
-      "missingImports": [
-        "@/lib/local-canonical",
-        "@/components/site/page-hero"
-      ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "bibliotecas.$slug.$object.tsx",
@@ -142,14 +169,13 @@
       "templateKind": "artigo",
       "sourceSha256": "e7b2d475e0f655d141b303d0697a77f0b42b1c416d2aa8d71e644ccc27a1c35c",
       "requiredImports": [
-        "@/components/article/article-page",
-        "@/components/site/related-content",
         "@/components/site/shell",
         "@/components/templates/biography-view",
+        "@/components/article/article-page",
+        "@/components/site/related-content",
         "@/lib/content/articles/index",
         "@/lib/seo",
-        "@/lib/translate",
-        "@tanstack/react-router"
+        "@/lib/translate"
       ],
       "missingImports": [],
       "status": "STATIC_PASS"
@@ -161,10 +187,51 @@
       "templateKind": "secao",
       "sourceSha256": "7f59c8efc1fd91cfa5028d6c279791a3c72dee88b48e67d1c1cc03266d3edc8f",
       "requiredImports": [
-        "@/components/article/article-page",
         "@/components/site/shell",
-        "@/lib/content/curiosidades/catalog",
-        "@tanstack/react-router"
+        "@/components/article/article-page",
+        "@/lib/content/curiosidades/catalog"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "blog.mary-eliza-mahoney.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "artigo",
+      "sourceSha256": "782a34560ae0dff37897625fcced7526c64f9e6e35a2b46801ff8e9c06d7458e",
+      "requiredImports": [
+        "@/components/site/shell",
+        "@/components/templates/biography-view",
+        "@/lib/content-object.functions",
+        "@/lib/seo",
+        "@/lib/translate"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "bolsas.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "d586764432ea7bc03efeb5fdc7fd3a1100d0f62ac8b87dfb5d0afae48a96dd55",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "calculadoras-trabalhistas.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "4f2b17367b8da0d52dcd080e00172de49b5b987448d3233e7e1d2489e45f1fb0",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
       "missingImports": [],
       "status": "STATIC_PASS"
@@ -176,11 +243,34 @@
       "templateKind": "area",
       "sourceSha256": "ddee0be5ad549a68537b0342e03903ccbac66c6bde19c3982b242dcb743d6d82",
       "requiredImports": [
-        "@/lib/central-command-tables",
-        "@/styles/command-center.css",
-        "@tanstack/react-router",
-        "../../registers/governance/imports/cko-coren-cofen-20261023/pending-candidates.v1.json",
-        "../../registers/pmo/queue.v1.json"
+        "@/lib/central-command-tables"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "concurso.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "adce1ed7d2df87129ea7ccefad245b87e4e081d808eecc572f204cad3458cd12",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/career/curriculum-editor"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "concursos.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "2d12de07732a5e34610b3d8f014603ba0c1b3cd422fff5acd06fed6221530ac9",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
       "missingImports": [],
       "status": "STATIC_PASS"
@@ -196,20 +286,125 @@
       "status": "STATIC_PASS"
     },
     {
+      "file": "curiosidades.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "68eed89ab73a2405c7ac3c3f06e947b21e55cb20f1ed11d0deb19291dfe4869b",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/editorial/fun-facts.seed",
+        "@/lib/editorial/types"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "cursos-sus.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "ccf9de7d86167c1020aee5c331f3980933cbd040ec3413ec7ef4ef98f100a862",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "doencas-compulsorias.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "f126b0ca5d5bdcf6b78534fd03808b66b7950600766669b1bc724fb71acc2579",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/saude-publica/doencas-compulsorias.data"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "estudo.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "468f720d1bb3d6d50be669e714bbdf46511ba8404e94d574c59c958897cc130a",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/education/quizzes-panel",
+        "@/components/education/flashcards-panel",
+        "@/components/education/simulados-panel",
+        "@/lib/education/store"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "exames-laboratoriais.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "91bc52ed32113fabbfbb455337a37a978bcbc0242420426efca05dc773a72a5f",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/tools/exames-laboratoriais.data"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "ferramentas-pesquisa.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "8aa6cea7b193eee8759c8c960da99c4c47ff12f228a1ecd6ca6a97d2664a8ce8",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/research/sources-panel",
+        "@/components/research/references-panel",
+        "@/components/research/pico-panel",
+        "@/lib/research/store"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
       "file": "ferramentas.$slug.tsx",
       "kind": "page",
       "role": "public",
       "templateKind": "ferramenta",
       "sourceSha256": "c9213c9edcb3b75966733dfa86124846012e933e254e159f538b925d6b22cb46",
       "requiredImports": [
-        "@/lib/local-canonical",
         "@/components/tools/clinical-tool",
-        "@/components/site/shell"
+        "@/components/site/shell",
+        "@/lib/seo",
+        "@/lib/source.functions"
       ],
-      "missingImports": [
-        "@/lib/local-canonical"
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "forum.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "e751c1a130d1c7ed748fc8a170a4b4947a82d8663d47674ee031357989a344f5",
+      "requiredImports": [
+        "@/lib/cookie-banner",
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/lib/editorial/forum.store",
+        "@/lib/editorial/forum-types"
       ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "index.tsx",
@@ -287,12 +482,24 @@
       "templateKind": "area",
       "sourceSha256": "73974d86de28460426e225fca88b18be5406338df97ce55825766b874455cc53",
       "requiredImports": [
-        "@/components/vila/vila-hub"
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
-      "missingImports": [
-        "@/components/vila/vila-hub"
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "kids.colorir.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "eab67751c45ce7fe2e017599b8f96d5e4c751af04b0b5978102315ca5da634fe",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "kids.index.tsx",
@@ -301,12 +508,24 @@
       "templateKind": "area",
       "sourceSha256": "6384b9d99c98eac0e15823aa5d68bc30914b379435d706a409ed497beb5b9ddc",
       "requiredImports": [
-        "@/components/vila/vila-hub"
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
-      "missingImports": [
-        "@/components/vila/vila-hub"
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "kids.jogos.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "039b6f01f3dce7f3c0fecd46541614d9e09b49c81cf5826fedf4ae07debfe384",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
       ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "kids.tsx",
@@ -340,15 +559,27 @@
       "templateKind": "biblioteca",
       "sourceSha256": "efb0250df494da80a632fcee7222a87bae38377e835accd40cbe4045317e89bc",
       "requiredImports": [
-        "@/lib/templates",
         "@/components/templates/editorial-view",
         "@/components/templates/form-view",
-        "@/components/site/shell"
+        "@/components/templates/guide-view",
+        "@/components/templates/institutional-template",
+        "@/components/templates/library-view",
+        "@/components/templates/norm-view",
+        "@/components/templates/report-view",
+        "@/components/templates/slide-deck",
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/site/related-content",
+        "@/lib/stored.functions",
+        "@/lib/stored",
+        "@/lib/lorem",
+        "@/components/templates/contract-view",
+        "@/components/templates/recovered-templates",
+        "@/lib/template-catalog",
+        "@/lib/translate"
       ],
-      "missingImports": [
-        "@/lib/templates"
-      ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "modelos.index.tsx",
@@ -357,14 +588,14 @@
       "templateKind": "biblioteca",
       "sourceSha256": "3591f9653486943ba8bda805cfed302b416fb8354f7a1457b4d3bc4c35e33b42",
       "requiredImports": [
-        "@/lib/templates",
+        "@/components/site/shell",
         "@/components/article/article-page",
-        "@/components/site/shell"
+        "@/lib/stored",
+        "@/lib/template-catalog",
+        "@/lib/translate"
       ],
-      "missingImports": [
-        "@/lib/templates"
-      ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "modelos.tsx",
@@ -389,20 +620,60 @@
       "status": "STATIC_PASS"
     },
     {
+      "file": "oportunidades.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "94b6ff72b188f1457eeacf9f89749fd764c9f0feed2736cabe23a16b5ef4ebdd",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
       "file": "pacote.tsx",
       "kind": "page",
       "role": "public",
       "templateKind": "area",
       "sourceSha256": "11d728f90623831b86b889602e3e2ff0c7952e9694e56912ac0f8e173ba810a9",
       "requiredImports": [
-        "@/lib/site-data",
+        "@/components/site/shell",
+        "@/components/article/article-page",
+        "@/lib/stored",
+        "@/lib/tools/catalog",
+        "@/lib/translate"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "residencias.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "50649070478c96890d6b8a2eff3a82b99de9e078d31ac81b0312ea763d1bd2ac",
+      "requiredImports": [
         "@/components/article/article-page",
         "@/components/site/shell"
       ],
-      "missingImports": [
-        "@/lib/site-data"
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
+      "file": "sbar.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "e95e3d5cd4388efc574ca8914009637b4cff3bced3deb9a2f713efb23340dc2b",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell",
+        "@/components/sbar/sbar-editor"
       ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "secao.$slug.tsx",
@@ -411,14 +682,14 @@
       "templateKind": "secao",
       "sourceSha256": "9fc98fc7974b1b1115bc988fdf5beef3c459dcb55983f798c2d134d351f6f0af",
       "requiredImports": [
-        "@/lib/sections",
         "@/components/site/section-page",
-        "@/components/site/shell"
+        "@/components/site/shell",
+        "@/lib/stored.functions",
+        "@/lib/translate",
+        "@/lib/seo"
       ],
-      "missingImports": [
-        "@/lib/sections"
-      ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     },
     {
       "file": "sessao.tsx",
@@ -447,161 +718,30 @@
       "status": "STATIC_PASS"
     },
     {
+      "file": "vagas.tsx",
+      "kind": "page",
+      "role": "public",
+      "templateKind": "area",
+      "sourceSha256": "86f2db89fb14a17b047fd168fc37851c9b6c015cf89870f15115fc1f4a532f0f",
+      "requiredImports": [
+        "@/components/article/article-page",
+        "@/components/site/shell"
+      ],
+      "missingImports": [],
+      "status": "STATIC_PASS"
+    },
+    {
       "file": "viladocuidado.tsx",
       "kind": "page",
       "role": "public",
       "templateKind": "area",
       "sourceSha256": "bce7c577269fde1191af9f000bb115bbd7475cbd7550cdfd792e67d95b3e690f",
       "requiredImports": [
-        "@/components/vila/vila-page",
-        "@tanstack/react-router"
+        "@/components/vila-page"
       ],
-      "missingImports": [
-        "@/components/vila/vila-page"
-      ],
-      "status": "FAIL"
+      "missingImports": [],
+      "status": "STATIC_PASS"
     }
   ],
-  "findings": [
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "$.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "album.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "blog.mary-eliza-mahoney.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "bolsas.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "calculadoras-trabalhistas.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "concurso.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "concursos.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "curiosidades.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "cursos-sus.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "doencas-compulsorias.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "estudo.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "exames-laboratoriais.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "ferramentas-pesquisa.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "forum.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "kids.colorir.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "kids.jogos.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "oportunidades.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "residencias.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "sbar.tsx"
-    },
-    {
-      "id": "UNKNOWN_ROUTE",
-      "route": "vagas.tsx"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "admin.tsx",
-      "import": "@/components/local/local-workbench-page"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "assinante.ferramentas.$slug.tsx",
-      "import": "@/lib/local-canonical"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "assinante.tsx",
-      "import": "@/lib/local-canonical"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "assinante.tsx",
-      "import": "@/components/site/page-hero"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "ferramentas.$slug.tsx",
-      "import": "@/lib/local-canonical"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "kids.$section.tsx",
-      "import": "@/components/vila/vila-hub"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "kids.index.tsx",
-      "import": "@/components/vila/vila-hub"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "modelos.$id.tsx",
-      "import": "@/lib/templates"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "modelos.index.tsx",
-      "import": "@/lib/templates"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "pacote.tsx",
-      "import": "@/lib/site-data"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "secao.$slug.tsx",
-      "import": "@/lib/sections"
-    },
-    {
-      "id": "MISSING_REQUIRED_IMPORT",
-      "route": "viladocuidado.tsx",
-      "import": "@/components/vila/vila-page"
-    }
-  ]
+  "findings": []
 }

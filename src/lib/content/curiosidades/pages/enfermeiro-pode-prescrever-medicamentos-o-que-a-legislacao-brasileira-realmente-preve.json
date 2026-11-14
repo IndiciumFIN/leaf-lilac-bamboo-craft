@@ -8,7 +8,7 @@
   "section_count": 6,
   "reference_count": 1,
   "content_status": "BLOCKED_SOURCE",
-  "review_reason": null,
+  "review_reason": "A Resolução COFEN 358/2009 não é a norma atual da SAE nem a base da prescrição. A 736/2024 a revogou. A 543/2017 é dimensionamento, revogada pela 743/2024.",
   "updated_at": "2026-10-10 07:52:17.179791+00",
   "content": {
     "slug": "enfermeiro-pode-prescrever-medicamentos-o-que-a-legislacao-brasileira-realmente-preve",
@@ -16,7 +16,7 @@
       "lead": "O debate sobre a prescrição de medicamentos por enfermeiros é parte da regulamentação profissional no Brasil. A legislação permite a prescrição em situações específicas, com protocolos e programas, e a leitura crítica preserva o que é permitido e o que exige protocolos.",
       "bullets": [
         "A Lei 7.498/86 e o Decreto 94.406/87 regulamentam a profissão.",
-        "A Resolução COFEN 358/2009 trata da Sistematização da Assistência de Enfermagem (SAE).",
+        "A Resolução COFEN 358/2009 tratava da SAE e foi revogada pela Resolução COFEN 736/2024. Ela não é a norma da prescrição.",
         "A Portaria 1.625/2007 trata da atenção à saúde dos viajantes em portos, aeroportos, e passagens de fronteira.",
         "A prescrição é permitida em situações específicas, com protocolos."
       ],
@@ -50,7 +50,7 @@
       },
       {
         "id": "s2",
-        "title": "2. A Resolução COFEN 358/2009 (SAE)",
+        "title": "2. A Resolução COFEN 358/2009 foi revogada",
         "sources": [
           "SRC-ABEN-FAB"
         ],
@@ -70,8 +70,8 @@
               },
               {
                 "f": "SAE",
-                "k": "2009",
-                "v": "COFEN 358"
+                "k": "2024",
+                "v": "COFEN 736"
               },
               {
                 "f": "Prescrição de enfermagem",
@@ -82,8 +82,8 @@
           }
         ],
         "paragraphs": [
-          "A Resolução COFEN 358/2009 trata da Sistematização da Assistência de Enfermagem (SAE) e do Processo de Enfermagem. A resolução define que a SAE deve ser implementada em todas as instituições de saúde onde ocorra cuidado de enfermagem.",
-          "A SAE é uma metodologia de assistência que organiza o cuidado em etapas: histórico, diagnóstico, planejamento, implementação, e avaliação. A prescrição de enfermagem é parte do planejamento, e a Resolução COFEN 587/2018 trata especificamente da prescrição de enfermagem.",
+          "A Resolução COFEN 358/2009 tratava da SAE e do Processo de Enfermagem. A Resolução COFEN 736/2024 a revogou. Ela não autoriza a prescrição de medicamentos.",
+          "A SAE organiza o cuidado em etapas: histórico, diagnóstico, planejamento, implementação e avaliação. A prescrição de enfermagem não se confunde com a Resolução 358/2009.",
           "A combinação de resoluções define o escopo da SAE e da prescrição de enfermagem. A leitura crítica preserva o que é documentado e contextualiza a aplicação."
         ]
       },
@@ -190,7 +190,7 @@
               {
                 "q": "Enfermeiro pode prescrever medicamentos?",
                 "paragraphs": [
-                  "Sim, em situações específicas, com protocolos e programas. A Lei 7.498/86 e a Resolução COFEN 358/2009 regulamentam."
+                  "Sim, em situações específicas, com protocolos e programas. A base citada nesta página é a Lei 7.498/86, não a Resolução COFEN 358/2009."
                 ]
               },
               {
@@ -213,8 +213,8 @@
         ]
       }
     ],
-    "subtitle": "O que a Lei 7.498/86, a Resolução COFEN 358/2009, e a Portaria 1.625/2007 permitem",
-    "hero_lead": "A legislação brasileira permite que enfermeiros prescrevem medicamentos em situações específicas, com protocolos e programas de saúde pública. A Lei 7.498/86, o Decreto 94.406/87, a Resolução COFEN 358/2009, e a Portaria 1.625/2007 são as principais referências. A leitura crítica preserva o que é permitido e o que exige protocolos.",
+    "subtitle": "O que a Lei 7.498/86 e a Portaria 1.625/2007 tratam. A Resolução COFEN 358/2009 não é a norma da prescrição.",
+    "hero_lead": "A legislação brasileira trata da prescrição por enfermeiros em situações específicas, com protocolos e programas. A Lei 7.498/86, o Decreto 94.406/87 e a Portaria 1.625/2007 são as referências desta página. A Resolução COFEN 358/2009 foi revogada pela 736/2024 e não é a norma da prescrição.",
     "references": [
       {
         "id": "SRC-ABEN-FAB",
@@ -231,11 +231,11 @@
     ],
     "summary_items": [
       "A legislação brasileira permite prescrição de medicamentos por enfermeiros em situações específicas.",
-      "Lei 7.498/86, Decreto 94.406/87, Resolução COFEN 358/2009, e COFEN 587/2018 são as referências.",
+      "Lei 7.498/86 e Decreto 94.406/87 são as referências desta página. A Resolução COFEN 358/2009 não autoriza a prescrição.",
       "Situações: programas de saúde, saúde do viajante, emergência com protocolos.",
       "A combinação de protocolos e programas é parte do trabalho do enfermeiro.",
       "Fontes: COFEN, COREN, Ministério da Saúde, legislação federal."
     ],
-    "seo_description": "A Lei 7.498/86 e a Resolução COFEN 358/2009 permitem que enfermeiros prescrevem medicamentos em situações específicas, com protocolos e programas."
+    "seo_description": "A Lei 7.498/86 trata do exercício profissional. A Resolução COFEN 358/2009 não é a norma atual da prescrição: a 736/2024 a revogou."
   }
 }

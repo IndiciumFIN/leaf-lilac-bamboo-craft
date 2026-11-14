@@ -5,8 +5,8 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-if (!process.env.CE_ALIAS_HOOK) {
-  process.env.CE_ALIAS_HOOK = "1";
+if (!globalThis.__ceAliasHook) {
+  globalThis.__ceAliasHook = true;
   register(import.meta.url);
 }
 
