@@ -23,7 +23,7 @@ test("o dicionário nomeia cada tabela e a coluna estrutural", async () => {
     [...tables].filter((name) => !dropped.has(name)).sort(),
   );
   const objectColumns = await db.query<{ name: string }>("select name from schema_column where entity = 'content_object' order by name");
-  assert.deepEqual(objectColumns.rows.map((row) => row.name), ["kind", "origin_path", "slug", "tool_slug"]);
+  assert.deepEqual(objectColumns.rows.map((row) => row.name), ["file_kind", "kind", "origin_path", "slug", "tool_slug"]);
   const term = await db.query("select code from schema_term where domain = 'content_status' and code = 'publicado'");
   assert.equal(term.rows.length, 1);
   const spec = await db.query("select status from data_specification where entity = 'content_text' and characteristic = 'status'");
