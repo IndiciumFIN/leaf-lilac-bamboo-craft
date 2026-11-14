@@ -1,6 +1,8 @@
 import type { ClinicalTool } from "@/lib/tools/types";
 import { acceptedCatalogTool } from "@/lib/tools/catalog-list";
 import { examesLaboratoriais } from "@/lib/tools/exames-laboratoriais";
+import { implanted } from "@/lib/tools/implanted";
+import { frozenScales } from "@/lib/tools/frozen-scales";
 
 const braden: ClinicalTool = {
   slug: "braden",
@@ -291,8 +293,8 @@ const aldrete: ClinicalTool = {
 
 export const tools: ClinicalTool[] = [braden, morse, apgar, gotejamento, imc];
 
-/** Fora do menu e do sitemap. A branch de auditoria exige homologação humana antes do índice. */
-export const candidateTools: ClinicalTool[] = [aldrete, examesLaboratoriais];
+/** Fora do menu publicado das cinco. A rota abre quando a fonte marca a capa. */
+export const candidateTools: ClinicalTool[] = [aldrete, examesLaboratoriais, ...implanted, ...frozenScales];
 
 export function getTool(slug: string) {
   const found = tools.find((tool) => tool.slug === slug) ?? candidateTools.find((tool) => tool.slug === slug);

@@ -39,6 +39,8 @@ export function ClinicalForm({
 }) {
   const showPatient = hasBlock(tool.kind, "paciente");
   const criteria = tool.criteria ?? [];
+  const hasInput = criteria.length > 0 || (tool.fields?.length ?? 0) > 0 || (tool.selects?.length ?? 0) > 0;
+  if (!hasInput) return null;
   const rawErrors = errors.raw as Record<string, { message?: string }> | undefined;
   const answerErrors = errors.answers as Record<string, { message?: string }> | undefined;
   const toastMessage = result && !result.ok ? result.message : result?.ok ? "Cálculo pronto." : null;

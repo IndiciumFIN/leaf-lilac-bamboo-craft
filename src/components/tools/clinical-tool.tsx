@@ -140,6 +140,7 @@ export function ClinicalToolPage({ tool, area = "public" }: { tool: ClinicalTool
         <h2>Como usar</h2>
         <ol className="plain-list">{tool.howTo.map((step) => <li key={step}>{step}</li>)}</ol>
       </section>
+      {tool.faqs.length ? (
       <section className="paper tool-block no-print">
         <h2>Dúvidas frequentes</h2>
         {tool.faqs.map((faq) => (
@@ -149,6 +150,7 @@ export function ClinicalToolPage({ tool, area = "public" }: { tool: ClinicalTool
           </details>
         ))}
       </section>
+      ) : null}
       <RelatedContent
         items={related.map((item) => ({
           title: item.title,

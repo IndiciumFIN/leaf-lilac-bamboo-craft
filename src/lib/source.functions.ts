@@ -130,6 +130,29 @@ export const readTool = createServerFn({ method: "GET" })
     if (!hasStoredSheet(sheet) && fallback) {
       return { published, tool: { ...fallback, title: sheet.cover.title, lead: sheet.cover.lead } };
     }
+    if (!hasStoredSheet(sheet)) {
+      const copies = await sql<{ body: string }>`
+        select body from content_text
+        where slug = ${slug} and locale = 'pt-BR' and status = 'publicado' and btrim(body) <> ''
+        order by case view when 'calculadora' then 0 when 'leitura' then 1 else 2 end
+        limit 1
+      `;
+      const body = (copies[0]?.body ?? "").trim();
+      const fechado = body.length < 180 || /protegido|premium/i.test(body);
+      const texto = fechado
+        ? "A capa está publicada. O backup não trouxe os itens de pontuação, então a conta não abre."
+        : body.slice(0, 3500);
+      return {
+        published,
+        tool: {
+          ...assembled,
+          category: assembled.category || "Ferramenta",
+          howTo: assembled.howTo.length ? assembled.howTo : ["Leia o texto publicado. A conta só abre quando a página guarda os itens."],
+          references: assembled.references.length ? assembled.references : ["Texto publicado desta ferramenta."],
+          specific: [texto],
+        },
+      };
+    }
     return { published, tool: assembled };
   });
 

@@ -284,3 +284,124 @@ test("gotejamento sem tempo não calcula e 1 h 30 min usa os 90 minutos", () => 
     assert.match(misto.steps?.[0] ?? "", / = 90 min\.$/);
   }
 });
+
+test("Glasgow soma os componentes e lê a faixa de TCE do formulário", () => {
+  const tool = getTool("glasgow");
+  assert.ok(tool);
+  const teto = evaluateScale(tool, { eye: 4, verbal: 5, motor: 6 });
+  assert.equal(teto.ok, true);
+  if (teto.ok) {
+    assert.equal(teto.total, 15);
+    assert.equal(teto.max, 15);
+    assert.equal(teto.band?.label, "13–15 · leve (TCE)");
+  }
+  const piso = evaluateScale(tool, { eye: 1, verbal: 1, motor: 1 });
+  assert.equal(piso.ok, true);
+  if (piso.ok) {
+    assert.equal(piso.total, 3);
+    assert.equal(piso.band?.label, "3–8 · grave (TCE)");
+  }
+});
+
+test("Norton nomeia as notas e o corte de 14", () => {
+  const tool = getTool("norton");
+  assert.ok(tool);
+  const baixo = evaluateScale(tool, marcar(tool, {
+    physical_condition: 1,
+    mental_condition: 1,
+    activity: 1,
+    mobility: 1,
+    incontinence: 1,
+  }));
+  assert.equal(baixo.ok, true);
+  if (baixo.ok) {
+    assert.equal(baixo.total, 5);
+    assert.equal(baixo.max, 20);
+    assert.equal(baixo.band?.label, "5–14 · risco sinalizado");
+  }
+});
+
+test("escala numérica lê as faixas da página", () => {
+  const tool = getTool("escalanumerica");
+  assert.ok(tool);
+  const forte = evaluateScale(tool, { dor: 7 });
+  assert.equal(forte.ok, true);
+  if (forte.ok) assert.equal(forte.band?.label, "Dor forte ou pior dor");
+  const zero = evaluateScale(tool, { dor: 0 });
+  assert.equal(zero.ok, true);
+  if (zero.ok) assert.equal(zero.band?.label, "Sem dor");
+});
+
+test("qSOFA separa um critério de dois", () => {
+  const tool = getTool("qsofa");
+  assert.ok(tool);
+  const baixo = evaluateScale(tool, marcar(tool, { fr: 1 }));
+  assert.equal(baixo.ok, true);
+  if (baixo.ok) assert.equal(baixo.band?.label, "Menos de dois critérios qSOFA");
+  const alto = evaluateScale(tool, marcar(tool, { fr: 1, pa: 1 }));
+  assert.equal(alto.ok, true);
+  if (alto.ok) {
+    assert.equal(alto.total, 2);
+    assert.equal(alto.band?.label, "Dois ou três critérios qSOFA");
+  }
+});
+
+test("insulina U-100 divide a dose por 100", () => {
+  const tool = getTool("insulina");
+  assert.ok(tool);
+  const trinta = evaluateFormula(tool, { dose: "30", concentracao: "100" });
+  assert.equal(trinta.ok, true);
+  if (trinta.ok) assert.equal(trinta.outputs?.find((item) => item.id === "ml")?.value, 0.3);
+  const cem = evaluateFormula(tool, { dose: "100", concentracao: "100" });
+  assert.equal(cem.ok, true);
+  if (cem.ok) assert.equal(cem.outputs?.find((item) => item.id === "ml")?.value, 1);
+});
+
+test("gestacional soma 280 dias a partir de 10 de fevereiro", () => {
+  const tool = getTool("gestacional");
+  assert.ok(tool);
+  const resultado = evaluateFormula(tool, { dia: "10", mes: "2", ano: "2026" });
+  assert.equal(resultado.ok, true);
+  if (resultado.ok) assert.equal(resultado.outputs?.find((item) => item.id === "dpp")?.text, "17/11/2026");
+  const invalida = evaluateFormula(tool, { dia: "31", mes: "2", ano: "2026" });
+  assert.equal(invalida.ok, false);
+});
+
+test("gasometria só compara com a faixa impressa", () => {
+  const tool = getTool("gasometria");
+  assert.ok(tool);
+  const dentro = evaluateFormula(tool, { ph: "7.40", paco2: "40", hco3: "24" });
+  assert.equal(dentro.ok, true);
+  if (dentro.ok) assert.match(dentro.outputs?.[0].text ?? "", /dentro da faixa/);
+  const baixo = evaluateFormula(tool, { ph: "7.20", paco2: "40", hco3: "24" });
+  assert.equal(baixo.ok, true);
+  if (baixo.ok) assert.match(baixo.outputs?.[0].text ?? "", /pH: abaixo da faixa/);
+});
+
+test("CAM-ICU segue o algoritmo e não soma", () => {
+  const tool = getTool("cam");
+  assert.ok(tool);
+  const fechado = evaluateScale(tool, { rass: -5, f1: 1, f2: 1, f4: 1 });
+  assert.equal(fechado.ok, true);
+  if (fechado.ok) assert.equal(fechado.band?.label, "Não avaliável neste momento");
+  const negativo = evaluateScale(tool, { rass: 0, f1: 1, f2: 1, f4: 0 });
+  assert.equal(negativo.ok, true);
+  if (negativo.ok) assert.equal(negativo.band?.label, "CAM-ICU negativo (−)");
+  const positivo = evaluateScale(tool, { rass: 0, f1: 1, f2: 1, f4: 1 });
+  assert.equal(positivo.ok, true);
+  if (positivo.ok) assert.equal(positivo.band?.label, "CAM-ICU positivo (+)");
+  const derivado = evaluateScale(tool, { rass: 2, f1: 1, f2: 1, f4: 0 });
+  assert.equal(derivado.ok, true);
+  if (derivado.ok) assert.equal(derivado.band?.label, "CAM-ICU positivo (+)");
+});
+
+test("Barthel soma as dez atividades até 100", () => {
+  const tool = getTool("barthel");
+  assert.ok(tool);
+  const cheio = evaluateScale(tool, Object.fromEntries((tool.criteria ?? []).map((item) => [item.id, Math.max(...item.choices.map((choice) => choice.value))])));
+  assert.equal(cheio.ok, true);
+  if (cheio.ok) {
+    assert.equal(cheio.total, 100);
+    assert.equal(cheio.max, 100);
+  }
+});

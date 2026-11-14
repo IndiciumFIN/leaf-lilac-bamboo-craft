@@ -9,7 +9,7 @@ const leituraExame: Record<string, string> = {
   "acima-do-minimo": "Acima do mínimo declarado. A base não traz máximo.",
 };
 
-/** O método de cada conta está em tool_formula. Estas funções só interpretam soma, gotejamento, imc e a faixa do exame. */
+/** O método de cada conta está em tool_formula. Estas funções só interpretam soma, gotejamento, imc, a faixa do exame e as contas cujo texto já está na página. */
 export const formulas: Record<string, (values: Record<string, number>) => ComputeResult> = {
   gotejamento: (values) => {
     const minutes = values.horas * 60 + values.minutos;
@@ -32,4 +32,44 @@ export const formulas: Record<string, (values: Record<string, number>) => Comput
       texts: { situacao: `${exame.nome}: ${leituraExame[leitura.situacao]}` },
     };
   },
+  insulina: (values) => {
+    if (values.concentracao !== 100) return { error: "Esta conta só vale para U-100. Outra concentração não entra." };
+    return { outputs: { ml: values.dose / 100 } };
+  },
+  gestacional: (values) => {
+    const dum = dataUtc(values.ano, values.mes, values.dia);
+    if (!dum) return { error: "Data da última menstruação inválida." };
+    const hoje = new Date();
+    const inicioHoje = Date.UTC(hoje.getUTCFullYear(), hoje.getUTCMonth(), hoje.getUTCDate());
+    const diasTotais = Math.round((inicioHoje - dum.getTime()) / 86400000);
+    if (diasTotais < 0) return { error: "A data da última menstruação está no futuro." };
+    const dpp = new Date(dum.getTime() + 280 * 86400000);
+    const dia = String(dpp.getUTCDate()).padStart(2, "0");
+    const mes = String(dpp.getUTCMonth() + 1).padStart(2, "0");
+    return {
+      outputs: { semanas: Math.floor(diasTotais / 7), dias: diasTotais % 7, dpp: diasTotais },
+      texts: { dpp: `${dia}/${mes}/${dpp.getUTCFullYear()}` },
+    };
+  },
+  gasometria: (values) => {
+    const linhas = [
+      faixa("pH", values.ph, 7.35, 7.45),
+      faixa("PaCO₂", values.paco2, 35, 45),
+      faixa("HCO₃", values.hco3, 22, 26),
+    ];
+    return { outputs: { leitura: values.ph }, texts: { leitura: linhas.join(" ") } };
+  },
 };
+
+function dataUtc(ano: number, mes: number, dia: number) {
+  if (mes < 1 || mes > 12 || dia < 1 || dia > 31) return null;
+  const data = new Date(Date.UTC(ano, mes - 1, dia));
+  if (data.getUTCFullYear() !== ano || data.getUTCMonth() !== mes - 1 || data.getUTCDate() !== dia) return null;
+  return data;
+}
+
+function faixa(nome: string, valor: number, minimo: number, maximo: number) {
+  if (valor < minimo) return `${nome}: abaixo da faixa ${minimo}–${maximo}.`;
+  if (valor > maximo) return `${nome}: acima da faixa ${minimo}–${maximo}.`;
+  return `${nome}: dentro da faixa ${minimo}–${maximo}.`;
+}
