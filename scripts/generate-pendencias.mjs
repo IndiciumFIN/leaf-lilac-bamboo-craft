@@ -7,7 +7,7 @@
  *   node scripts/generate-pendencias.mjs
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { execSync } from "node:child_process";
+import { execSync, spawnSync } from "node:child_process";
 import { templateCatalogo } from "@/lib/template-catalog";
 
 const alvo = "docs/PENDENCIAS.md";
@@ -228,7 +228,56 @@ const contagem = {
   "SCHEMA CKO IMPLEMENTADO": paridade?.totais.IMPLEMENTADO ?? 0,
   "SCHEMA CKO AUSENTE": paridade?.totais.AUSENTE ?? 0,
 };
-const Area = { Gate: "Gate de release", Template: "Templates", "Politica CKO": "Politica CKO (CKO-POL-UT-001)", "Design system": "Design system", Conteudo: "Conteudo" };
+// ── 8. o caminho medido até a conclusão ─────────────────────────────────────
+const opa = spawnSync("opa", ["version"], { timeout: 1500, encoding: "utf8" });
+if (opa.status !== 0) {
+  itens.push({
+    area: "Conclusao",
+    titulo: "OPA executável",
+    estado: "AUSENTE",
+    detalhe: "O programa opa não responde. A decisão gravada continua opa=nao_executado e o pedido fica em_espera.",
+    evidencia: "scripts/ce-check.mjs",
+  });
+}
+const driftPath = "audit-evidence/ncos-canonical-source-lineage/schema-drift-delta.v1.json";
+if (existsSync(driftPath)) {
+  const drift = JSON.parse(readFileSync(driftPath, "utf8"));
+  if ((drift.totalEnumDrift ?? 0) > 0) {
+    itens.push({
+      area: "Conclusao",
+      titulo: "Contratos CKO fora do vocabulário",
+      estado: `${drift.totalEnumDrift} DIVERGENTES · ${drift.incompatibleEnumEntries?.length ?? 0} GRUPOS`,
+      detalhe: "Não reescrever o enum. Os maiores grupos são decision=BOUND, authority_class=CLINICAL e privacy_policy=NOT_APPLICABLE.",
+      evidencia: driftPath,
+    });
+  }
+}
+const mesa = readFileSync("src/lib/normative-desk.ts", "utf8");
+if (mesa.includes('id: "atomo", title: "Átomo", state: "Bloqueado"')) {
+  itens.push({
+    area: "Conclusao",
+    titulo: "Normativo transversal atômico",
+    estado: "BLOQUEADO",
+    detalhe: "Piloto de 3 átomos e 2 normas. A Resolução 545 está cortada. A 564 traz cabeçalho do Diário Oficial. ISO e ABNT ficam no identificador. A fórmula não nasce do átomo.",
+    evidencia: "src/lib/normative-desk.ts#lineageSteps",
+  });
+}
+itens.push({
+  area: "Conclusao",
+  titulo: "Quatro fichas normativas sem átomo",
+  estado: "ABERTAS DE PROPOSITO",
+  detalhe: "Código de ética sem número repetido, e duas resoluções da década de 80 sem ano. Sem número, não extrair.",
+  evidencia: "src/core/compliance/norm-card.test.ts",
+});
+itens.push({
+  area: "Conclusao",
+  titulo: "Admissão do kernel e conclusão da plataforma",
+  estado: "NAO CONCLUIDA",
+  detalhe: "Nenhuma migration grava kernel_order admitida. A etapa conclusao permanece falsa até existir pedido admitido por outra pessoa, com validador que passou e OPA executado. Publicar é outra ação.",
+  evidencia: "src/core/compliance/platform-conclusion.ts",
+});
+
+const Area = { Gate: "Gate de release", Template: "Templates", "Politica CKO": "Politica CKO (CKO-POL-UT-001)", "Design system": "Design system", Conteudo: "Conteudo", Conclusao: "Caminho ate a conclusao" };
 const porArea = {};
 for (const it of itens) (porArea[it.area] ??= []).push(it);
 
@@ -250,15 +299,10 @@ for (const [area, lista] of Object.entries(porArea)) {
   }
 }
 md += `## O que ja esta fechado\n\n`;
-md += `- Build de producao (\`build:spa\`) — 52 HTML, 53 arquivos materializados\n`;
-md += `- \`npx tsc --noEmit\` — limpo\n`;
-md += `- \`npm test\` — 187/187\n`;
-md += `- Gates de release — ${contagem["GATE VERDE"]}/${gates.length} verdes\n`;
-md += `- Contratos runtime — derivados do codigo, gate barra entidade sem contrato e contrato orfao\n`;
-md += `- Route Registry (UTC-051) — canonical e hreflang derivados do catalogo\n`;
-md += `- Sitemap — 41 URLs, gerado no prebuild, conferido pelo gate\n`;
-md += `- Aldrete — candidata, fora do indice, com os 7 HOLDs declarados\n`;
-md += `- Catalogo de 30 templates — cada um com kind, frame, nota e materia-prima declarados\n`;
+md += `Itens conferidos pelo arquivo que os prova. Contagem antiga de teste e de build não é repetida aqui porque não foi medida nesta geração.\n\n`;
+md += `- Amarração de arquivo — migrations/0092_amarracao_arquivo.sql. Arquivo rastreado não nasce canônico. Canônicos são só os oito tokens congelados.\n`;
+md += `- Bloqueio de camada — migrations/0091_camada_anterior.sql. Dado não entra se a camada anterior não tem tabela.\n`;
+md += `- Plano detalhado — docs/PLANO-ATE-CONCLUSAO.md\n`;
 
 writeFileSync(alvo, md);
 console.log(`PENDENCIAS.md escrito: ${itens.length} itens`);

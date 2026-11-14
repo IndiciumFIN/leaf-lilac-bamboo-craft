@@ -1,0 +1,3881 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "NCOS_INTEGRATED_CANDIDATE",
+  "source": "migrations/*.sql replayed in isolated PGlite; introspected via PostgreSQL pg_catalog",
+  "sourceDigest": "f5387d23d58bc315c2e3e765f28e33f617beac4359a5009e4709665df5f9adcd",
+  "sourceProvenance": [
+    {
+      "file": "migrations/0001_auth.sql",
+      "sha256": "f953cacc448c0c81ae4fe63e66b0e59569e840782ad279fdee201dff529363e9"
+    },
+    {
+      "file": "migrations/0002_source.sql",
+      "sha256": "d76c5b5f6ce15620a1b940f88c0b013452420b2fa75f635908c1bdd0f3fc9673"
+    },
+    {
+      "file": "migrations/0003_community.sql",
+      "sha256": "78618fcb19dbb9c25fffed998a47b5aded885b1903c3995c0346272c362e01fa"
+    },
+    {
+      "file": "migrations/0004_metamodel.sql",
+      "sha256": "5e7af4605fcde7cce3fbe50ee087fcfafe4183e19212a0cd026ca69b9e380f2a"
+    },
+    {
+      "file": "migrations/0005_controls.sql",
+      "sha256": "5d26d98282cbb5b3bed4519a8a974b36c7df47ef568fe1548d6ed62c6209a38e"
+    },
+    {
+      "file": "migrations/0006_governance.sql",
+      "sha256": "7443ceb145e3307c2b6516f1fc8462d1c1d1e523521de19f610c594b40c54eb8"
+    },
+    {
+      "file": "migrations/0007_policies.sql",
+      "sha256": "3bff912ff5fee35552f9fefda75cf0d73ecad4dd06f7be3d89c912154032e8af"
+    },
+    {
+      "file": "migrations/0008_canonical.sql",
+      "sha256": "d2ebf02f6cbcfc7e150dbbf72c4c911693772ef6504e058b3de18deb0e9b89c3"
+    },
+    {
+      "file": "migrations/0009_repo_policies.sql",
+      "sha256": "a79cadaba77686f9d79367e6f1bdf8a513422607571f81c3ee5a93c05923ebc8"
+    },
+    {
+      "file": "migrations/0010_command_center.sql",
+      "sha256": "257ccc27596f41f1f5f61250eaab88d04b3a78024f7e0db2d43622489aa24eee"
+    },
+    {
+      "file": "migrations/0011_command.sql",
+      "sha256": "ce7f685231fee15cf5b62bee578d2054d69584782b6deb64db6c8dfc21df7fc9"
+    },
+    {
+      "file": "migrations/0012_intake.sql",
+      "sha256": "df8260ccc99922ac0868e852ff5a5bb6e8c0ae3227377ec98824c61d07de7a8e"
+    },
+    {
+      "file": "migrations/0013_suggestion.sql",
+      "sha256": "9aba40ff13c55ded9d8d0bb6c56fa86f68926716cbe71c03a3ff4e71ebf658c8"
+    },
+    {
+      "file": "migrations/0014_site_route.sql",
+      "sha256": "137126e6b59b3f106a3073b90a7942784e819b08e2ae08139fe1c551adcbe629"
+    },
+    {
+      "file": "migrations/0015_site_route_body.sql",
+      "sha256": "b97f452edbc019f7d5cad4a436049dc664e40f0ad0761f918244f6039d93d61a"
+    },
+    {
+      "file": "migrations/0016_publish_routes.sql",
+      "sha256": "101fa4e9ba44748e8659431726f979a6585d6d663b5a1fba1c829661d6426ecf"
+    },
+    {
+      "file": "migrations/0017_publish_languages.sql",
+      "sha256": "24667ebd40f22669c50dab60dc4e5a73abf1ef47452490ff4b43e17228b81940"
+    },
+    {
+      "file": "migrations/0018_linked_bodies.sql",
+      "sha256": "4ebab265573329a93c00a8b62960a1e551a6a50215831c49bd0e03587f9185d2"
+    },
+    {
+      "file": "migrations/0019_canonical_route.sql",
+      "sha256": "07fd280ca4c1d33e09d60cddfd6eca993c41a1accdef3009d13b1ccdfffeb459"
+    },
+    {
+      "file": "migrations/0020_content_object.sql",
+      "sha256": "37448ac685e2b149924f9aee92677afa7c4bd32c0aa6fd20e4b3b0e752b4b870"
+    },
+    {
+      "file": "migrations/0021_content_kinds.sql",
+      "sha256": "f1d2a367b459a53e330c2f3814f693788c7ae2d2f367f1b9076ba901fc779f93"
+    },
+    {
+      "file": "migrations/0022_instrument_cover.sql",
+      "sha256": "5453068dfb8e541a6906160ec5f98faa96d647d53891f703a92715bc72b39c24"
+    },
+    {
+      "file": "migrations/0023_stored_sheets.sql",
+      "sha256": "206678077015e6966f6b2087e3035f0449c78f94f0cd3b380ab28a70340e06a4"
+    },
+    {
+      "file": "migrations/0024_page_from_object.sql",
+      "sha256": "6d1617fe9b4f6ffa0a98f382c749c141492915f915fbe6c4d3f8180aa732b918"
+    },
+    {
+      "file": "migrations/0025_dictionary.sql",
+      "sha256": "30a62e1a615ab4af1d1fc91b0b61b1eafc15dce12bebc4793cc03c54ed7a32a4"
+    },
+    {
+      "file": "migrations/0026_control_plane.sql",
+      "sha256": "105a27c3f8abb3f0e0ce8ab73d0a152d5dc4ca00ba3a383c0d05578fb75444d9"
+    },
+    {
+      "file": "migrations/0027_kernel_admission.sql",
+      "sha256": "936fa36abbf45fd1ac435a44b6f41c1803cb5f75ae798ef7bf3caa08ce765415"
+    },
+    {
+      "file": "migrations/0028_order_policy_rules.sql",
+      "sha256": "f3b87a0f4164d735ad982ab4180ee13472324dde18f76c7e4a0086efe735ec9e"
+    },
+    {
+      "file": "migrations/0029_retire_duplicates.sql",
+      "sha256": "112d5b0977e0d1e44f4e848ea5bcc7ee77dc771794ffac4d323df46446b96640"
+    },
+    {
+      "file": "migrations/0030_stored_files.sql",
+      "sha256": "1e51e4169801e4df512db9734ae978a19c2e41362648760216cc7e6ead7fb95a"
+    },
+    {
+      "file": "migrations/0031_nav_tone.sql",
+      "sha256": "e73d6437f2db69ac9f8aacd8afe8a4fb9a342259da7a9882ab84e0cfbe66b596"
+    },
+    {
+      "file": "migrations/0032_public_files.sql",
+      "sha256": "af0a856451ed8418a2cbdea14733cffaee5abeed6dc43c7a34de077eaab16caf"
+    },
+    {
+      "file": "migrations/0033_cross_keys.sql",
+      "sha256": "c7e1fc228b6ffa415bfc87f6510b4151af4d63ad96444b53c81bdc4446e656a5"
+    },
+    {
+      "file": "migrations/0034_ops_record.sql",
+      "sha256": "b297f111600261d558698d9fd8b6c007a1aff0c269236b45d5d753b43f5ad8cd"
+    },
+    {
+      "file": "migrations/0035_canonical_gaps.sql",
+      "sha256": "e80c4799d3f7421afdebda6c510026659a1de8ddfff9f29bfaf88f5f5d5e1463"
+    },
+    {
+      "file": "migrations/0036_repo_intake.sql",
+      "sha256": "124f9139e8aa99f7f057cd584ad6e9ab059cb10aaa78eb37c2bd4c43d0cf772e"
+    },
+    {
+      "file": "migrations/0037_slug_e_alt.sql",
+      "sha256": "167cd05e3df81dfc7bf66bfe2c2bf1e805a3c59c5378bcff05c6c7f059cd7824"
+    },
+    {
+      "file": "migrations/0038_media_alt.sql",
+      "sha256": "ba894950ec440de273eb211ad9d5ec19656016604a1525544c63cf991683438b"
+    },
+    {
+      "file": "migrations/0039_media_alt_locale.sql",
+      "sha256": "08c21d30e3e7836564460f53a2fa773489403a3f839371392394cf9807118284"
+    },
+    {
+      "file": "migrations/0040_aprovacao_humana.sql",
+      "sha256": "aa583a88559b372b87e120ed105f2c906f89c3d656e25b337d5bbe1906183df7"
+    },
+    {
+      "file": "migrations/0041_editorial_study.sql",
+      "sha256": "16c1e06c8e3bb957a1e7fe9f3cfc5f14708324c9842c9ccf582dca6ea5815830"
+    },
+    {
+      "file": "migrations/0042_library_shelves.sql",
+      "sha256": "dfe9bddafd78296832e836cac4f2d65957d2d8ddac2ff9106174dcf64e2a761c"
+    },
+    {
+      "file": "migrations/0043_section_shelves.sql",
+      "sha256": "84572b1cb9e9022f8c1d37fa1bde8cb71a503b9ba28589660e238abbb41ca268"
+    },
+    {
+      "file": "migrations/0044_anatomy_plates.sql",
+      "sha256": "c13c5e2ed5171afa5b12d21643a0d8f7cf6a457a0e52b16584ba694564b909cf"
+    },
+    {
+      "file": "migrations/0045_heart_sheet.sql",
+      "sha256": "38dabe8515e33828c60bb77744eba216692b97b6677d8b44716bb038afa87779"
+    },
+    {
+      "file": "migrations/0046_template_contract.sql",
+      "sha256": "75a9a8f603ec397a643417b14f2a6790981e70eb91d388f73e53ea71d67ee3ae"
+    },
+    {
+      "file": "migrations/0047_recovered_templates.sql",
+      "sha256": "b1598073033911d958140a1a8c678468861ab004449cb75fbe648e930054de0a"
+    },
+    {
+      "file": "migrations/0048_backup_routes.sql",
+      "sha256": "9177f90557442feeda7685fd79cf89f2217d44652b98e91f5bb2fec985714111"
+    },
+    {
+      "file": "migrations/0049_learn_nav.sql",
+      "sha256": "bf9b979e4ffeda9e02c0e343a88e286faae49bb631970c5431d34df8e90bcb48"
+    },
+    {
+      "file": "migrations/0050_simulado_vila.sql",
+      "sha256": "975bb4c820042fc32532af1f6c6b99aa3cf53cd8237bf88adbc6f9120c5e3a8a"
+    },
+    {
+      "file": "migrations/0051_study_bank.sql",
+      "sha256": "d8f8e22abd0c74ee8e63152e1d824435990d1d657c7cbce7ff5272bcf26d12e8"
+    },
+    {
+      "file": "migrations/0052_normalize_study.sql",
+      "sha256": "f410ebf5657bcfa5ac23b27f8604b195f6fafd587caacff36f2f137d5008a431"
+    },
+    {
+      "file": "migrations/0053_repo_branch.sql",
+      "sha256": "39862fdcfa77b40d9a3fc4dbb12ce989d8d6b7d203fa5abdcb5a7a7a4aace991"
+    },
+    {
+      "file": "migrations/0054_reverter_aprovacao_em_lote.sql",
+      "sha256": "15ecdf203567621fffbdb23744cce3bf01141eb64d85b4e7402b85acce5d0e40"
+    },
+    {
+      "file": "migrations/0055_intake_fora_do_git.sql",
+      "sha256": "3b60813cf5df4871ee01a3ce4c4f153558a537dfe2155da83c119e5817fd7887"
+    },
+    {
+      "file": "migrations/0056_kernel_independente.sql",
+      "sha256": "f474161332a052ae38c20eb590d6ba03fe992ac9004148a030ab1ccd5eac0f8a"
+    },
+    {
+      "file": "migrations/0057_leitura_isolada.sql",
+      "sha256": "a1b58ea637a9feb50bb15767f3151bab05a9015923b9fbada4a2a0b87dc4c129"
+    },
+    {
+      "file": "migrations/0058_leitura_publica.sql",
+      "sha256": "4f1bb91ac3b5a4f22e53f6e7288e468ff8453fd3e2ab44fba56c41dc65675d31"
+    },
+    {
+      "file": "migrations/0059_exam_intake.sql",
+      "sha256": "5c166a518311d0bb235746c5958162c5fdf4f86550f18df06f5edc7a97dcc5e3"
+    },
+    {
+      "file": "migrations/0060_catalogo_biblioteca.sql",
+      "sha256": "7c8c363f2a1127d686a518d0541c69e7c47d37a32390586a084654d6d0b58970"
+    },
+    {
+      "file": "migrations/0061_suporte_iso.sql",
+      "sha256": "fe28ec049d2afeea07e6d76042fec80c4604346010a8e0ab96f49e409f23f0e1"
+    },
+    {
+      "file": "migrations/0062_documento_arredondamento.sql",
+      "sha256": "16548acc8187f461e6e258e79ad26f786a3eaec5ba798875a2eb18aee9c445a5"
+    },
+    {
+      "file": "migrations/0063_formula_dicionario.sql",
+      "sha256": "c3f7b5a4105134db66b14b975971c9e1ae0767a6083fdfa2f24b06508be0590d"
+    },
+    {
+      "file": "migrations/0064_identidade.sql",
+      "sha256": "db47a181c23f4b5b16fec8e80ae338e9afc82e8615ef6dda6c5ac4273644640a"
+    },
+    {
+      "file": "migrations/0065_acesso.sql",
+      "sha256": "9020438cd44de49f0f6e01c9770c3306421b8a88ecdb5b1cea9bf5d524c660aa"
+    },
+    {
+      "file": "migrations/0066_pedido_pessoa.sql",
+      "sha256": "15c71721ba1dc9268dffbcc0caeb80cc91d3db44b04fc92718046832e96a6433"
+    },
+    {
+      "file": "migrations/0067_processo_espinha.sql",
+      "sha256": "24e53ae0f9428490e1134c603ab156c4d06bb41b8761ec09569c1a49eee98e4d"
+    },
+    {
+      "file": "migrations/0068_metadado.sql",
+      "sha256": "25b6fb04c3f55e880283305368a0f45dedb0534dd88c5c9a67ad8bdc55743585"
+    },
+    {
+      "file": "migrations/0069_sincronia_dicionario.sql",
+      "sha256": "e1a53d24479242fab4cd0fa154fed300384cf29f4075a3bf1b2a4091d5419fb3"
+    },
+    {
+      "file": "migrations/0070_processo_resto.sql",
+      "sha256": "7fd300bad125b808bf104c8e9abdeeb9bccf69b217c3ca420d892f4d4d29a136"
+    },
+    {
+      "file": "migrations/0071_conteudo.sql",
+      "sha256": "6424c73072ee5f8fc01149824ff1e3299656a1c2552a34a20a96bbc3b53f885b"
+    },
+    {
+      "file": "migrations/0072_clinico.sql",
+      "sha256": "c2d50d7e4b8eb604dc2dc5d75903c3ee4365d5c5572d6e593deae3b228a3bdb3"
+    },
+    {
+      "file": "migrations/0073_conteudo_canonico.sql",
+      "sha256": "db9746d06e674de44ffbd705c40cf445373913e5500129850169bf5d6aca79ff"
+    },
+    {
+      "file": "migrations/0074_registro_normativo.sql",
+      "sha256": "db05420b50fd98ee3235cb03069a0b46044421ff29d4525f166b85b2506ff4b7"
+    },
+    {
+      "file": "migrations/0075_metamodelo_normativo.sql",
+      "sha256": "65d4349fa1604d9b4ea2c8e5e7a522e80805ad9703a3d92a640bc8197cc8391a"
+    },
+    {
+      "file": "migrations/0076_vinculo_normativo.sql",
+      "sha256": "d8d0cfa9f32817ce12381c15136307b4ab20cc878e05888b7eb7f64053cbab4a"
+    },
+    {
+      "file": "migrations/0077_citacao_encontrada.sql",
+      "sha256": "e488ea52e567305b360cdb81fe54c41d61e423da56be142450e1503fc321fbdb"
+    },
+    {
+      "file": "migrations/0078_biblioteca_arquivo.sql",
+      "sha256": "df35beaa83e6debbcaf178639e9899536da7f49c7932cf77e639c5654c085335"
+    },
+    {
+      "file": "migrations/0079_biblioteca_imagem.sql",
+      "sha256": "ca3de432db93f1a55e4ffbeda7d7c4ccce0f77ab205e201448424d3c8029822f"
+    },
+    {
+      "file": "migrations/0080_citacao_numero_ano.sql",
+      "sha256": "b7ac966012a161a00c112cb4385b2acacf65e36c5a631946e770ad69d587489e"
+    },
+    {
+      "file": "migrations/0081_ficha_normativa.sql",
+      "sha256": "36a3a3cdcc190c858baaaf54dc8382e3af1f82b7134e4ad9c442c72f17440c30"
+    },
+    {
+      "file": "migrations/0082_citacao_familia.sql",
+      "sha256": "aee379c2374a5b283e451ae25c5ba9a955b3771330a2ffb678f7d75b7a05e01d"
+    },
+    {
+      "file": "migrations/0083_candidato_carreira.sql",
+      "sha256": "4ec71e5ebc85e39dd65e12498fe96cc263f296d70a711ad80cb71620912633d5"
+    },
+    {
+      "file": "migrations/0084_linhas_candidatas.sql",
+      "sha256": "14f77a77eee37df2cdc8699079185cfb1269cfe34e8a26aba5b78fb042771be8"
+    },
+    {
+      "file": "migrations/0085_carreira_fundamento.sql",
+      "sha256": "fa8e1685dd4844c4624166bf2490d2161620aaf147c224067518ed47f7b4f563"
+    },
+    {
+      "file": "migrations/0087_dicionario_candidato.sql",
+      "sha256": "544c68326e5972c76da3118044fae35cf0d39804cf1db3b26032551ab22fc773"
+    },
+    {
+      "file": "migrations/0088_extracao_governada.sql",
+      "sha256": "b42036baacd7bb038ceb7403f55897b915920331ceeefe8ab8c55db7e4af22f7"
+    },
+    {
+      "file": "migrations/0089_validacao_normativa.sql",
+      "sha256": "480a0afbd04e64b6bc7ceeb197a834f5c64fc16548fe9d569abb35c9e0ac5eeb"
+    },
+    {
+      "file": "migrations/0090_mestre_kernel.sql",
+      "sha256": "93a1c80d403ecea9c4eaf93aa81e46fe0c644aa19770b22cbae1994800f40811"
+    },
+    {
+      "file": "migrations/0091_camada_anterior.sql",
+      "sha256": "8a0a59545b004b9db3edd85919980f388231e9cbb19953fbca495777539a93bb"
+    },
+    {
+      "file": "migrations/0092_amarracao_arquivo.sql",
+      "sha256": "985d3a951a4272b576a0b35b985c0a756d5ab2c38ea11b3bfd1735a5c87dddf6"
+    },
+    {
+      "file": "migrations/0093_regra_da_decisao.sql",
+      "sha256": "7b83af3107c79bcbbfd50904e0f3ffa5012a8f24a94a01ddbc6b289dde0a9266"
+    }
+  ],
+  "sourceSha": null,
+  "approved": false,
+  "productionVerified": false,
+  "releaseGate": "SCHEMA_STATIC_PASS_NOT_RELEASE",
+  "kind": "RELATIONSHIP_GRAPH",
+  "physicalForeignKeys": [
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "account",
+      "parent": "user",
+      "childColumns": [
+        "userId"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "account_userId_fkey",
+      "definition": "FOREIGN KEY (\"userId\") REFERENCES \"user\"(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "activity_event",
+      "parent": "policy_decision",
+      "childColumns": [
+        "decision_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "activity_event_decision_id_fkey",
+      "definition": "FOREIGN KEY (decision_id) REFERENCES policy_decision(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "agent_basis",
+      "parent": "agent",
+      "childColumns": [
+        "agent_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "agent_basis_agent_id_fkey",
+      "definition": "FOREIGN KEY (agent_id) REFERENCES agent(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "agent_check",
+      "parent": "agent",
+      "childColumns": [
+        "agent_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "agent_check_agent_id_fkey",
+      "definition": "FOREIGN KEY (agent_id) REFERENCES agent(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "agent_rule",
+      "parent": "agent",
+      "childColumns": [
+        "agent_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "agent_rule_agent_id_fkey",
+      "definition": "FOREIGN KEY (agent_id) REFERENCES agent(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "ai_control",
+      "parent": "ai_principle",
+      "childColumns": [
+        "principle_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "ai_control_principle_id_fkey",
+      "definition": "FOREIGN KEY (principle_id) REFERENCES ai_principle(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "business_rule",
+      "parent": "schema_entity",
+      "childColumns": [
+        "from_entity"
+      ],
+      "parentColumns": [
+        "name"
+      ],
+      "name": "business_rule_from_entity_fkey",
+      "definition": "FOREIGN KEY (from_entity) REFERENCES schema_entity(name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "business_rule",
+      "parent": "schema_entity",
+      "childColumns": [
+        "to_entity"
+      ],
+      "parentColumns": [
+        "name"
+      ],
+      "name": "business_rule_to_entity_fkey",
+      "definition": "FOREIGN KEY (to_entity) REFERENCES schema_entity(name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_application_candidate",
+      "parent": "career_profile_candidate",
+      "childColumns": [
+        "participant_key"
+      ],
+      "parentColumns": [
+        "participant_key"
+      ],
+      "name": "career_application_candidate_participant_key_fkey",
+      "definition": "FOREIGN KEY (participant_key) REFERENCES career_profile_candidate(participant_key)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_atomic_fact_candidate",
+      "parent": "career_source_fragment_candidate",
+      "childColumns": [
+        "fragment_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_atomic_fact_candidate_fragment_id_fkey",
+      "definition": "FOREIGN KEY (fragment_id) REFERENCES career_source_fragment_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_atomic_fact_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_atomic_fact_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_authority_binding_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_authority_binding_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_claim_candidate",
+      "parent": "career_atomic_fact_candidate",
+      "childColumns": [
+        "atomic_fact_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_claim_candidate_atomic_fact_id_fkey",
+      "definition": "FOREIGN KEY (atomic_fact_id) REFERENCES career_atomic_fact_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_content_claim_binding_candidate",
+      "parent": "career_claim_candidate",
+      "childColumns": [
+        "claim_id"
+      ],
+      "parentColumns": [
+        "canonical_id"
+      ],
+      "name": "career_content_claim_binding_candidate_claim_id_fkey",
+      "definition": "FOREIGN KEY (claim_id) REFERENCES career_claim_candidate(canonical_id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_content_claim_binding_candidate",
+      "parent": "career_editorial_document_candidate",
+      "childColumns": [
+        "document_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_content_claim_binding_candidate_document_id_fkey",
+      "definition": "FOREIGN KEY (document_id) REFERENCES career_editorial_document_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_editorial_block_candidate",
+      "parent": "career_editorial_document_candidate",
+      "childColumns": [
+        "document_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_editorial_block_candidate_document_id_fkey",
+      "definition": "FOREIGN KEY (document_id) REFERENCES career_editorial_document_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_editorial_document_candidate",
+      "parent": "career_editorial_candidate",
+      "childColumns": [
+        "editorial_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_editorial_document_candidate_editorial_id_fkey",
+      "definition": "FOREIGN KEY (editorial_id) REFERENCES career_editorial_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_atomic_fact_candidate",
+      "childColumns": [
+        "atomic_fact_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_evidence_bundle_candidate_atomic_fact_id_fkey",
+      "definition": "FOREIGN KEY (atomic_fact_id) REFERENCES career_atomic_fact_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_claim_candidate",
+      "childColumns": [
+        "claim_id"
+      ],
+      "parentColumns": [
+        "canonical_id"
+      ],
+      "name": "career_evidence_bundle_candidate_claim_id_fkey",
+      "definition": "FOREIGN KEY (claim_id) REFERENCES career_claim_candidate(canonical_id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_source_fragment_candidate",
+      "childColumns": [
+        "fragment_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_evidence_bundle_candidate_fragment_id_fkey",
+      "definition": "FOREIGN KEY (fragment_id) REFERENCES career_source_fragment_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_evidence_bundle_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_ingestion_run_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_ingestion_run_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_learning_resource_candidate",
+      "parent": "career_ingestion_run_candidate",
+      "childColumns": [
+        "ingestion_run_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_learning_resource_candidate_ingestion_run_id_fkey",
+      "definition": "FOREIGN KEY (ingestion_run_id) REFERENCES career_ingestion_run_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_learning_resource_candidate",
+      "parent": "career_learning_resource_type_candidate",
+      "childColumns": [
+        "resource_type_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_learning_resource_candidate_resource_type_id_fkey",
+      "definition": "FOREIGN KEY (resource_type_id) REFERENCES career_learning_resource_type_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_learning_resource_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_learning_resource_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_market_observation_candidate",
+      "parent": "career_ingestion_run_candidate",
+      "childColumns": [
+        "ingestion_run_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_market_observation_candidate_ingestion_run_id_fkey",
+      "definition": "FOREIGN KEY (ingestion_run_id) REFERENCES career_ingestion_run_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_market_observation_candidate",
+      "parent": "career_role_candidate",
+      "childColumns": [
+        "role_ref"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_market_observation_candidate_role_ref_fkey",
+      "definition": "FOREIGN KEY (role_ref) REFERENCES career_role_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_market_observation_candidate",
+      "parent": "career_market_signal_candidate",
+      "childColumns": [
+        "signal_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_market_observation_candidate_signal_id_fkey",
+      "definition": "FOREIGN KEY (signal_id) REFERENCES career_market_signal_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_market_observation_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_market_observation_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_market_signal_candidate",
+      "parent": "career_role_candidate",
+      "childColumns": [
+        "role_ref"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_market_signal_candidate_role_ref_fkey",
+      "definition": "FOREIGN KEY (role_ref) REFERENCES career_role_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_milestone_candidate",
+      "parent": "career_profile_candidate",
+      "childColumns": [
+        "participant_key"
+      ],
+      "parentColumns": [
+        "participant_key"
+      ],
+      "name": "career_milestone_candidate_participant_key_fkey",
+      "definition": "FOREIGN KEY (participant_key) REFERENCES career_profile_candidate(participant_key)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_opportunity_candidate",
+      "parent": "career_ingestion_run_candidate",
+      "childColumns": [
+        "ingestion_run_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_opportunity_candidate_ingestion_run_id_fkey",
+      "definition": "FOREIGN KEY (ingestion_run_id) REFERENCES career_ingestion_run_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_opportunity_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_opportunity_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_opportunity_candidate",
+      "parent": "career_opportunity_type_candidate",
+      "childColumns": [
+        "type_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_opportunity_candidate_type_id_fkey",
+      "definition": "FOREIGN KEY (type_id) REFERENCES career_opportunity_type_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_path_step_candidate",
+      "parent": "career_path_candidate",
+      "childColumns": [
+        "path_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_path_step_candidate_path_id_fkey",
+      "definition": "FOREIGN KEY (path_id) REFERENCES career_path_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_profile_candidate",
+      "parent": "career_role_candidate",
+      "childColumns": [
+        "target_role_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_profile_candidate_target_role_id_fkey",
+      "definition": "FOREIGN KEY (target_role_id) REFERENCES career_role_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_profile_credential_candidate",
+      "parent": "career_credential_candidate",
+      "childColumns": [
+        "credential_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_profile_credential_candidate_credential_id_fkey",
+      "definition": "FOREIGN KEY (credential_id) REFERENCES career_credential_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_profile_credential_candidate",
+      "parent": "career_profile_candidate",
+      "childColumns": [
+        "participant_key"
+      ],
+      "parentColumns": [
+        "participant_key"
+      ],
+      "name": "career_profile_credential_candidate_participant_key_fkey",
+      "definition": "FOREIGN KEY (participant_key) REFERENCES career_profile_candidate(participant_key)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_profile_skill_candidate",
+      "parent": "career_profile_candidate",
+      "childColumns": [
+        "participant_key"
+      ],
+      "parentColumns": [
+        "participant_key"
+      ],
+      "name": "career_profile_skill_candidate_participant_key_fkey",
+      "definition": "FOREIGN KEY (participant_key) REFERENCES career_profile_candidate(participant_key)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_profile_skill_candidate",
+      "parent": "career_skill_candidate",
+      "childColumns": [
+        "skill_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_profile_skill_candidate_skill_id_fkey",
+      "definition": "FOREIGN KEY (skill_id) REFERENCES career_skill_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_projection_item_candidate",
+      "parent": "career_module_candidate",
+      "childColumns": [
+        "module_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_projection_item_candidate_module_id_fkey",
+      "definition": "FOREIGN KEY (module_id) REFERENCES career_module_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_projection_item_candidate",
+      "parent": "career_projection_candidate",
+      "childColumns": [
+        "projection_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_projection_item_candidate_projection_id_fkey",
+      "definition": "FOREIGN KEY (projection_id) REFERENCES career_projection_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_role_skill_candidate",
+      "parent": "career_role_candidate",
+      "childColumns": [
+        "role_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_role_skill_candidate_role_id_fkey",
+      "definition": "FOREIGN KEY (role_id) REFERENCES career_role_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_role_skill_candidate",
+      "parent": "career_skill_candidate",
+      "childColumns": [
+        "skill_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_role_skill_candidate_skill_id_fkey",
+      "definition": "FOREIGN KEY (skill_id) REFERENCES career_skill_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_source_candidate",
+      "parent": "fundamento",
+      "childColumns": [
+        "fundamento_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_source_candidate_fundamento_id_fkey",
+      "definition": "FOREIGN KEY (fundamento_id) REFERENCES fundamento(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "career_source_fragment_candidate",
+      "parent": "career_source_candidate",
+      "childColumns": [
+        "source_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "career_source_fragment_candidate_source_id_fkey",
+      "definition": "FOREIGN KEY (source_id) REFERENCES career_source_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "catalog_item",
+      "parent": "screen_dest",
+      "childColumns": [
+        "dest_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "catalog_item_dest_fkey",
+      "definition": "FOREIGN KEY (dest_id) REFERENCES screen_dest(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "chrome_label",
+      "parent": "locale",
+      "childColumns": [
+        "locale"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "chrome_label_locale_fkey",
+      "definition": "FOREIGN KEY (locale) REFERENCES locale(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "cmd_command",
+      "parent": "work_order",
+      "childColumns": [
+        "work_order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "cmd_command_work_order_id_fkey",
+      "definition": "FOREIGN KEY (work_order_id) REFERENCES work_order(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "cmd_event",
+      "parent": "cmd_run",
+      "childColumns": [
+        "run_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "cmd_event_run_id_fkey",
+      "definition": "FOREIGN KEY (run_id) REFERENCES cmd_run(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "cmd_run",
+      "parent": "cmd_command",
+      "childColumns": [
+        "command_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "cmd_run_command_id_fkey",
+      "definition": "FOREIGN KEY (command_id) REFERENCES cmd_command(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "cmd_run",
+      "parent": "work_order",
+      "childColumns": [
+        "work_order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "cmd_run_work_order_id_fkey",
+      "definition": "FOREIGN KEY (work_order_id) REFERENCES work_order(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "community_post",
+      "parent": "user",
+      "childColumns": [
+        "user_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "community_post_user_fkey",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_alias",
+      "parent": "locale",
+      "childColumns": [
+        "locale"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "content_alias_locale_fkey",
+      "definition": "FOREIGN KEY (locale) REFERENCES locale(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_alias",
+      "parent": "content_object",
+      "childColumns": [
+        "slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "content_alias_slug_fkey",
+      "definition": "FOREIGN KEY (slug) REFERENCES content_object(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_atom",
+      "parent": "fundamento",
+      "childColumns": [
+        "fundamento_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "content_atom_fundamento_id_fkey",
+      "definition": "FOREIGN KEY (fundamento_id) REFERENCES fundamento(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_atom",
+      "parent": "tool_reference",
+      "childColumns": [
+        "reference_tool",
+        "reference_position"
+      ],
+      "parentColumns": [
+        "tool_slug",
+        "position"
+      ],
+      "name": "content_atom_reference_tool_reference_position_fkey",
+      "definition": "FOREIGN KEY (reference_tool, reference_position) REFERENCES tool_reference(tool_slug, \"position\")",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_atom",
+      "parent": "content_object",
+      "childColumns": [
+        "slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "content_atom_slug_fkey",
+      "definition": "FOREIGN KEY (slug) REFERENCES content_object(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_atom",
+      "parent": "editorial_template",
+      "childColumns": [
+        "template_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "content_atom_template_id_fkey",
+      "definition": "FOREIGN KEY (template_id) REFERENCES editorial_template(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_atom",
+      "parent": "editorial_line",
+      "childColumns": [
+        "template_id",
+        "line_position"
+      ],
+      "parentColumns": [
+        "template_id",
+        "position"
+      ],
+      "name": "content_atom_template_id_line_position_fkey",
+      "definition": "FOREIGN KEY (template_id, line_position) REFERENCES editorial_line(template_id, \"position\")",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_object",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "content_object_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_place",
+      "parent": "inst_page",
+      "childColumns": [
+        "inst_path"
+      ],
+      "parentColumns": [
+        "path"
+      ],
+      "name": "content_place_inst_path_fkey",
+      "definition": "FOREIGN KEY (inst_path) REFERENCES inst_page(path)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_place",
+      "parent": "content_object",
+      "childColumns": [
+        "object_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "content_place_object_fkey",
+      "definition": "FOREIGN KEY (object_slug) REFERENCES content_object(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_place",
+      "parent": "section_page",
+      "childColumns": [
+        "section_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "content_place_section_slug_fkey",
+      "definition": "FOREIGN KEY (section_slug) REFERENCES section_page(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_text",
+      "parent": "locale",
+      "childColumns": [
+        "locale"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "content_text_locale_fkey",
+      "definition": "FOREIGN KEY (locale) REFERENCES locale(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "content_text",
+      "parent": "content_object",
+      "childColumns": [
+        "slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "content_text_slug_fkey",
+      "definition": "FOREIGN KEY (slug) REFERENCES content_object(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "document_version",
+      "parent": "governance_item",
+      "childColumns": [
+        "item_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "document_version_item_id_fkey",
+      "definition": "FOREIGN KEY (item_id) REFERENCES governance_item(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "editorial_line",
+      "parent": "editorial_template",
+      "childColumns": [
+        "template_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "editorial_line_template_id_fkey",
+      "definition": "FOREIGN KEY (template_id) REFERENCES editorial_template(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "exam_key_intake",
+      "parent": "exam_option_intake",
+      "childColumns": [
+        "question_id",
+        "correct_letter_norm"
+      ],
+      "parentColumns": [
+        "question_id",
+        "letter_norm"
+      ],
+      "name": "exam_key_intake_question_id_correct_letter_norm_fkey",
+      "definition": "FOREIGN KEY (question_id, correct_letter_norm) REFERENCES exam_option_intake(question_id, letter_norm)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "exam_key_intake",
+      "parent": "exam_question_intake",
+      "childColumns": [
+        "question_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "exam_key_intake_question_id_fkey",
+      "definition": "FOREIGN KEY (question_id) REFERENCES exam_question_intake(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "exam_option_intake",
+      "parent": "exam_question_intake",
+      "childColumns": [
+        "question_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "exam_option_intake_question_id_fkey",
+      "definition": "FOREIGN KEY (question_id) REFERENCES exam_question_intake(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "exam_question_intake",
+      "parent": "exam_intake",
+      "childColumns": [
+        "exam_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "exam_question_intake_exam_id_fkey",
+      "definition": "FOREIGN KEY (exam_id) REFERENCES exam_intake(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "fundamento",
+      "parent": "governance_item",
+      "childColumns": [
+        "support_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "fundamento_support_id_fkey",
+      "definition": "FOREIGN KEY (support_id) REFERENCES governance_item(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "inst_child",
+      "parent": "inst_page",
+      "childColumns": [
+        "child_path"
+      ],
+      "parentColumns": [
+        "path"
+      ],
+      "name": "inst_child_child_fkey",
+      "definition": "FOREIGN KEY (child_path) REFERENCES inst_page(path)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "inst_child",
+      "parent": "inst_page",
+      "childColumns": [
+        "path"
+      ],
+      "parentColumns": [
+        "path"
+      ],
+      "name": "inst_child_path_fkey",
+      "definition": "FOREIGN KEY (path) REFERENCES inst_page(path)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "inst_section",
+      "parent": "inst_page",
+      "childColumns": [
+        "path"
+      ],
+      "parentColumns": [
+        "path"
+      ],
+      "name": "inst_section_path_fkey",
+      "definition": "FOREIGN KEY (path) REFERENCES inst_page(path)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "intake_file",
+      "parent": "intake_batch",
+      "childColumns": [
+        "batch_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "intake_file_batch_id_fkey",
+      "definition": "FOREIGN KEY (batch_id) REFERENCES intake_batch(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "intake_file",
+      "parent": "locale",
+      "childColumns": [
+        "locale"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "intake_file_locale_fkey",
+      "definition": "FOREIGN KEY (locale) REFERENCES locale(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_claim",
+      "parent": "kernel_atom",
+      "childColumns": [
+        "atom_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_claim_atom_id_fkey",
+      "definition": "FOREIGN KEY (atom_id) REFERENCES kernel_atom(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_evidence",
+      "parent": "kernel_claim",
+      "childColumns": [
+        "claim_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_evidence_claim_id_fkey",
+      "definition": "FOREIGN KEY (claim_id) REFERENCES kernel_claim(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_manifest",
+      "parent": "kernel_order",
+      "childColumns": [
+        "order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_manifest_order_id_fkey",
+      "definition": "FOREIGN KEY (order_id) REFERENCES kernel_order(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_order",
+      "parent": "user",
+      "childColumns": [
+        "approver_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_order_approver_user_fkey",
+      "definition": "FOREIGN KEY (approver_id) REFERENCES \"user\"(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_order",
+      "parent": "user",
+      "childColumns": [
+        "owner_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_order_owner_user_fkey",
+      "definition": "FOREIGN KEY (owner_id) REFERENCES \"user\"(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_order_criterion",
+      "parent": "kernel_order",
+      "childColumns": [
+        "order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_order_criterion_order_id_fkey",
+      "definition": "FOREIGN KEY (order_id) REFERENCES kernel_order(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_order_policy",
+      "parent": "kernel_order",
+      "childColumns": [
+        "order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_order_policy_order_id_fkey",
+      "definition": "FOREIGN KEY (order_id) REFERENCES kernel_order(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_order_policy",
+      "parent": "policy_rule",
+      "childColumns": [
+        "package_id",
+        "rule_id"
+      ],
+      "parentColumns": [
+        "package_id",
+        "id"
+      ],
+      "name": "kernel_order_policy_package_id_rule_id_fkey",
+      "definition": "FOREIGN KEY (package_id, rule_id) REFERENCES policy_rule(package_id, id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "kernel_validator",
+      "parent": "kernel_order",
+      "childColumns": [
+        "order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "kernel_validator_order_id_fkey",
+      "definition": "FOREIGN KEY (order_id) REFERENCES kernel_order(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "library_item",
+      "parent": "library_shelf",
+      "childColumns": [
+        "shelf_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "library_item_shelf_id_fkey",
+      "definition": "FOREIGN KEY (shelf_id) REFERENCES library_shelf(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "master_binding",
+      "parent": "fundamento",
+      "childColumns": [
+        "fundamento_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "master_binding_fundamento_id_fkey",
+      "definition": "FOREIGN KEY (fundamento_id) REFERENCES fundamento(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "master_binding",
+      "parent": "kernel_order",
+      "childColumns": [
+        "order_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "master_binding_order_id_fkey",
+      "definition": "FOREIGN KEY (order_id) REFERENCES kernel_order(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "media_alt",
+      "parent": "locale",
+      "childColumns": [
+        "locale"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "media_alt_locale_fkey",
+      "definition": "FOREIGN KEY (locale) REFERENCES locale(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "media_alt",
+      "parent": "media_asset",
+      "childColumns": [
+        "path"
+      ],
+      "parentColumns": [
+        "path"
+      ],
+      "name": "media_alt_path_fkey",
+      "definition": "FOREIGN KEY (path) REFERENCES media_asset(path)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "member",
+      "parent": "user",
+      "childColumns": [
+        "user_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "member_user_fkey",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "metadata_element",
+      "parent": "schema_domain",
+      "childColumns": [
+        "domain_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "metadata_element_domain_id_fkey",
+      "definition": "FOREIGN KEY (domain_id) REFERENCES schema_domain(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "metadata_element",
+      "parent": "schema_column",
+      "childColumns": [
+        "entity",
+        "name"
+      ],
+      "parentColumns": [
+        "entity",
+        "name"
+      ],
+      "name": "metadata_element_entity_name_fkey",
+      "definition": "FOREIGN KEY (entity, name) REFERENCES schema_column(entity, name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "metadata_element",
+      "parent": "data_specification",
+      "childColumns": [
+        "specification_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "metadata_element_specification_id_fkey",
+      "definition": "FOREIGN KEY (specification_id) REFERENCES data_specification(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "metadata_element",
+      "parent": "governance_item",
+      "childColumns": [
+        "support_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "metadata_element_support_id_fkey",
+      "definition": "FOREIGN KEY (support_id) REFERENCES governance_item(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "nav_item",
+      "parent": "screen_dest",
+      "childColumns": [
+        "dest_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "nav_item_dest_fkey",
+      "definition": "FOREIGN KEY (dest_id) REFERENCES screen_dest(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "nav_item",
+      "parent": "nav_item",
+      "childColumns": [
+        "parent_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "nav_item_parent_fkey",
+      "definition": "FOREIGN KEY (parent_id) REFERENCES nav_item(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "normative_link",
+      "parent": "normative_asset",
+      "childColumns": [
+        "asset_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "normative_link_asset_id_fkey",
+      "definition": "FOREIGN KEY (asset_id) REFERENCES normative_asset(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "normative_link",
+      "parent": "content_atom",
+      "childColumns": [
+        "rule_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "normative_link_rule_id_fkey",
+      "definition": "FOREIGN KEY (rule_id) REFERENCES content_atom(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_consensus_vote_candidate",
+      "parent": "participation_process_candidate",
+      "childColumns": [
+        "process_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_consensus_vote_candidate_process_id_fkey",
+      "definition": "FOREIGN KEY (process_id) REFERENCES participation_process_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_consensus_vote_candidate",
+      "parent": "participation_statement_candidate",
+      "childColumns": [
+        "statement_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_consensus_vote_candidate_statement_id_fkey",
+      "definition": "FOREIGN KEY (statement_id) REFERENCES participation_statement_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_contribution_candidate",
+      "parent": "participation_process_candidate",
+      "childColumns": [
+        "process_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_contribution_candidate_process_id_fkey",
+      "definition": "FOREIGN KEY (process_id) REFERENCES participation_process_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_outcome_candidate",
+      "parent": "participation_process_candidate",
+      "childColumns": [
+        "process_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_outcome_candidate_process_id_fkey",
+      "definition": "FOREIGN KEY (process_id) REFERENCES participation_process_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_proposal_candidate",
+      "parent": "participation_process_candidate",
+      "childColumns": [
+        "process_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_proposal_candidate_process_id_fkey",
+      "definition": "FOREIGN KEY (process_id) REFERENCES participation_process_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_reaction_candidate",
+      "parent": "participation_proposal_candidate",
+      "childColumns": [
+        "proposal_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_reaction_candidate_proposal_id_fkey",
+      "definition": "FOREIGN KEY (proposal_id) REFERENCES participation_proposal_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "participation_statement_candidate",
+      "parent": "participation_process_candidate",
+      "childColumns": [
+        "process_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "participation_statement_candidate_process_id_fkey",
+      "definition": "FOREIGN KEY (process_id) REFERENCES participation_process_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "policy_decision",
+      "parent": "policy_package",
+      "childColumns": [
+        "package_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "policy_decision_package_id_fkey",
+      "definition": "FOREIGN KEY (package_id) REFERENCES policy_package(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "policy_decision",
+      "parent": "policy_rule",
+      "childColumns": [
+        "package_id",
+        "rule_id"
+      ],
+      "parentColumns": [
+        "package_id",
+        "id"
+      ],
+      "name": "policy_decision_rule_fkey",
+      "definition": "FOREIGN KEY (package_id, rule_id) REFERENCES policy_rule(package_id, id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "policy_rule",
+      "parent": "policy_package",
+      "childColumns": [
+        "package_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "policy_rule_package_id_fkey",
+      "definition": "FOREIGN KEY (package_id) REFERENCES policy_package(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "process_setting",
+      "parent": "process",
+      "childColumns": [
+        "process_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "process_setting_process_id_fkey",
+      "definition": "FOREIGN KEY (process_id) REFERENCES process(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "repo_branch",
+      "parent": "repo_source",
+      "childColumns": [
+        "repo"
+      ],
+      "parentColumns": [
+        "repo"
+      ],
+      "name": "repo_branch_repo_fkey",
+      "definition": "FOREIGN KEY (repo) REFERENCES repo_source(repo)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "repo_branch_commit",
+      "parent": "repo_branch",
+      "childColumns": [
+        "repo",
+        "branch"
+      ],
+      "parentColumns": [
+        "repo",
+        "branch"
+      ],
+      "name": "repo_branch_commit_repo_branch_fkey",
+      "definition": "FOREIGN KEY (repo, branch) REFERENCES repo_branch(repo, branch)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "repo_file",
+      "parent": "repo_branch",
+      "childColumns": [
+        "repo",
+        "branch"
+      ],
+      "parentColumns": [
+        "repo",
+        "branch"
+      ],
+      "name": "repo_file_branch_fkey",
+      "definition": "FOREIGN KEY (repo, branch) REFERENCES repo_branch(repo, branch)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "repo_file",
+      "parent": "repo_source",
+      "childColumns": [
+        "repo"
+      ],
+      "parentColumns": [
+        "repo"
+      ],
+      "name": "repo_file_repo_fkey",
+      "definition": "FOREIGN KEY (repo) REFERENCES repo_source(repo)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "research_instrument_candidate",
+      "parent": "research_project_candidate",
+      "childColumns": [
+        "project_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "research_instrument_candidate_project_id_fkey",
+      "definition": "FOREIGN KEY (project_id) REFERENCES research_project_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "research_risk_candidate",
+      "parent": "research_project_candidate",
+      "childColumns": [
+        "project_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "research_risk_candidate_project_id_fkey",
+      "definition": "FOREIGN KEY (project_id) REFERENCES research_project_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "research_skill_need_candidate",
+      "parent": "research_project_candidate",
+      "childColumns": [
+        "project_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "research_skill_need_candidate_project_id_fkey",
+      "definition": "FOREIGN KEY (project_id) REFERENCES research_project_candidate(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "schema_column",
+      "parent": "schema_entity",
+      "childColumns": [
+        "entity"
+      ],
+      "parentColumns": [
+        "name"
+      ],
+      "name": "schema_column_entity_fkey",
+      "definition": "FOREIGN KEY (entity) REFERENCES schema_entity(name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "schema_column",
+      "parent": "schema_entity",
+      "childColumns": [
+        "ref_entity"
+      ],
+      "parentColumns": [
+        "name"
+      ],
+      "name": "schema_column_ref_entity_fkey",
+      "definition": "FOREIGN KEY (ref_entity) REFERENCES schema_entity(name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "schema_entity",
+      "parent": "schema_layer",
+      "childColumns": [
+        "layer_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "schema_entity_layer_id_fkey",
+      "definition": "FOREIGN KEY (layer_id) REFERENCES schema_layer(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "schema_relation",
+      "parent": "schema_entity",
+      "childColumns": [
+        "from_entity"
+      ],
+      "parentColumns": [
+        "name"
+      ],
+      "name": "schema_relation_from_entity_fkey",
+      "definition": "FOREIGN KEY (from_entity) REFERENCES schema_entity(name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "schema_relation",
+      "parent": "schema_entity",
+      "childColumns": [
+        "to_entity"
+      ],
+      "parentColumns": [
+        "name"
+      ],
+      "name": "schema_relation_to_entity_fkey",
+      "definition": "FOREIGN KEY (to_entity) REFERENCES schema_entity(name)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "schema_term",
+      "parent": "schema_domain",
+      "childColumns": [
+        "domain"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "schema_term_domain_fkey",
+      "definition": "FOREIGN KEY (domain) REFERENCES schema_domain(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "screen_dest",
+      "parent": "content_place",
+      "childColumns": [
+        "place_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "screen_dest_place_id_fkey",
+      "definition": "FOREIGN KEY (place_id) REFERENCES content_place(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "screen_dest",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "screen_dest_tool_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "section_block",
+      "parent": "section_page",
+      "childColumns": [
+        "slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "section_block_slug_fkey",
+      "definition": "FOREIGN KEY (slug) REFERENCES section_page(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "section_link",
+      "parent": "screen_dest",
+      "childColumns": [
+        "dest_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "section_link_dest_fkey",
+      "definition": "FOREIGN KEY (dest_id) REFERENCES screen_dest(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "section_link",
+      "parent": "section_block",
+      "childColumns": [
+        "slug",
+        "block_position"
+      ],
+      "parentColumns": [
+        "slug",
+        "position"
+      ],
+      "name": "section_link_slug_block_position_fkey",
+      "definition": "FOREIGN KEY (slug, block_position) REFERENCES section_block(slug, \"position\")",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "session",
+      "parent": "user",
+      "childColumns": [
+        "userId"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "session_userId_fkey",
+      "definition": "FOREIGN KEY (\"userId\") REFERENCES \"user\"(id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "specimen_line",
+      "parent": "specimen_module",
+      "childColumns": [
+        "specimen_id",
+        "module_position"
+      ],
+      "parentColumns": [
+        "specimen_id",
+        "position"
+      ],
+      "name": "specimen_line_specimen_id_module_position_fkey",
+      "definition": "FOREIGN KEY (specimen_id, module_position) REFERENCES specimen_module(specimen_id, \"position\")",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "specimen_module",
+      "parent": "specimen",
+      "childColumns": [
+        "specimen_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "specimen_module_specimen_id_fkey",
+      "definition": "FOREIGN KEY (specimen_id) REFERENCES specimen(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "study_choice",
+      "parent": "study_item",
+      "childColumns": [
+        "item_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "study_choice_item_id_fkey",
+      "definition": "FOREIGN KEY (item_id) REFERENCES study_item(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "subscription",
+      "parent": "user",
+      "childColumns": [
+        "user_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "subscription_user_fkey",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "suggestion",
+      "parent": "intake_batch",
+      "childColumns": [
+        "batch_id"
+      ],
+      "parentColumns": [
+        "id"
+      ],
+      "name": "suggestion_batch_id_fkey",
+      "definition": "FOREIGN KEY (batch_id) REFERENCES intake_batch(id)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_band",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_band_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_band_nanda",
+      "parent": "tool_band",
+      "childColumns": [
+        "tool_slug",
+        "min_score"
+      ],
+      "parentColumns": [
+        "tool_slug",
+        "min_score"
+      ],
+      "name": "tool_band_nanda_tool_slug_min_score_fkey",
+      "definition": "FOREIGN KEY (tool_slug, min_score) REFERENCES tool_band(tool_slug, min_score) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_choice",
+      "parent": "tool_criterion",
+      "childColumns": [
+        "tool_slug",
+        "criterion_id"
+      ],
+      "parentColumns": [
+        "tool_slug",
+        "id"
+      ],
+      "name": "tool_choice_tool_slug_criterion_id_fkey",
+      "definition": "FOREIGN KEY (tool_slug, criterion_id) REFERENCES tool_criterion(tool_slug, id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_criterion",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_criterion_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_faq",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_faq_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_field",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_field_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_formula",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_formula_tool_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_formula_step",
+      "parent": "tool_formula",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "tool_slug"
+      ],
+      "name": "tool_formula_step_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES tool_formula(tool_slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_meta",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_meta_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_meta_option",
+      "parent": "tool_meta",
+      "childColumns": [
+        "tool_slug",
+        "meta_id"
+      ],
+      "parentColumns": [
+        "tool_slug",
+        "id"
+      ],
+      "name": "tool_meta_option_tool_slug_meta_id_fkey",
+      "definition": "FOREIGN KEY (tool_slug, meta_id) REFERENCES tool_meta(tool_slug, id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_output",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_output_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_reference",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_reference_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_related",
+      "parent": "source_tool",
+      "childColumns": [
+        "related_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_related_related_fkey",
+      "definition": "FOREIGN KEY (related_slug) REFERENCES source_tool(slug)",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_related",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_related_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_select",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_select_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_select_option",
+      "parent": "tool_select",
+      "childColumns": [
+        "tool_slug",
+        "select_id"
+      ],
+      "parentColumns": [
+        "tool_slug",
+        "id"
+      ],
+      "name": "tool_select_option_tool_slug_select_id_fkey",
+      "definition": "FOREIGN KEY (tool_slug, select_id) REFERENCES tool_select(tool_slug, id) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_specific",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_specific_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    },
+    {
+      "kind": "PHYSICAL_FK",
+      "child": "tool_step",
+      "parent": "source_tool",
+      "childColumns": [
+        "tool_slug"
+      ],
+      "parentColumns": [
+        "slug"
+      ],
+      "name": "tool_step_tool_slug_fkey",
+      "definition": "FOREIGN KEY (tool_slug) REFERENCES source_tool(slug) ON DELETE CASCADE",
+      "validated": true
+    }
+  ],
+  "declaredLinks": [
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "account",
+      "parent": "user",
+      "column": "userId",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "activity_event",
+      "parent": "policy_decision",
+      "column": "decision_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "agent_basis",
+      "parent": "agent",
+      "column": "agent_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "agent_check",
+      "parent": "agent",
+      "column": "agent_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "agent_rule",
+      "parent": "agent",
+      "column": "agent_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "ai_control",
+      "parent": "ai_principle",
+      "column": "principle_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "business_rule",
+      "parent": "schema_entity",
+      "column": "from_entity",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "business_rule",
+      "parent": "schema_entity",
+      "column": "to_entity",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_application_candidate",
+      "parent": "career_profile_candidate",
+      "column": "participant_key",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_atomic_fact_candidate",
+      "parent": "career_source_fragment_candidate",
+      "column": "fragment_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_atomic_fact_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_authority_binding_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_claim_candidate",
+      "parent": "career_atomic_fact_candidate",
+      "column": "atomic_fact_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_content_claim_binding_candidate",
+      "parent": "career_claim_candidate",
+      "column": "claim_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_content_claim_binding_candidate",
+      "parent": "career_editorial_document_candidate",
+      "column": "document_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_editorial_block_candidate",
+      "parent": "career_editorial_document_candidate",
+      "column": "document_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_editorial_document_candidate",
+      "parent": "career_editorial_candidate",
+      "column": "editorial_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_atomic_fact_candidate",
+      "column": "atomic_fact_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_claim_candidate",
+      "column": "claim_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_source_fragment_candidate",
+      "column": "fragment_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_evidence_bundle_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_ingestion_run_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_learning_resource_candidate",
+      "parent": "career_ingestion_run_candidate",
+      "column": "ingestion_run_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_learning_resource_candidate",
+      "parent": "career_learning_resource_type_candidate",
+      "column": "resource_type_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_learning_resource_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_market_observation_candidate",
+      "parent": "career_ingestion_run_candidate",
+      "column": "ingestion_run_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_market_observation_candidate",
+      "parent": "career_role_candidate",
+      "column": "role_ref",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_market_observation_candidate",
+      "parent": "career_market_signal_candidate",
+      "column": "signal_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_market_observation_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_market_signal_candidate",
+      "parent": "career_role_candidate",
+      "column": "role_ref",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_milestone_candidate",
+      "parent": "career_profile_candidate",
+      "column": "participant_key",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_opportunity_candidate",
+      "parent": "career_ingestion_run_candidate",
+      "column": "ingestion_run_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_opportunity_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_opportunity_candidate",
+      "parent": "career_opportunity_type_candidate",
+      "column": "type_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_path_step_candidate",
+      "parent": "career_path_candidate",
+      "column": "path_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_profile_candidate",
+      "parent": "career_role_candidate",
+      "column": "target_role_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_profile_credential_candidate",
+      "parent": "career_credential_candidate",
+      "column": "credential_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_profile_credential_candidate",
+      "parent": "career_profile_candidate",
+      "column": "participant_key",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_profile_skill_candidate",
+      "parent": "career_profile_candidate",
+      "column": "participant_key",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_profile_skill_candidate",
+      "parent": "career_skill_candidate",
+      "column": "skill_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_projection_item_candidate",
+      "parent": "career_module_candidate",
+      "column": "module_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_projection_item_candidate",
+      "parent": "career_projection_candidate",
+      "column": "projection_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_role_skill_candidate",
+      "parent": "career_role_candidate",
+      "column": "role_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_role_skill_candidate",
+      "parent": "career_skill_candidate",
+      "column": "skill_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_source_candidate",
+      "parent": "fundamento",
+      "column": "fundamento_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "career_source_fragment_candidate",
+      "parent": "career_source_candidate",
+      "column": "source_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "catalog_item",
+      "parent": "screen_dest",
+      "column": "dest_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "chrome_label",
+      "parent": "locale",
+      "column": "locale",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "cmd_command",
+      "parent": "work_order",
+      "column": "work_order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "cmd_event",
+      "parent": "cmd_run",
+      "column": "run_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "cmd_run",
+      "parent": "cmd_command",
+      "column": "command_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "cmd_run",
+      "parent": "work_order",
+      "column": "work_order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "community_post",
+      "parent": "user",
+      "column": "user_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_alias",
+      "parent": "locale",
+      "column": "locale",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_alias",
+      "parent": "content_object",
+      "column": "slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_atom",
+      "parent": "fundamento",
+      "column": "fundamento_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_atom",
+      "parent": "editorial_line",
+      "column": "line_position",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_atom",
+      "parent": "tool_reference",
+      "column": "reference_position",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_atom",
+      "parent": "tool_reference",
+      "column": "reference_tool",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_atom",
+      "parent": "content_object",
+      "column": "slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_atom",
+      "parent": "editorial_template",
+      "column": "template_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_object",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_place",
+      "parent": "inst_page",
+      "column": "inst_path",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_place",
+      "parent": "content_object",
+      "column": "object_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_place",
+      "parent": "section_page",
+      "column": "section_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_text",
+      "parent": "locale",
+      "column": "locale",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "content_text",
+      "parent": "content_object",
+      "column": "slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "document_version",
+      "parent": "governance_item",
+      "column": "item_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "editorial_line",
+      "parent": "editorial_template",
+      "column": "template_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "exam_key_intake",
+      "parent": "exam_option_intake",
+      "column": "correct_letter_norm",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "exam_key_intake",
+      "parent": "exam_question_intake",
+      "column": "question_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "exam_option_intake",
+      "parent": "exam_question_intake",
+      "column": "question_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "exam_question_intake",
+      "parent": "exam_intake",
+      "column": "exam_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "fundamento",
+      "parent": "governance_item",
+      "column": "support_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "inst_child",
+      "parent": "inst_page",
+      "column": "child_path",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "inst_child",
+      "parent": "inst_page",
+      "column": "path",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "inst_section",
+      "parent": "inst_page",
+      "column": "path",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "intake_file",
+      "parent": "intake_batch",
+      "column": "batch_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "intake_file",
+      "parent": "locale",
+      "column": "locale",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_claim",
+      "parent": "kernel_atom",
+      "column": "atom_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_evidence",
+      "parent": "kernel_claim",
+      "column": "claim_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_manifest",
+      "parent": "kernel_order",
+      "column": "order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_order",
+      "parent": "user",
+      "column": "approver_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_order",
+      "parent": "user",
+      "column": "owner_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_order_criterion",
+      "parent": "kernel_order",
+      "column": "order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_order_policy",
+      "parent": "kernel_order",
+      "column": "order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_order_policy",
+      "parent": "policy_package",
+      "column": "package_id",
+      "enforcement": "TRANSITIVE_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_order_policy",
+      "parent": "policy_rule",
+      "column": "rule_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "kernel_validator",
+      "parent": "kernel_order",
+      "column": "order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "library_item",
+      "parent": "library_shelf",
+      "column": "shelf_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "master_binding",
+      "parent": "fundamento",
+      "column": "fundamento_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "master_binding",
+      "parent": "kernel_order",
+      "column": "order_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "media_alt",
+      "parent": "locale",
+      "column": "locale",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "media_alt",
+      "parent": "media_asset",
+      "column": "path",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "member",
+      "parent": "user",
+      "column": "user_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "metadata_element",
+      "parent": "schema_domain",
+      "column": "domain_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "metadata_element",
+      "parent": "schema_entity",
+      "column": "entity",
+      "enforcement": "TRANSITIVE_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "metadata_element",
+      "parent": "schema_column",
+      "column": "name",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "metadata_element",
+      "parent": "data_specification",
+      "column": "specification_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "metadata_element",
+      "parent": "governance_item",
+      "column": "support_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "nav_item",
+      "parent": "screen_dest",
+      "column": "dest_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "nav_item",
+      "parent": "nav_item",
+      "column": "parent_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "normative_link",
+      "parent": "normative_asset",
+      "column": "asset_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "normative_link",
+      "parent": "content_atom",
+      "column": "rule_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_consensus_vote_candidate",
+      "parent": "participation_process_candidate",
+      "column": "process_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_consensus_vote_candidate",
+      "parent": "participation_statement_candidate",
+      "column": "statement_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_contribution_candidate",
+      "parent": "participation_process_candidate",
+      "column": "process_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_outcome_candidate",
+      "parent": "participation_process_candidate",
+      "column": "process_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_proposal_candidate",
+      "parent": "participation_process_candidate",
+      "column": "process_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_reaction_candidate",
+      "parent": "participation_proposal_candidate",
+      "column": "proposal_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "participation_statement_candidate",
+      "parent": "participation_process_candidate",
+      "column": "process_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "policy_decision",
+      "parent": "policy_package",
+      "column": "package_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "policy_decision",
+      "parent": "policy_rule",
+      "column": "rule_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "policy_rule",
+      "parent": "policy_package",
+      "column": "package_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "process_setting",
+      "parent": "process",
+      "column": "process_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "repo_branch",
+      "parent": "repo_source",
+      "column": "repo",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "repo_branch_commit",
+      "parent": "repo_branch",
+      "column": "branch",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "repo_branch_commit",
+      "parent": "repo_branch",
+      "column": "repo",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "repo_file",
+      "parent": "repo_branch",
+      "column": "branch",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "repo_file",
+      "parent": "repo_source",
+      "column": "repo",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "research_instrument_candidate",
+      "parent": "research_project_candidate",
+      "column": "project_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "research_risk_candidate",
+      "parent": "research_project_candidate",
+      "column": "project_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "research_skill_need_candidate",
+      "parent": "research_project_candidate",
+      "column": "project_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "schema_column",
+      "parent": "schema_entity",
+      "column": "entity",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "schema_column",
+      "parent": "schema_entity",
+      "column": "ref_entity",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "schema_entity",
+      "parent": "schema_layer",
+      "column": "layer_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "schema_relation",
+      "parent": "schema_entity",
+      "column": "from_entity",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "schema_relation",
+      "parent": "schema_entity",
+      "column": "to_entity",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "schema_term",
+      "parent": "schema_domain",
+      "column": "domain",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "screen_dest",
+      "parent": "content_place",
+      "column": "place_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "screen_dest",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "section_block",
+      "parent": "section_page",
+      "column": "slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "section_link",
+      "parent": "section_block",
+      "column": "block_position",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "section_link",
+      "parent": "screen_dest",
+      "column": "dest_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "section_link",
+      "parent": "section_block",
+      "column": "slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "session",
+      "parent": "user",
+      "column": "userId",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "specimen_line",
+      "parent": "specimen_module",
+      "column": "module_position",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "specimen_line",
+      "parent": "specimen_module",
+      "column": "specimen_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "specimen_module",
+      "parent": "specimen",
+      "column": "specimen_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "study_choice",
+      "parent": "study_item",
+      "column": "item_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "subscription",
+      "parent": "user",
+      "column": "user_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "suggestion",
+      "parent": "intake_batch",
+      "column": "batch_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_band",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_band_nanda",
+      "parent": "tool_band",
+      "column": "min_score",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_band_nanda",
+      "parent": "tool_band",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_choice",
+      "parent": "tool_criterion",
+      "column": "criterion_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_choice",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "TRANSITIVE_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_criterion",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_faq",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_field",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_formula",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_formula_step",
+      "parent": "tool_formula",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_meta",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_meta_option",
+      "parent": "tool_meta",
+      "column": "meta_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_meta_option",
+      "parent": "tool_meta",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_output",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_reference",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_related",
+      "parent": "source_tool",
+      "column": "related_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_related",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_select",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_select_option",
+      "parent": "tool_select",
+      "column": "select_id",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_select_option",
+      "parent": "tool_select",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_specific",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    },
+    {
+      "kind": "DECLARED_DICTIONARY_REFERENCE",
+      "child": "tool_step",
+      "parent": "source_tool",
+      "column": "tool_slug",
+      "enforcement": "DIRECT_FK",
+      "physicallyEnforced": true
+    }
+  ]
+}

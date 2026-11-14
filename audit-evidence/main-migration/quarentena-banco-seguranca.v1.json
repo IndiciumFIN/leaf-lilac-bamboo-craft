@@ -1,0 +1,1313 @@
+{
+  "schemaVersion": "1.0.0",
+  "releaseGate": "HOLD_HUMAN",
+  "applied": false,
+  "completionClaim": "NOT_100_PERCENT_MIGRATED",
+  "paths": 23,
+  "blobs": 74,
+  "alreadyInLocalMigrations": 0,
+  "ledger": [
+    {
+      "path": ".github/workflows/admin-ux-e2e.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "78c2587b3bbd06cb2e1e9fda09d6a07f8849a66d",
+      "sha256": "aaab958ffa831b4640c9f90dbb49348c693b959900e25b55db0af429d30c0469",
+      "bytes": 2011,
+      "branches": [
+        "archivamento",
+        "audit-hardening-2026-10-24",
+        "audit/ce-wave1-evidence-20261101",
+        "backup/research-hub-complete-20261026",
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "feat/career-youth-db-first-20261026",
+        "feat/curiosidades-mem-87-20261026",
+        "feat/research-all-tools-candidate-20261101",
+        "feat/research-hub-governed-20261026",
+        "feat/research-participation-layer-20261026",
+        "feat/research-supabase-bridge-20261101",
+        "fix/governed-activities-cli-20261026",
+        "fix/pendencias-camadas-20261101",
+        "fix/shell-consolidation",
+        "implementation-governed-ecosystem",
+        "import/drive-cko-nurseos-20261026",
+        "integration/structural-overlay-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101",
+        "plan/ce-reconciliacao-v6-20261101",
+        "plan/pmokernel-finalization-20261031",
+        "planning",
+        "revert-26-plan/pmokernel-finalization-20261031",
+        "simulados-enfermagem-db-canonico",
+        "staging/bibliotecas-corpus-20261026",
+        "viladocuidado",
+        "work/editorial-canonical-learning-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/aa/aaab958ffa831b4640c9f90dbb49348c693b959900e25b55db0af429d30c0469",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/admin-ux-e2e.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "fbdb45548d8a136d3d9dfed031085526383cf147",
+      "sha256": "e2974e34e6f3ab6868fd5979e7770b53861f3191b0da45b4d942b2907886df98",
+      "bytes": 2268,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114",
+        "fix/ce-admin-e2e-hierarchy-20261101",
+        "fix/ncos-generated-contract-sync-20261113",
+        "review/grook-na-main"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/e2/e2974e34e6f3ab6868fd5979e7770b53861f3191b0da45b4d942b2907886df98",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/admin-ux-e2e.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "3f3bd3105f77be0f236595f1b5e755aa0bfd980c",
+      "sha256": "b05e0d031ddfe1d86ec105e61f80fb7fdb3a5971761972fbef92d8a79e2b2f86",
+      "bytes": 2361,
+      "branches": [
+        "idioma/consolidado-19",
+        "idioma/de-v1",
+        "idioma/pt-PT-v1"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/b0/b05e0d031ddfe1d86ec105e61f80fb7fdb3a5971761972fbef92d8a79e2b2f86",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/admin-ux-e2e.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "75cab9aab1b4bc9e6d281bbc0028d59d8d588a05",
+      "sha256": "1e6a155a1a025466780d861c32e07650cf73c13d8c3d189782f0b2e10cb39a54",
+      "bytes": 2399,
+      "branches": [
+        "preview/central-comando-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/1e/1e6a155a1a025466780d861c32e07650cf73c13d8c3d189782f0b2e10cb39a54",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/portoes.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "863a59674d0b270984675a83469b4714fd06c6eb",
+      "sha256": "13e8c264b279a6d0e9cc9b1bb8030ed0db561f803f85a9367abc98e81d82ed05",
+      "bytes": 3202,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "fix/pendencias-camadas-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/13/13e8c264b279a6d0e9cc9b1bb8030ed0db561f803f85a9367abc98e81d82ed05",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/portoes.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "b7d421ecbddfc5a1340b6d08af290dfc88d2594d",
+      "sha256": "d6eb1338b15d2c7b5b7dfaef8fe8b4067d07224c233714bdfb1e6449d332525b",
+      "bytes": 1818,
+      "branches": [
+        "feat/projection-unica-f0-suite-real"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/d6/d6eb1338b15d2c7b5b7dfaef8fe8b4067d07224c233714bdfb1e6449d332525b",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/verify-bibliotecas.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "342fe43a53ca2aa686ad293390e3ac134db15689",
+      "sha256": "a4ab0a5ea2a1d826cd684496b6c8eb4b57b5cb9259d809e880ae641d43decbee",
+      "bytes": 3553,
+      "branches": [
+        "archivamento",
+        "audit-hardening-2026-10-24",
+        "audit/ce-wave1-evidence-20261101",
+        "backup/research-hub-complete-20261026",
+        "canonical/local-20261101",
+        "feat/career-youth-db-first-20261026",
+        "feat/curiosidades-mem-87-20261026",
+        "feat/research-all-tools-candidate-20261101",
+        "feat/research-hub-governed-20261026",
+        "feat/research-participation-layer-20261026",
+        "feat/research-supabase-bridge-20261101",
+        "fix/ce-admin-e2e-hierarchy-20261101",
+        "fix/shell-consolidation",
+        "implementation-governed-ecosystem",
+        "import/drive-cko-nurseos-20261026",
+        "integration/structural-overlay-20261101",
+        "plan/ce-reconciliacao-v6-20261101",
+        "plan/pmokernel-finalization-20261031",
+        "planning",
+        "revert-26-plan/pmokernel-finalization-20261031",
+        "review/grook-na-main",
+        "simulados-enfermagem-db-canonico",
+        "staging/bibliotecas-corpus-20261026",
+        "viladocuidado",
+        "work/editorial-canonical-learning-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/a4/a4ab0a5ea2a1d826cd684496b6c8eb4b57b5cb9259d809e880ae641d43decbee",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/verify-bibliotecas.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "d26b238c01075b997c17a71efcf19db2d3b9d51e",
+      "sha256": "a22218db3f12bc71467eff1f94e67867ac6e0c6d95dea4fb8fec1b6d002c1bf8",
+      "bytes": 3596,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114",
+        "fix/ncos-generated-contract-sync-20261113"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/a2/a22218db3f12bc71467eff1f94e67867ac6e0c6d95dea4fb8fec1b6d002c1bf8",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/verify-bibliotecas.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "295a15af696221688d8eb6ce57be0c50499a41b7",
+      "sha256": "7d1ee91e68b16987edd66d8fe105de272a94bd04db24048d1ac321633800dce5",
+      "bytes": 7382,
+      "branches": [
+        "canonical/foundation-20261101",
+        "fix/pendencias-camadas-20261101",
+        "idioma/consolidado-19",
+        "idioma/de-v1",
+        "idioma/pt-PT-v1",
+        "plan/ce-best-excellence-supabase-readonly-20261101",
+        "preview/central-comando-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/7d/7d1ee91e68b16987edd66d8fe105de272a94bd04db24048d1ac321633800dce5",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": ".github/workflows/verify-bibliotecas.yml",
+      "risk": "SECURITY_HOLD",
+      "blob": "fb377661ce866fc6f76b8bbedea7ad59f22066a6",
+      "sha256": "d64a84544ea0e38432d94fb5d0268b9359a139d61689859b5b2be21df868220d",
+      "bytes": 5207,
+      "branches": [
+        "fix/governed-activities-cli-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/d6/d64a84544ea0e38432d94fb5d0268b9359a139d61689859b5b2be21df868220d",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0004_career_youth_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "9ed9082c7b3ab72943614f7f472a679d8218d5f1",
+      "sha256": "6847ea40131524168bbf1c3f58547c3f24359567d33ac359feb058d6eb5d68ee",
+      "bytes": 44311,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "feat/career-youth-db-first-20261026",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/68/6847ea40131524168bbf1c3f58547c3f24359567d33ac359feb058d6eb5d68ee",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0004_career_youth_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "81b71ac18093e9e1ad8306d773124ab51d676053",
+      "sha256": "50a48ee4aad0d5c52d713490ba107217f4cef1d113975ad3c960862322eb01de",
+      "bytes": 44334,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/50/50a48ee4aad0d5c52d713490ba107217f4cef1d113975ad3c960862322eb01de",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0004_revisao_conteudo.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "4b73f9218255bb89d89f76771691ae0bdfad944d",
+      "sha256": "8b0d676ed6af27e8ed21f82a04343bbccc19511c923dd2a86072258b682a8ec0",
+      "bytes": 547921,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "idioma/consolidado-19",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/8b/8b0d676ed6af27e8ed21f82a04343bbccc19511c923dd2a86072258b682a8ec0",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0004_revisao_conteudo.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "732801214efdccf08d4ee56085b016d210f22038",
+      "sha256": "a7f7a4491c56da6669a0cb93385c991e908c8bb63473d302b2485d2904075514",
+      "bytes": 547967,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/a7/a7f7a4491c56da6669a0cb93385c991e908c8bb63473d302b2485d2904075514",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0005_career_editorial_content_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "dddea1033b2a5d0f20888b0e1512de63c8aa556f",
+      "sha256": "05af85c3d1d47b5eeb25f88979f4d8af691375c47404d574fd2226770e276629",
+      "bytes": 86112,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "feat/career-youth-db-first-20261026",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/05/05af85c3d1d47b5eeb25f88979f4d8af691375c47404d574fd2226770e276629",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0005_career_editorial_content_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "6fa0f159a30456572a2fc048e5387e6a829757ac",
+      "sha256": "ca4bb1252d82a229b6f126c21b90be3b33062bb488799e74e94984a5705f7905",
+      "bytes": 86342,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/ca/ca4bb1252d82a229b6f126c21b90be3b33062bb488799e74e94984a5705f7905",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0006_career_atomization_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "7fcf6e5902cc7bdf080c09a2fa1a0d5dca787bf2",
+      "sha256": "ab65c6b5ee998c90d15fa68bf2a92ddc63d5bf943430759eeb1b382c3049c2df",
+      "bytes": 68879,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "feat/career-youth-db-first-20261026",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/ab/ab65c6b5ee998c90d15fa68bf2a92ddc63d5bf943430759eeb1b382c3049c2df",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0006_career_atomization_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "3ed5e8fe41b9aa8441ae01cc52e1a1a35f286883",
+      "sha256": "5a1f6d44f54479ec80284c310b44477f3a290812b7f8e30a7488ea1a238ad246",
+      "bytes": 68971,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/5a/5a1f6d44f54479ec80284c310b44477f3a290812b7f8e30a7488ea1a238ad246",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0036_indice_do_banco.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "411d77552d535e170f1cc8f611e72b15655be464",
+      "sha256": "96376797671d1a675ef6f12034735d4f13baf5f3fa1b2ffeb7a303a4abe9d99b",
+      "bytes": 23474,
+      "branches": [
+        "canonical/foundation-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/96/96376797671d1a675ef6f12034735d4f13baf5f3fa1b2ffeb7a303a4abe9d99b",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0036_indice_do_banco.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "665f2ccc6211f0894a7e8fd35cab2b24d816d1a4",
+      "sha256": "69c89c78081ca60352bbfc5636f286c956192ffdc8dcf75cc9f38516ea552659",
+      "bytes": 5129,
+      "branches": [
+        "canonical/local-20261101",
+        "feat/projection-unica-f0-suite-real",
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/69/69c89c78081ca60352bbfc5636f286c956192ffdc8dcf75cc9f38516ea552659",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0036_revisao_conteudo.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "4b73f9218255bb89d89f76771691ae0bdfad944d",
+      "sha256": "8b0d676ed6af27e8ed21f82a04343bbccc19511c923dd2a86072258b682a8ec0",
+      "bytes": 547921,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/8b/8b0d676ed6af27e8ed21f82a04343bbccc19511c923dd2a86072258b682a8ec0",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0036_revisao_conteudo.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "732801214efdccf08d4ee56085b016d210f22038",
+      "sha256": "a7f7a4491c56da6669a0cb93385c991e908c8bb63473d302b2485d2904075514",
+      "bytes": 547967,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/a7/a7f7a4491c56da6669a0cb93385c991e908c8bb63473d302b2485d2904075514",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0037_revisao_idiomas.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "663a8eeef487f370039a2d4d7a6f9aeb8a341078",
+      "sha256": "609979d2832bca7ca51b2cba5cfd78a862f54f9056722f2f38b97f5aa52bed69",
+      "bytes": 1560,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/60/609979d2832bca7ca51b2cba5cfd78a862f54f9056722f2f38b97f5aa52bed69",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0037_revisao_idiomas.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "0b68e53ae528d349ef75337e1fdd607317ddff7e",
+      "sha256": "28054fb873b42a19f9e05c4ae6cd8eb4737949a0a54450c98ca82e029746b4b6",
+      "bytes": 1583,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/28/28054fb873b42a19f9e05c4ae6cd8eb4737949a0a54450c98ca82e029746b4b6",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0038_canonical_divergence.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "85d5954a47245f0a6c1b84c77dc28d5c3b5a2134",
+      "sha256": "c06cbaf2509d22e9e39551b314026630fd856021f90e0ef1b8acda9032ff7bb1",
+      "bytes": 1807,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/c0/c06cbaf2509d22e9e39551b314026630fd856021f90e0ef1b8acda9032ff7bb1",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0038_canonical_divergence.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "e04cf5a9d11d74b616b0962a2ac76121038bd906",
+      "sha256": "4ac539e40123d2c4adbc4040f9c6f0b42a25ebe4c2c500c849dcc90b88466b01",
+      "bytes": 1830,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/4a/4ac539e40123d2c4adbc4040f9c6f0b42a25ebe4c2c500c849dcc90b88466b01",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0039_kernel_anchors.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "3b76f2f74707b24565525b99ffe733e8165c6d0b",
+      "sha256": "a81fdcb2ce6267f2a206386e31c0fb8f0d4346c8521a28e755db67ce8f4c1743",
+      "bytes": 1892,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/a8/a81fdcb2ce6267f2a206386e31c0fb8f0d4346c8521a28e755db67ce8f4c1743",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0039_kernel_anchors.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "92380a7154089f8e3ff653504f03e8edf361fb7e",
+      "sha256": "8e56913f8b381636c591ec03ccb4cab720dd235c944845a7424e0ea50286e8c6",
+      "bytes": 1915,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/8e/8e56913f8b381636c591ec03ccb4cab720dd235c944845a7424e0ea50286e8c6",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0040_kernel_candidate_local.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "ede5380a8535acff0986b82d1777c39d6c68620c",
+      "sha256": "f67b08d473e19954a8e52c84b1f31ac05f1206aad699329af26e9d2725261a95",
+      "bytes": 13516,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/f6/f67b08d473e19954a8e52c84b1f31ac05f1206aad699329af26e9d2725261a95",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0040_kernel_candidate_local.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "6efec2934ad4519bbb8c63dc8986a79a705d3a78",
+      "sha256": "329c819ea434409649aac9388f481c26516686da98ede844bec4bf6214e2a8f7",
+      "bytes": 13917,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/32/329c819ea434409649aac9388f481c26516686da98ede844bec4bf6214e2a8f7",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0041_canonical_suggestions.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "01ee068fd93834e56480afa4e2c5650ada8d060e",
+      "sha256": "654965d4efda9020bf287c89223c3e48b7bfd24de615bbdb889f960cfb9fe988",
+      "bytes": 2846,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/65/654965d4efda9020bf287c89223c3e48b7bfd24de615bbdb889f960cfb9fe988",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0041_canonical_suggestions.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "7d858d7ca4312c3f173bfde76936f8b8f8c7d69f",
+      "sha256": "6148779ccc984caa61a3f26af884f1033d80bb4d15694ffe34be156d4f394b24",
+      "bytes": 3182,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/61/6148779ccc984caa61a3f26af884f1033d80bb4d15694ffe34be156d4f394b24",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0042_suggestions_follow.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "fad9c27d65de0cd91d86c3dc453fabf64c7a2f4c",
+      "sha256": "a9f3dd6cbeb5bf0809458af789cba892b164a5f5292f23f4c5a2d46a8b82900d",
+      "bytes": 3874,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/a9/a9f3dd6cbeb5bf0809458af789cba892b164a5f5292f23f4c5a2d46a8b82900d",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0042_suggestions_follow.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "3d9395e11871fd043785ae8f31ac9ed151217927",
+      "sha256": "6f08ea1dd2bac7f761d2aa7824e4c163ca69948e8bc444929e23c4d4d0d4c5d3",
+      "bytes": 4087,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/6f/6f08ea1dd2bac7f761d2aa7824e4c163ca69948e8bc444929e23c4d4d0d4c5d3",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0043_canonical_unreviewed.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "0a30a1662f0aa63709d91ffe10e64d9632d6b753",
+      "sha256": "60a55fff35cbf5976c86a342fd387b40e809ad6a52bb059a7e196a2f993537fc",
+      "bytes": 249090,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/60/60a55fff35cbf5976c86a342fd387b40e809ad6a52bb059a7e196a2f993537fc",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0043_canonical_unreviewed.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "5c3b1ff79c7885443e5fe0931e018cd344bd5738",
+      "sha256": "ddf232f8c788f8cc88f14821ac3f76cbbec84633835f2d04e052088baf8ca335",
+      "bytes": 249228,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/dd/ddf232f8c788f8cc88f14821ac3f76cbbec84633835f2d04e052088baf8ca335",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0044_canonical_conflicts.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "05285b18ca2d4a6f0e04b59ae461e5e4e8230101",
+      "sha256": "99bbb403f93c3e07718e8145cdb5bf10026f37ab40e9e75bef9b04de653d3f4d",
+      "bytes": 81401,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/99/99bbb403f93c3e07718e8145cdb5bf10026f37ab40e9e75bef9b04de653d3f4d",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0044_canonical_conflicts.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "d299f0f2753e8972351d9f6c9f3463b48261eae7",
+      "sha256": "28689aa7e76c00c5653c73c0513dc90a0f37e2a129f7ed842a6a6b422927cbce",
+      "bytes": 81493,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/28/28689aa7e76c00c5653c73c0513dc90a0f37e2a129f7ed842a6a6b422927cbce",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0047_revisao_automatica.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "6dee52c355f0639514b86661ac9f3fdd928983e6",
+      "sha256": "f45e315d7ec28a3c6ad8ccfe2d1b692196f9f16a250dd1c8e68201a00438b057",
+      "bytes": 3839471,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/f4/f45e315d7ec28a3c6ad8ccfe2d1b692196f9f16a250dd1c8e68201a00438b057",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "migrations/0047_revisao_automatica.sql",
+      "risk": "DATABASE_HOLD",
+      "blob": "eb02ef05956cddb1a2363d67fa9631e36be72360",
+      "sha256": "4e32571f7297d05e1f596d2f810bbe15d01265aa8d5adcc70043f696f3adb2ce",
+      "bytes": 3840069,
+      "branches": [
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/4e/4e32571f7297d05e1f596d2f810bbe15d01265aa8d5adcc70043f696f3adb2ce",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "87f9301552cd96b1d286467c913cdd324f2eab86",
+      "sha256": "2ad09b5b02acc49b46efa644a4bf4443acbb51e34627a609dd2fe95ff4119ee3",
+      "bytes": 266621,
+      "branches": [
+        "archivamento",
+        "audit-hardening-2026-10-24",
+        "backup/research-hub-complete-20261026",
+        "feat/career-youth-db-first-20261026",
+        "feat/curiosidades-mem-87-20261026",
+        "feat/research-all-tools-candidate-20261101",
+        "feat/research-hub-governed-20261026",
+        "feat/research-participation-layer-20261026",
+        "feat/research-supabase-bridge-20261101",
+        "fix/shell-consolidation",
+        "idioma/consolidado-19",
+        "idioma/de-v1",
+        "idioma/pt-PT-v1",
+        "implementation-governed-ecosystem",
+        "import/drive-cko-nurseos-20261026",
+        "planning",
+        "preview/central-comando-20261026",
+        "revert-26-plan/pmokernel-finalization-20261031",
+        "staging/bibliotecas-corpus-20261026",
+        "viladocuidado",
+        "work/editorial-canonical-learning-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/2a/2ad09b5b02acc49b46efa644a4bf4443acbb51e34627a609dd2fe95ff4119ee3",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "f576a666ce59590113e06d8c0cb68bf7b17d0b86",
+      "sha256": "bcf94aed31fc8576819556096da534ab94110b97a3096082ff054309890f8a9c",
+      "bytes": 265819,
+      "branches": [
+        "audit/ce-wave1-evidence-20261101",
+        "fix/ce-admin-e2e-hierarchy-20261101",
+        "fix/governed-activities-cli-20261026",
+        "integration/structural-overlay-20261101",
+        "plan/ce-reconciliacao-v6-20261101",
+        "plan/pmokernel-finalization-20261031",
+        "simulados-enfermagem-db-canonico"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/bc/bcf94aed31fc8576819556096da534ab94110b97a3096082ff054309890f8a9c",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "c2beea71660d7f44d647f3adb1195e4a75701d92",
+      "sha256": "5636f60ffdb3dc384bcede628307d70bfb7a81953d4ea3f64e4a535c04fcacbd",
+      "bytes": 264083,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114",
+        "fix/ncos-generated-contract-sync-20261113"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/56/5636f60ffdb3dc384bcede628307d70bfb7a81953d4ea3f64e4a535c04fcacbd",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "6c07b3d637967533a547fd030eee62ec3d10e758",
+      "sha256": "05d4de1ffaa55a34aade02b32bb97ce730be9f25853041578ca15dac495a44b4",
+      "bytes": 265869,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "fix/pendencias-camadas-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/05/05d4de1ffaa55a34aade02b32bb97ce730be9f25853041578ca15dac495a44b4",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "326bf200c07a84605687165e2a9ba95d2727104f",
+      "sha256": "51f126053ce708bf44effc268e316eb54172f8ef5ea4702f166f7c5978635976",
+      "bytes": 264885,
+      "branches": [
+        "feat/projection-unica-f0-suite-real"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/51/51f126053ce708bf44effc268e316eb54172f8ef5ea4702f166f7c5978635976",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "b6432638b56727d1e822e1d1d8ca6a5b76375adc",
+      "sha256": "ca792d89a2cc29915ebeb76001b3b6a04bfcb001bee3fdebb3b99adf4884eca6",
+      "bytes": 261937,
+      "branches": [
+        "grook_10_26",
+        "review/grook-na-main"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/ca/ca792d89a2cc29915ebeb76001b3b6a04bfcb001bee3fdebb3b99adf4884eca6",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "a7a90d32c6da3cda65315e0aecb345fab255c55e",
+      "sha256": "b50540f8e59fd68516bfb897625ddf7eebf0f1c2e6b645d3b311310028e674e2",
+      "bytes": 7618,
+      "branches": [
+        "archivamento",
+        "audit-hardening-2026-10-24",
+        "feat/research-hub-governed-20261026",
+        "fix/shell-consolidation",
+        "idioma/consolidado-19",
+        "idioma/de-v1",
+        "idioma/pt-PT-v1",
+        "implementation-governed-ecosystem",
+        "import/drive-cko-nurseos-20261026",
+        "planning",
+        "preview/central-comando-20261026",
+        "revert-26-plan/pmokernel-finalization-20261031",
+        "staging/bibliotecas-corpus-20261026",
+        "viladocuidado",
+        "work/editorial-canonical-learning-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/b5/b50540f8e59fd68516bfb897625ddf7eebf0f1c2e6b645d3b311310028e674e2",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "5eeaf32ebe836b1d2c4956a95536c7a655dd23ab",
+      "sha256": "3f8fb7f427dbe303f5a54fce345c682990c7f6226e9aabe14aa8203f648580b2",
+      "bytes": 7617,
+      "branches": [
+        "audit/ce-wave1-evidence-20261101",
+        "plan/ce-reconciliacao-v6-20261101",
+        "plan/pmokernel-finalization-20261031",
+        "simulados-enfermagem-db-canonico"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/3f/3f8fb7f427dbe303f5a54fce345c682990c7f6226e9aabe14aa8203f648580b2",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "4df3e68fd12f6e6ad9bdbc9a18bd65d2cfdffbfd",
+      "sha256": "e7680285446808aa52e85562d080eaa460374b6796d4598da2a40e16fbcc0b2f",
+      "bytes": 3637,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/e7/e7680285446808aa52e85562d080eaa460374b6796d4598da2a40e16fbcc0b2f",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "12c3bb9838bf7704c4c1d6c3557c943eb7779b95",
+      "sha256": "14815f72ec0babd144a9aabc7a4e45c4d35d55a7dcabc0b66e7b291d99267b84",
+      "bytes": 7709,
+      "branches": [
+        "backup/research-hub-complete-20261026",
+        "feat/research-all-tools-candidate-20261101",
+        "feat/research-participation-layer-20261026",
+        "feat/research-supabase-bridge-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/14/14815f72ec0babd144a9aabc7a4e45c4d35d55a7dcabc0b66e7b291d99267b84",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "0c8174df45c945b80fca88a375e39e75d34f3e6a",
+      "sha256": "814e3c2cbd0a7c913937947d2d305563b1dfdfc01fb025028d57999baae191be",
+      "bytes": 8088,
+      "branches": [
+        "canonical/foundation-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/81/814e3c2cbd0a7c913937947d2d305563b1dfdfc01fb025028d57999baae191be",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "ce32b580448c7ac1e0e0e85cc438c88c467d7784",
+      "sha256": "0c104622750c2fb5962af2b8d36a28a7564e16145269251fd2a4ed97f8c29e6b",
+      "bytes": 8088,
+      "branches": [
+        "canonical/local-20261101",
+        "fix/pendencias-camadas-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/0c/0c104622750c2fb5962af2b8d36a28a7564e16145269251fd2a4ed97f8c29e6b",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "ae6fdf747937010bcde05d19c995b9eaa6984613",
+      "sha256": "111b662283e43e79640e02ac63fe675cc4d2918dac2df7732ad58c4f856edef5",
+      "bytes": 8023,
+      "branches": [
+        "feat/career-youth-db-first-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/11/111b662283e43e79640e02ac63fe675cc4d2918dac2df7732ad58c4f856edef5",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "0bca39f47ddea5e736fb5073d2fe60bdc3b3822f",
+      "sha256": "0685f427b9375992e389db04396a7230dcebae522c62b28cccdb9b1b932dbf56",
+      "bytes": 7738,
+      "branches": [
+        "feat/curiosidades-mem-87-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/06/0685f427b9375992e389db04396a7230dcebae522c62b28cccdb9b1b932dbf56",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "34a4a390531c9271131ced109653562b11fa8c59",
+      "sha256": "4c1b8ab868088fe93b9cb907a0b748d8465db1c9853149f384d9fed6ba2ffacd",
+      "bytes": 3438,
+      "branches": [
+        "feat/projection-unica-f0-suite-real"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/4c/4c1b8ab868088fe93b9cb907a0b748d8465db1c9853149f384d9fed6ba2ffacd",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "fc3f726270d23ef4b6553a985fe1b63b4686ef0d",
+      "sha256": "5cd97329b06b6beee6f400d36d6b7cdb49f9fa9b15cffbf37850d3f0f718507c",
+      "bytes": 8002,
+      "branches": [
+        "fix/ce-admin-e2e-hierarchy-20261101",
+        "integration/structural-overlay-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/5c/5cd97329b06b6beee6f400d36d6b7cdb49f9fa9b15cffbf37850d3f0f718507c",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "34ddf52a4b4e0a7fd77d22f3c2e66876a891e30f",
+      "sha256": "7d1e581deb2663be8522c21a0023126ed705992cea17ed657d699b09ac8ab181",
+      "bytes": 8058,
+      "branches": [
+        "fix/governed-activities-cli-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/7d/7d1e581deb2663be8522c21a0023126ed705992cea17ed657d699b09ac8ab181",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "75be0c3a9d952569a4be2680016ea778256c9680",
+      "sha256": "1a0935ec0045875443a2c33b6f4a2a38aae3292d1030e0991b415a1bff4e95e9",
+      "bytes": 3680,
+      "branches": [
+        "fix/ncos-generated-contract-sync-20261113"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/1a/1a0935ec0045875443a2c33b6f4a2a38aae3292d1030e0991b415a1bff4e95e9",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "158fc5ba643d83458ba2991171dd42ceb43d1a8b",
+      "sha256": "63b664be5b4f5209eb345ba2dae8df2f19a918981c36c5c4b644f7667795bb55",
+      "bytes": 617,
+      "branches": [
+        "governance/normative-crossdomain-evaluation-20261108",
+        "wutrib/audit-integral-20261108",
+        "wutrib/docs-governance-20261108",
+        "wutrib/expansion-analytics-plan-20261108",
+        "wutrib/expansion-spec-v02-20261108",
+        "wutrib/normative-universe-v11-supabase-first-20261108",
+        "wutrib/pmo-v1-controller-20261108",
+        "wutrib/v1-nfe-xml-ingestion-20261108",
+        "wutrib/v1-normative-benchmark-assurance-20261108",
+        "wutrib/v1-scope-freeze-candidate-20261108",
+        "wutrib/v1-vertical-slice-dev-20261108",
+        "wutrib/validators-plan-20261108",
+        "wutrib/validators-strategy-v03-20261108"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/63/63b664be5b4f5209eb345ba2dae8df2f19a918981c36c5c4b644f7667795bb55",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "844f8aad72fcfc6a17b30268f7d50c8d95a92b69",
+      "sha256": "863c270c2551dbb2952cc737659324152a566062f77995d9bfedc36337c87a77",
+      "bytes": 3604,
+      "branches": [
+        "grook_10_26",
+        "review/grook-na-main"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/86/863c270c2551dbb2952cc737659324152a566062f77995d9bfedc36337c87a77",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "e73f43ca45df6882c489f1aeea7a70f3d1eae871",
+      "sha256": "fca42a986d5bac6b01b3ee29c9b13994c33988c6804dac5f64b7feb4404198da",
+      "bytes": 585,
+      "branches": [
+        "wutrib/demo-persistence-v04-20261108"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/fc/fca42a986d5bac6b01b3ee29c9b13994c33988c6804dac5f64b7feb4404198da",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "blob": "4e1044a760957bfd58af923635beced7496df052",
+      "sha256": "6d2262b894d07d8616095ec805f08864ddf32407838cf9e5ecc1c5d8ee9c9a2c",
+      "bytes": 554,
+      "branches": [
+        "wutrib/web-pilot-20261108"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/6d/6d2262b894d07d8616095ec805f08864ddf32407838cf9e5ecc1c5d8ee9c9a2c",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/client.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "d3b267d3de8b9d5e31545ee56ed7a3ff240c601d",
+      "sha256": "4bca649afb627b11231a7b31acfcffe9323efddebc05944b2d769d2b8589294f",
+      "bytes": 9714,
+      "branches": [
+        "archivamento",
+        "audit-hardening-2026-10-24",
+        "backup/research-hub-complete-20261026",
+        "feat/career-youth-db-first-20261026",
+        "feat/curiosidades-mem-87-20261026",
+        "feat/projection-unica-f0-suite-real",
+        "feat/research-all-tools-candidate-20261101",
+        "feat/research-hub-governed-20261026",
+        "feat/research-participation-layer-20261026",
+        "feat/research-supabase-bridge-20261101",
+        "fix/shell-consolidation",
+        "grook_10_26",
+        "idioma/consolidado-19",
+        "idioma/de-v1",
+        "idioma/pt-PT-v1",
+        "implementation-governed-ecosystem",
+        "import/drive-cko-nurseos-20261026",
+        "planning",
+        "preview/central-comando-20261026",
+        "revert-26-plan/pmokernel-finalization-20261031",
+        "review/grook-na-main",
+        "staging/bibliotecas-corpus-20261026",
+        "viladocuidado",
+        "work/editorial-canonical-learning-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/4b/4bca649afb627b11231a7b31acfcffe9323efddebc05944b2d769d2b8589294f",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/client.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "ed553a2e161257a21fe69f08ea6f947149472507",
+      "sha256": "d1203245b03d911eafa2e5cd4df20042fc150cd95e14928f668220eb57fc60e6",
+      "bytes": 9623,
+      "branches": [
+        "audit/ce-wave1-evidence-20261101",
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "fix/ce-admin-e2e-hierarchy-20261101",
+        "fix/governed-activities-cli-20261026",
+        "fix/pendencias-camadas-20261101",
+        "integration/structural-overlay-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101",
+        "plan/ce-reconciliacao-v6-20261101",
+        "plan/pmokernel-finalization-20261031"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/d1/d1203245b03d911eafa2e5cd4df20042fc150cd95e14928f668220eb57fc60e6",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/client.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "b1c206d20d07056c4f9a79fdc62f199f6ddd7de8",
+      "sha256": "33ee3a2e208b3d9666dfb84e4a95685dd867776c17f14a55357292c5db2e88e4",
+      "bytes": 9651,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/33/33ee3a2e208b3d9666dfb84e4a95685dd867776c17f14a55357292c5db2e88e4",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/client.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "70ac17c8f9bc2972e95312704b4582ea313e4a86",
+      "sha256": "6754764da41bada8bc3672e795a7a7d181e6a673209701e0208e2f588835ac3d",
+      "bytes": 9525,
+      "branches": [
+        "fix/ncos-generated-contract-sync-20261113"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/67/6754764da41bada8bc3672e795a7a7d181e6a673209701e0208e2f588835ac3d",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/client.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "2649a4c41e58a0735990a6bcc22fbc9ee011fb7f",
+      "sha256": "fb3e2df6fa1e7944afe8a193cd92979b33cc928081a1e0c8e3eb176ec7f3c517",
+      "bytes": 9624,
+      "branches": [
+        "simulados-enfermagem-db-canonico"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/fb/fb3e2df6fa1e7944afe8a193cd92979b33cc928081a1e0c8e3eb176ec7f3c517",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/popup.server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "40adca02eaf00dcd6cf4108b91b7b68df746fc58",
+      "sha256": "151ada41a0e708e14cf73d82b832094eed7f19efbf389dec7b5cf9e1505bfca1",
+      "bytes": 6170,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114",
+        "fix/ncos-generated-contract-sync-20261113"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/15/151ada41a0e708e14cf73d82b832094eed7f19efbf389dec7b5cf9e1505bfca1",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/popup.server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "94ab1036f37050ad51da49402f227a5c91145884",
+      "sha256": "eea0b96e794f773f4c98a3b57106ce459f1935aec4a3786e9ea612cbe4df870d",
+      "bytes": 6785,
+      "branches": [
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "fix/pendencias-camadas-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/ee/eea0b96e794f773f4c98a3b57106ce459f1935aec4a3786e9ea612cbe4df870d",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/popup.server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "9e686ae29e2b0463b7868ce755dd066479ebe8a3",
+      "sha256": "81f8833d9ab639f76b86f4bb23fed42a04cec4b0c6d90b7a67425a9232c9bb4a",
+      "bytes": 6133,
+      "branches": [
+        "feat/projection-unica-f0-suite-real",
+        "grook_10_26",
+        "review/grook-na-main"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/81/81f8833d9ab639f76b86f4bb23fed42a04cec4b0c6d90b7a67425a9232c9bb4a",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "b32a0af440b1012db7acf3d5ff937af0648a95bc",
+      "sha256": "2ecc279dbe8392e3335772597aea282aa8a88cb7d1fddb77ab8fa6230a15dbe9",
+      "bytes": 12597,
+      "branches": [
+        "archivamento",
+        "audit-hardening-2026-10-24",
+        "backup/research-hub-complete-20261026",
+        "feat/career-youth-db-first-20261026",
+        "feat/curiosidades-mem-87-20261026",
+        "feat/research-all-tools-candidate-20261101",
+        "feat/research-hub-governed-20261026",
+        "feat/research-participation-layer-20261026",
+        "feat/research-supabase-bridge-20261101",
+        "fix/shell-consolidation",
+        "idioma/consolidado-19",
+        "idioma/de-v1",
+        "idioma/pt-PT-v1",
+        "implementation-governed-ecosystem",
+        "import/drive-cko-nurseos-20261026",
+        "planning",
+        "preview/central-comando-20261026",
+        "revert-26-plan/pmokernel-finalization-20261031",
+        "simulados-enfermagem-db-canonico",
+        "staging/bibliotecas-corpus-20261026",
+        "viladocuidado",
+        "work/editorial-canonical-learning-20261026"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/2e/2ecc279dbe8392e3335772597aea282aa8a88cb7d1fddb77ab8fa6230a15dbe9",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "233924df32d4e4115e447f684ba1a368e947ee8e",
+      "sha256": "282288a34e2881491720e9858864d1085509f4180304464c949cbdd5541effa3",
+      "bytes": 12596,
+      "branches": [
+        "audit/ce-wave1-evidence-20261101",
+        "canonical/foundation-20261101",
+        "canonical/local-20261101",
+        "fix/ce-admin-e2e-hierarchy-20261101",
+        "fix/governed-activities-cli-20261026",
+        "fix/pendencias-camadas-20261101",
+        "integration/structural-overlay-20261101",
+        "plan/ce-best-excellence-supabase-readonly-20261101",
+        "plan/ce-reconciliacao-v6-20261101",
+        "plan/pmokernel-finalization-20261031"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/28/282288a34e2881491720e9858864d1085509f4180304464c949cbdd5541effa3",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "66d94be9eb10e78fe46e2da2e7d950eef82580d0",
+      "sha256": "e0544cadbfa1a09c3cb4cf2a0ec187dbbb2831aebf7de887a3c858abdd72ca43",
+      "bytes": 12548,
+      "branches": [
+        "audit/cko-atomic-intake-schema-20261114",
+        "canonical/supabase-skeleton-20261101",
+        "cko/cardiologia-corpus-editorial-20261114",
+        "cko/evidence-index-rights-20261114",
+        "cko/pmo-corpus-canonical-20261114",
+        "feat/projection-unica-f0-suite-real",
+        "grook_10_26",
+        "review/grook-na-main"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/e0/e0544cadbfa1a09c3cb4cf2a0ec187dbbb2831aebf7de887a3c858abdd72ca43",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    },
+    {
+      "path": "src/lib/auth/server.ts",
+      "risk": "SECURITY_HOLD",
+      "blob": "1748f83722ca4ef639d1936d56ad478394903837",
+      "sha256": "7882893b6ed69782254efe89f980e4a65d17a0493e6ff26708d4812c1fc30a66",
+      "bytes": 12557,
+      "branches": [
+        "fix/ncos-generated-contract-sync-20261113"
+      ],
+      "sameAsLocalMigration": null,
+      "stored": "intake/quarentena-migracao/78/7882893b6ed69782254efe89f980e4a65d17a0493e6ff26708d4812c1fc30a66",
+      "applied": false,
+      "disposition": "QUARANTINE"
+    }
+  ]
+}

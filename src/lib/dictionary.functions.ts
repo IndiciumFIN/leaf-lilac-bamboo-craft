@@ -33,9 +33,17 @@ export type BusinessRuleRow = {
   status: string;
 };
 
+export type DictionaryEntity = {
+  name: string;
+  layer: string;
+  primary_key: string;
+  purpose: string;
+  links: string;
+};
+
 export const readDictionary = createServerFn({ method: "GET" })
   .middleware([authMiddleware])
-  .handler(async ({ context }): Promise<{ columns: DictionaryColumn[]; terms: DictionaryTerm[]; relations: DictionaryRelation[]; rules: BusinessRuleRow[] }> => {
+  .handler(async ({ context }): Promise<{ columns: DictionaryColumn[]; terms: DictionaryTerm[]; relations: DictionaryRelation[]; rules: BusinessRuleRow[]; entities: DictionaryEntity[] }> => {
     const { getSql } = await import("@/lib/db");
     const sql = await getSql();
     const role = await sql<{ role: string }>`select role from member where user_id = ${context.userId}`;
@@ -58,6 +66,12 @@ export const readDictionary = createServerFn({ method: "GET" })
       from business_rule
       order by id
     `;
+    const entities = await sql<DictionaryEntity>`
+      select entity.name, layer.label as layer, entity.primary_key, entity.purpose, entity.links
+      from schema_entity as entity
+      join schema_layer as layer on layer.id = entity.layer_id
+      order by layer.position, entity.name
+    `;
     const on = (value: unknown) => value === true || value === "t" || value === "true" || value === 1;
     return {
       columns: columns.map((row) => ({
@@ -71,5 +85,6 @@ export const readDictionary = createServerFn({ method: "GET" })
       terms,
       relations,
       rules,
+      entities,
     };
   });

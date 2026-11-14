@@ -1,0 +1,1490 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "intake/mirrors/dev-chatgpt-workspace.git",
+  "main": "refs/heads/main",
+  "branches": 56,
+  "collisions": 210,
+  "duplicates": 13378,
+  "byRisk": {
+    "SECURITY_HOLD": 8,
+    "CANDIDATE_REVIEW": 127,
+    "AUDIT_ARTIFACT_REVIEW": 1,
+    "DATABASE_HOLD": 15,
+    "I18N_VALIDATE": 59
+  },
+  "canonicalMergesPerformed": 0,
+  "releaseGate": "HOLD_HUMAN",
+  "completionClaim": "NOT_100_PERCENT_MIGRATED",
+  "paths": [
+    {
+      "path": ".github/workflows/admin-ux-e2e.yml",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": ".github/workflows/portoes.yml",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": ".github/workflows/verify-bibliotecas.yml",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": ".gitignore",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "agents/release.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "agents/security.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "artifacts/db-indice.json",
+      "risk": "AUDIT_ARTIFACT_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/execution/execution-gates-latest.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/application-current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/content-current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/events.jsonl",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/file-changes.jsonl",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/media-current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/operations-current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/routes-current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "audit/registers/templates-current.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "contracts/cko-governance/opa/kernel_admission.rego",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "contracts/entities/components.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "contracts/entities/routes.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "contracts/entities/tool-components.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/entregas/REGISTRO-DE-ESCRITA.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/handoffs/research-hub-20261026/ARQUIVOS-LOCAIS.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/handoffs/research-hub-20261026/EVIDENCIAS-E-SHAs.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/handoffs/research-hub-20261026/PATCHES-CANDIDATOS.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/handoffs/research-hub-20261026/PENDENCIAS.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/handoffs/research-hub-20261026/README.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/handoffs/research-hub-20261026/RETOMADA.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/expansoes/README.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/FONTES_E_NORMAS.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/MAPA_DOCUMENTAL.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/PLANO_AUDITORIA_COM_VALIDADORES.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/README.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/referencias-normativas.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/REGISTRO_MUDANCAS.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/homologacao/v1/registro-documental.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/PLAN-PMOKERNEL-FINALIZATION-v0.1.0.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "docs/PLAN-TASKS-PMOKERNEL-v0.1.0.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "index.html",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0004_career_youth_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0004_revisao_conteudo.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0005_career_editorial_content_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0006_career_atomization_candidate.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0036_indice_do_banco.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0036_revisao_conteudo.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0037_revisao_idiomas.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0038_canonical_divergence.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0039_kernel_anchors.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0040_kernel_candidate_local.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0041_canonical_suggestions.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0042_suggestions_follow.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0043_canonical_unreviewed.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0044_canonical_conflicts.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "migrations/0047_revisao_automatica.sql",
+      "risk": "DATABASE_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "package-lock.json",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "package.json",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/agent/pmo-controller.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/contracts/activity.schema.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/data/activities.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/data/events.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/manifest.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/README.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/reports/STATUS.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/reports/summary.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "PMO/WUTRIB/tests/pmo-controller.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "README.md",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/canonical/route-contracts.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/canonical/route-template-register.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/canonical/surface-binding-register.v2.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/canonical/surface-contracts.v2.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/governance/find-register.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__accessibility.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__contrast.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__dark.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__dyslexia.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__fontDown.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__fontUp.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__language.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__reset.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__search.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/headerAccessibility__shortcuts.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__about.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__accept.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__autoNote.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__calcs.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__clinicalLock.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__close.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__closePanels.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__commitment.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__commitmentText.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__contact.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__contents.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__contrast.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__cookie.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__cookieAudience.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__cookieNecessary.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__cookiesManage.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__cookieTranslation.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__customize.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__dark.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__dyslexia.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__enter.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__exams.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__follow.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__fontDown.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__fontUp.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__goContent.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__goFooter.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__goMenu.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__goSearch.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__home.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__institutional.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__jobs.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__library.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__menu.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__openList.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__pack.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__reject.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__reset.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__saveCookies.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__search.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__searchPlaceholder.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__shortcuts.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__shortcutsTitle.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__skip.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__subscribe.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__sustainability.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/contracts/interface__system.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/index.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/i18n/incoming/de/register-entry.json",
+      "risk": "I18N_VALIDATE",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "registers/pmo/queue.v1.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/admin-mobile-first.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/admin-ux-e2e.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/alias-hook.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/audit-indice-banco.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/audit-indice-banco.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/audit-source.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/auditar-registro.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/auditar-registro.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/brand-check.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/check-auth-invariant.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/generate-entity-contracts.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/grok-pwa-plugin.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/grok-pwa-shared.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/header-entry.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/migration-plan.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/preencher-derby.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/preencher-derby.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/test-admin-console.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/test-locale-registry.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/with-app-env.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "scripts/write-atomic.test.mjs",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/admin/admin-console.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/admin/admin-layout.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/admin/commander-panel.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/admin/pmo-panel.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/admin/registry.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/site/areas.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/site/breadcrumb.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/site/home-page.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/site/related-content.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/site/section-page.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/site/shell.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/templates/contract-view.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/templates/editorial-view.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/templates/guide-view.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/templates/library-shelves.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/templates/library-view.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/templates/norm-view.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/tools/clinical-form.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/components/tools/clinical-tool.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/core/compliance/validators.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/core/governance/kernel.test.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/core/governance/kernel.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/core/governance/types.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/core/registry/source-registry.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/app-data/client.server.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/auth/client.ts",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/auth/popup.server.ts",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/auth/server.ts",
+      "risk": "SECURITY_HOLD",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/banco/indice.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/chrome.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/contract-index.generated.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/contract.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/db.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/dictionary.test.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/header-i18n.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/it-controls.test.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/locale-registry.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/nav.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/route-registry.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/sections.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/seo.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/source.functions.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/template-catalog.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/lib/template-contract.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routes/blog.$slug.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routes/index.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routes/login.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routes/modelos.$id.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routes/modelos.index.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routes/secao.$slug.tsx",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/routeTree.gen.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/styles.css",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/styles/admin-console.css",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "src/ui.js",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "styles.css",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "tests/browser_e2e.py",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "vercel.json",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    },
+    {
+      "path": "vite.config.ts",
+      "risk": "CANDIDATE_REVIEW",
+      "disposition": "QUARANTINE",
+      "merge": false,
+      "reason": "Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído."
+    }
+  ]
+}

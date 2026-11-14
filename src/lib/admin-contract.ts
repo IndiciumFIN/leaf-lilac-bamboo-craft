@@ -35,7 +35,7 @@ export const adminContracts: Record<DeskModule, AdminContract> = {
     regions: ["toolbar", "list"],
     components: ["ModelDesk"],
     forms: ["RecordToolbar"],
-    reads: ["metamodel"],
+    reads: ["readDictionary"],
     writes: [],
   },
   fila: {

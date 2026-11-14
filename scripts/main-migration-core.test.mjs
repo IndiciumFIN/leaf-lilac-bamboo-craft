@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
-import {validateMigrationManifest,parseTree,parseNameStatus,classifyCandidateRisk,detectMainMigrationCollisions,reconcileBranchPopulation} from './lib/main-migration-core.mjs';
+import {readFileSync, existsSync} from 'node:fs';
+import {validateMigrationManifest,parseTree,parseNameStatus,classifyCandidateRisk,detectMainMigrationCollisions,reconcileBranchPopulation,quarantineCollision} from './lib/main-migration-core.mjs';
 
 const manifest=JSON.parse(readFileSync('registers/governance/main-migration-scope.v1.json','utf8'));
 test('scope contains a controlled, versioned branch universe with explicit HOLD',()=>{
@@ -105,4 +105,23 @@ test('read-only branch auditor never persists git checkout credentials',()=>{
   assert.match(workflow,/persist-credentials:\s*false/);
   assert.doesNotMatch(workflow,/persist-credentials:\s*true/);
   assert.match(workflow,/permissions:\s*\n\s*contents:\s*read/);
+});
+
+test('colisão não escolhe vencedor e não entra na main',()=>{
+  const held=quarantineCollision('package.json','SECURITY_HOLD');
+  assert.equal(held.disposition,'QUARANTINE');
+  assert.equal(held.merge,false);
+});
+
+test('banco e segurança em quarentena não entram na fila aplicada',()=>{
+  const report=JSON.parse(readFileSync('audit-evidence/main-migration/quarentena-banco-seguranca.v1.json','utf8'));
+  assert.equal(report.applied,false);
+  assert.equal(report.releaseGate,'HOLD_HUMAN');
+  assert.equal(report.ledger.length,report.blobs);
+  for (const row of report.ledger) {
+    assert.equal(row.applied,false);
+    assert.equal(row.disposition,'QUARANTINE');
+    assert.equal(row.stored.startsWith('migrations/'),false);
+    assert.equal(existsSync(row.stored),true);
+  }
 });

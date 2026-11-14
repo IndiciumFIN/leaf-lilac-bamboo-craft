@@ -7,8 +7,79 @@ type Queryable = {
 
 const syncSql = readFileSync(new URL("../../migrations/0069_sincronia_dicionario.sql", import.meta.url), "utf8");
 
-/** Roda de novo a sincronia do catálogo. A própria migration já bloqueia a base nova. */
+const refreshSql = `
+update schema_column as column_row
+set
+  data_type = case physical.data_type
+    when 'boolean' then 'booleano'
+    when 'integer' then 'inteiro'
+    when 'bigint' then 'inteiro'
+    when 'smallint' then 'inteiro'
+    when 'timestamp with time zone' then 'instante'
+    when 'text' then 'texto'
+    else physical.data_type
+  end,
+  required = physical.is_nullable = 'NO',
+  key_part = exists (
+    select 1
+    from information_schema.table_constraints as key_row
+    join information_schema.key_column_usage as key_column
+      on key_column.constraint_name = key_row.constraint_name
+     and key_column.table_schema = key_row.table_schema
+     and key_column.table_name = key_row.table_name
+    where key_row.table_schema = 'public'
+      and key_row.table_name = physical.table_name
+      and key_row.constraint_type = 'PRIMARY KEY'
+      and key_column.column_name = physical.column_name
+  ),
+  syntax = physical.data_type
+from information_schema.columns as physical
+where physical.table_schema = 'public'
+  and physical.table_name = column_row.entity
+  and physical.column_name = column_row.name;
+
+update schema_column as column_row
+set ref_entity = parent_table.relname
+from pg_constraint as constraint_row
+join pg_class as child_table on child_table.oid = constraint_row.conrelid
+join pg_class as parent_table on parent_table.oid = constraint_row.confrelid
+join pg_namespace as namespace on namespace.oid = child_table.relnamespace
+join pg_attribute as child_attribute
+  on child_attribute.attrelid = child_table.oid and child_attribute.attnum = any (constraint_row.conkey)
+where constraint_row.contype = 'f'
+  and namespace.nspname = 'public'
+  and cardinality(constraint_row.conkey) = 1
+  and child_table.relname = column_row.entity
+  and child_attribute.attname = column_row.name
+  and column_row.ref_entity is null;
+
+insert into schema_entity (name, layer_id, primary_key, purpose, links)
+select
+  physical.table_name,
+  'candidato',
+  coalesce((
+    select string_agg(key_column.column_name, ' + ' order by key_column.ordinal_position)
+    from information_schema.table_constraints as key_row
+    join information_schema.key_column_usage as key_column
+      on key_column.constraint_name = key_row.constraint_name
+     and key_column.table_schema = key_row.table_schema
+     and key_column.table_name = key_row.table_name
+    where key_row.table_schema = 'public'
+      and key_row.table_name = physical.table_name
+      and key_row.constraint_type = 'PRIMARY KEY'
+  ), 'sem-chave'),
+  'Tabela lida do catálogo. A camada ainda não foi escolhida.',
+  ''
+from information_schema.tables as physical
+where physical.table_schema = 'public'
+  and physical.table_type = 'BASE TABLE'
+  and not exists (select 1 from schema_entity as entity where entity.name = physical.table_name)
+on conflict (name) do nothing;
+`;
+
+/** Atualiza tipo, obrigatoriedade e chave a partir do catálogo. Não troca a definição humana. */
 export async function syncDictionary(db: Queryable) {
+  await db.exec(refreshSql);
   await db.exec(syncSql);
 }
 

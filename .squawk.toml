@@ -1,0 +1,5 @@
+# Cada arquivo em migrations/ roda dentro de uma transação (scripts/migrate.mjs).
+# CREATE INDEX CONCURRENTLY não pode entrar nessa transação, então a regra fica de fora.
+pg_version = "16.0"
+assume_in_transaction = true
+excluded_rules = ["require-concurrent-index-creation"]

@@ -105,3 +105,14 @@ export function detectMainMigrationCollisions(candidateByBranch) {
   }
   return {collisions:collisions.sort((a,b)=>a.path.localeCompare(b.path)),duplicates:duplicates.sort((a,b)=>a.path.localeCompare(b.path)),distinctPaths:paths.size};
 }
+
+/** Nenhuma colisão entra em main nesta passagem. Data e nome não escolhem vencedor. */
+export function quarantineCollision(path, risk) {
+  return {
+    path,
+    risk,
+    disposition: 'QUARANTINE',
+    merge: false,
+    reason: 'Sem admissão do kernel e sem eleição do PMO. O arquivo local não é substituído.',
+  };
+}

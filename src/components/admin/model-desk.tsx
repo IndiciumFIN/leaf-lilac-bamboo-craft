@@ -1,16 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ModuleFrame, RecordToolbar, Status } from "@/components/admin/admin-layout";
 import { commandGap, commandProposal } from "@/lib/command-gap";
-import { readDictionary, type BusinessRuleRow, type DictionaryColumn, type DictionaryRelation, type DictionaryTerm } from "@/lib/dictionary.functions";
-import { metamodel } from "@/lib/metamodel";
-
-const groups = [
-  ["Identidade", metamodel.identity],
-  ["Acesso", metamodel.access],
-  ["Processo", metamodel.process],
-  ["Clínico", metamodel.clinical],
-  ["Arquivo", metamodel.archive],
-] as const;
+import { readDictionary, type BusinessRuleRow, type DictionaryColumn, type DictionaryEntity, type DictionaryRelation, type DictionaryTerm } from "@/lib/dictionary.functions";
 
 export function ModelDesk() {
   const [search, setSearch] = useState("");
@@ -20,23 +11,43 @@ export function ModelDesk() {
   const [terms, setTerms] = useState<DictionaryTerm[]>([]);
   const [relations, setRelations] = useState<DictionaryRelation[]>([]);
   const [rules, setRules] = useState<BusinessRuleRow[]>([]);
+  const [entities, setEntities] = useState<DictionaryEntity[]>([]);
+  const [phase, setPhase] = useState<"carregando" | "pronto" | "falhou">("carregando");
   const needle = search.trim().toLowerCase();
+  const groups = useMemo(() => {
+    const layers = new Map<string, { entity: string; key: string; stores: string; links: string }[]>();
+    for (const row of entities) {
+      const list = layers.get(row.layer) ?? [];
+      list.push({ entity: row.name, key: row.primary_key, stores: row.purpose, links: row.links });
+      layers.set(row.layer, list);
+    }
+    return [...layers.entries()];
+  }, [entities]);
   const rows = useMemo(() => groups.flatMap(([label, items]) => items
     .filter((row) => group === "" || label === group)
-    .filter((row) => `${row.entity} ${row.key} ${"stores" in row ? row.stores : ""}`.toLowerCase().includes(needle))
-    .map((row) => ({ group: label, ...row }))), [group, needle]);
+    .filter((row) => `${row.entity} ${row.key} ${row.stores}`.toLowerCase().includes(needle))
+    .map((row) => ({ group: label, ...row }))), [groups, group, needle]);
   const ordered = [...rows].sort((a, b) => (sort === "grupo" ? a.group.localeCompare(b.group, "pt") : a.entity.localeCompare(b.entity, "pt")));
   const total = groups.reduce((sum, [, items]) => sum + items.length, 0);
   const shownColumns = columns.filter((row) => `${row.entity} ${row.name} ${row.definition}`.toLowerCase().includes(needle));
   const shownTerms = terms.filter((row) => `${row.domain} ${row.code} ${row.label}`.toLowerCase().includes(needle));
 
   useEffect(() => {
+    let live = true;
     void readDictionary().then((dictionary) => {
+      if (!live) return;
       setColumns(dictionary.columns);
       setTerms(dictionary.terms);
       setRelations(dictionary.relations);
       setRules(dictionary.rules);
-    }).catch(() => undefined);
+      setEntities(dictionary.entities);
+      setPhase("pronto");
+    }).catch(() => {
+      if (live) setPhase("falhou");
+    });
+    return () => {
+      live = false;
+    };
   }, []);
 
   return (
@@ -53,7 +64,12 @@ export function ModelDesk() {
           filters={[{ id: "grupo", label: "Grupo", value: group, onChange: setGroup, options: [{ value: "", label: "Todos" }, ...groups.map(([label]) => ({ value: label, label }))] }]}
         />
       )}
-      list={(
+      list={phase !== "pronto" ? (
+        <div className="model-toast" role="status" aria-live="polite">
+          <span className="model-spin" aria-hidden="true" />
+          <span>{phase === "carregando" ? "Carregando o dicionário deste ambiente." : "O dicionário não carregou. A lista fixa não entra no lugar."}</span>
+        </div>
+      ) : (
         <>
           <p className="tool-help">{ordered.length} de {total} tabelas deste ambiente. A proposta de {commandProposal.date} fala em {commandProposal.tables} nomes. Aprovar o parecer não cria tabela.</p>
           {commandGap.map((row) => (
@@ -63,8 +79,8 @@ export function ModelDesk() {
             <article key={`${row.group}-${row.entity}`} className="model-card">
               <b>{row.entity}</b>
               <span>{row.group} · chave {row.key}</span>
-              {"stores" in row && row.stores ? <span>Guarda: {row.stores}</span> : null}
-              {"links" in row && row.links ? <span>Liga: {row.links}</span> : null}
+              {row.stores ? <span>Guarda: {row.stores}</span> : null}
+              {row.links ? <span>Liga: {row.links}</span> : null}
             </article>
           ))}
           {!ordered.length ? <p className="next-act">Nenhuma tabela com “{search.trim()}”.</p> : null}
@@ -120,7 +136,6 @@ export function ModelDesk() {
               ))}
             </tbody>
           </table>
-          <p className="next-act">Fora do banco: {metamodel.notStored.join(", ")}.</p>
         </>
       )}
     />

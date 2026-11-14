@@ -1,6 +1,6 @@
 # Pendencias — branch-bibliotecas
 
-Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-10-23 18:37Z**.
+Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 19:55Z**.
 Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 > A lista so cresce quando algo esta de fato por fazer. Se um gate passa, o item desaparece.
@@ -9,80 +9,13 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 | Medida | Valor |
 |---|---|
-| GATE VERDE | **12** |
-| GATE VERMELHO | **0** |
-| DESVIO DE TEMPLATE | **5** |
-| TEMPLATE SEM PAGINA | **8** |
+| GATE VERDE | **10** |
+| GATE VERMELHO | **2** |
+| DESVIO DE TEMPLATE | **0** |
+| TEMPLATE SEM PAGINA | **0** |
 | UTC EM ABERTO | **12** |
 | SCHEMA CKO IMPLEMENTADO | **0** |
 | SCHEMA CKO AUSENTE | **41** |
-
-## Templates (13)
-
-### Calculadoras Trabalhistas — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** CFM/ANVISA/COREN — a qualificar
-- **Evidencia:** `src/lib/template-catalog.ts#calculadoras-trabalhistas`
-
-### Doencas Compulsorias — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** CFM/CID — a qualificar
-- **Evidencia:** `src/lib/template-catalog.ts#doencas-compulsorias`
-
-### Exames Laboratoriais — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** consensos/sociedades — a qualificar
-- **Evidencia:** `src/lib/template-catalog.ts#exames-laboratoriais`
-
-### SBAR — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** protocolo de passagem de plantao — a qualificar
-- **Evidencia:** `src/lib/template-catalog.ts#sbar`
-
-### Conteudo de curiosidades — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** 87 slots reservados, sem conteudo escrito
-- **Evidencia:** `src/lib/template-catalog.ts#curiosidades`
-
-### Ferramentas de pesquisa — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** a definir com o dono
-- **Evidencia:** `src/lib/template-catalog.ts#ferramentas-pesquisa`
-
-### Forum de enfermagem — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** a definir com o dono
-- **Evidencia:** `src/lib/template-catalog.ts#forum`
-
-### Album de Enfermagem — sem pagina
-- **Estado:** CONTEUDO GOVERNADO
-- **Detalhe:** a definir com o dono
-- **Evidencia:** `src/lib/template-catalog.ts#album`
-
-### editorial — desvio de contrato
-- **Estado:** DESVIO MEDIDO
-- **Detalhe:** /modelos/institucional toc sidebar != none | tools a mais: favorite,listen
-- **Evidencia:** `scripts/audit-templates.mjs -> audit/audit-templates-latest.log`
-
-### Institucional — desvio de contrato
-- **Estado:** DESVIO MEDIDO
-- **Detalhe:** /modelos/institucional toc sidebar != none
-- **Evidencia:** `scripts/audit-templates.mjs -> audit/audit-templates-latest.log`
-
-### Biblioteca de Imagens — desvio de contrato
-- **Estado:** DESVIO MEDIDO
-- **Detalhe:** /bibliotecas/anatomia toc none != sidebar | related false != true | note none != inline | tools faltando: favorite,print,readingTime,listen
-- **Evidencia:** `scripts/audit-templates.mjs -> audit/audit-templates-latest.log`
-
-### Area do administrador — desvio de contrato
-- **Estado:** DESVIO MEDIDO
-- **Detalhe:** /admin hero none != page | crumbs false != true
-- **Evidencia:** `scripts/audit-templates.mjs -> audit/audit-templates-latest.log`
-
-### Slides — desvio de contrato
-- **Estado:** DESVIO MEDIDO
-- **Detalhe:** /modelos/slides hero none != page | related false != true | note none != inline | tools faltando: print,readingTime
-- **Evidencia:** `scripts/audit-templates.mjs -> audit/audit-templates-latest.log`
 
 ## Politica CKO (CKO-POL-UT-001) (28)
 
@@ -226,6 +159,18 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 - **Detalhe:** enquanto fechado, nada pode ir a RELEASED — a Aldrete segue como candidata, fora do indice
 - **Evidencia:** `registers/governance/find-register.v1.json`
 
+## Gate de release (2)
+
+### surface-bindings
+- **Estado:** FAIL
+- **Detalhe:** ver gate
+- **Evidencia:** `scripts/audit-execution-gates.mjs`
+
+### template-contract
+- **Estado:** FAIL
+- **Detalhe:** ver gate
+- **Evidencia:** `scripts/audit-execution-gates.mjs`
+
 ## Design system (3)
 
 ### Token mapping do pacote CKO
@@ -270,14 +215,37 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 - **Detalhe:** article, case, flashcard, quiz, infographic, pdf, pocket_guide, slides — os 8 referenciam profiles/*.json que nao existem no pacote
 - **Evidencia:** `contracts/cko-skeleton/catalog/profiles/`
 
+## Caminho ate a conclusao (5)
+
+### OPA executável
+- **Estado:** AUSENTE
+- **Detalhe:** O programa opa não responde. A decisão gravada continua opa=nao_executado e o pedido fica em_espera.
+- **Evidencia:** `scripts/ce-check.mjs`
+
+### Contratos CKO fora do vocabulário
+- **Estado:** 162 DIVERGENTES · 14 GRUPOS
+- **Detalhe:** Não reescrever o enum. Os maiores grupos são decision=BOUND, authority_class=CLINICAL e privacy_policy=NOT_APPLICABLE.
+- **Evidencia:** `audit-evidence/ncos-canonical-source-lineage/schema-drift-delta.v1.json`
+
+### Normativo transversal atômico
+- **Estado:** BLOQUEADO
+- **Detalhe:** Piloto de 3 átomos e 2 normas. A Resolução 545 está cortada. A 564 traz cabeçalho do Diário Oficial. ISO e ABNT ficam no identificador. A fórmula não nasce do átomo.
+- **Evidencia:** `src/lib/normative-desk.ts#lineageSteps`
+
+### Quatro fichas normativas sem átomo
+- **Estado:** ABERTAS DE PROPOSITO
+- **Detalhe:** Código de ética sem número repetido, e duas resoluções da década de 80 sem ano. Sem número, não extrair.
+- **Evidencia:** `src/core/compliance/norm-card.test.ts`
+
+### Admissão do kernel e conclusão da plataforma
+- **Estado:** NAO CONCLUIDA
+- **Detalhe:** Nenhuma migration grava kernel_order admitida. A etapa conclusao permanece falsa até existir pedido admitido por outra pessoa, com validador que passou e OPA executado. Publicar é outra ação.
+- **Evidencia:** `src/core/compliance/platform-conclusion.ts`
+
 ## O que ja esta fechado
 
-- Build de producao (`build:spa`) — 52 HTML, 53 arquivos materializados
-- `npx tsc --noEmit` — limpo
-- `npm test` — 187/187
-- Gates de release — 12/12 verdes
-- Contratos runtime — derivados do codigo, gate barra entidade sem contrato e contrato orfao
-- Route Registry (UTC-051) — canonical e hreflang derivados do catalogo
-- Sitemap — 41 URLs, gerado no prebuild, conferido pelo gate
-- Aldrete — candidata, fora do indice, com os 7 HOLDs declarados
-- Catalogo de 30 templates — cada um com kind, frame, nota e materia-prima declarados
+Itens conferidos pelo arquivo que os prova. Contagem antiga de teste e de build não é repetida aqui porque não foi medida nesta geração.
+
+- Amarração de arquivo — migrations/0092_amarracao_arquivo.sql. Arquivo rastreado não nasce canônico. Canônicos são só os oito tokens congelados.
+- Bloqueio de camada — migrations/0091_camada_anterior.sql. Dado não entra se a camada anterior não tem tabela.
+- Plano detalhado — docs/PLANO-ATE-CONCLUSAO.md
