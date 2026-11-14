@@ -238,6 +238,182 @@ export const contractTools = [
   {
     "id": "CE-TOOL-exames-laboratoriais",
     "slug": "exames-laboratoriais"
+  },
+  {
+    "id": "CE-TOOL-escalanumerica",
+    "slug": "escalanumerica"
+  },
+  {
+    "id": "CE-TOOL-insulina",
+    "slug": "insulina"
+  },
+  {
+    "id": "CE-TOOL-gestacional",
+    "slug": "gestacional"
+  },
+  {
+    "id": "CE-TOOL-gasometria",
+    "slug": "gasometria"
+  },
+  {
+    "id": "CE-TOOL-gosnell",
+    "slug": "gosnell"
+  },
+  {
+    "id": "CE-TOOL-norton",
+    "slug": "norton"
+  },
+  {
+    "id": "CE-TOOL-waterlow",
+    "slug": "waterlow"
+  },
+  {
+    "id": "CE-TOOL-berg",
+    "slug": "berg"
+  },
+  {
+    "id": "CE-TOOL-downton",
+    "slug": "downton"
+  },
+  {
+    "id": "CE-TOOL-hendrich",
+    "slug": "hendrich"
+  },
+  {
+    "id": "CE-TOOL-humpty",
+    "slug": "humpty"
+  },
+  {
+    "id": "CE-TOOL-tinetti",
+    "slug": "tinetti"
+  },
+  {
+    "id": "CE-TOOL-cam",
+    "slug": "cam"
+  },
+  {
+    "id": "CE-TOOL-cincinnati",
+    "slug": "cincinnati"
+  },
+  {
+    "id": "CE-TOOL-fast",
+    "slug": "fast"
+  },
+  {
+    "id": "CE-TOOL-four",
+    "slug": "four"
+  },
+  {
+    "id": "CE-TOOL-glasgow",
+    "slug": "glasgow"
+  },
+  {
+    "id": "CE-TOOL-nihss",
+    "slug": "nihss"
+  },
+  {
+    "id": "CE-TOOL-rancholosamigos",
+    "slug": "rancholosamigos"
+  },
+  {
+    "id": "CE-TOOL-capurro",
+    "slug": "capurro"
+  },
+  {
+    "id": "CE-TOOL-nips",
+    "slug": "nips"
+  },
+  {
+    "id": "CE-TOOL-silverman",
+    "slug": "silverman"
+  },
+  {
+    "id": "CE-TOOL-ramsay",
+    "slug": "ramsay"
+  },
+  {
+    "id": "CE-TOOL-richmond",
+    "slug": "richmond"
+  },
+  {
+    "id": "CE-TOOL-curb-65",
+    "slug": "curb-65"
+  },
+  {
+    "id": "CE-TOOL-qsofa",
+    "slug": "qsofa"
+  },
+  {
+    "id": "CE-TOOL-sofa",
+    "slug": "sofa"
+  },
+  {
+    "id": "CE-TOOL-bps",
+    "slug": "bps"
+  },
+  {
+    "id": "CE-TOOL-cries",
+    "slug": "cries"
+  },
+  {
+    "id": "CE-TOOL-flacc",
+    "slug": "flacc"
+  },
+  {
+    "id": "CE-TOOL-lanss",
+    "slug": "lanss"
+  },
+  {
+    "id": "CE-TOOL-painad",
+    "slug": "painad"
+  },
+  {
+    "id": "CE-TOOL-barthel",
+    "slug": "barthel"
+  },
+  {
+    "id": "CE-TOOL-katz",
+    "slug": "katz"
+  },
+  {
+    "id": "CE-TOOL-lachs",
+    "slug": "lachs"
+  },
+  {
+    "id": "CE-TOOL-lawton",
+    "slug": "lawton"
+  },
+  {
+    "id": "CE-TOOL-bishop",
+    "slug": "bishop"
+  },
+  {
+    "id": "CE-TOOL-asa",
+    "slug": "asa"
+  },
+  {
+    "id": "CE-TOOL-classificacao_wifi",
+    "slug": "classificacao_wifi"
+  },
+  {
+    "id": "CE-TOOL-sistema_sinbad",
+    "slug": "sistema_sinbad"
+  },
+  {
+    "id": "CE-TOOL-hamilton",
+    "slug": "hamilton"
+  },
+  {
+    "id": "CE-TOOL-gds",
+    "slug": "gds"
+  },
+  {
+    "id": "CE-TOOL-fugulin",
+    "slug": "fugulin"
+  },
+  {
+    "id": "CE-TOOL-elpo",
+    "slug": "elpo"
   }
 ] as const;
 export const contractComponents = [

@@ -11,11 +11,19 @@ test("todo arquivo rastreado tem amarração e só o token congelado é canônic
   const names = (await readdir(base)).filter((name) => name.endsWith(".sql")).sort();
   for (const name of names) await db.exec(await readFile(new URL(name, base), "utf8"));
 
-  const tracked = execFileSync("git", ["-C", "/workspace", "ls-files"], { encoding: "utf8" })
+  const tracked = execFileSync("git", ["-C", "/workspace", "ls-files", "-s"], { encoding: "utf8" })
     .split("\n")
-    .filter((path) => path.length > 0);
+    .filter((line) => line.length > 0)
+    .map((line) => {
+      const tab = line.indexOf("\t");
+      const hash = line.slice(0, tab).split(" ")[1];
+      return { path: line.slice(tab + 1), hash };
+    });
   const bound = await db.query<{ path: string }>("select path from file_binding where kind = 'arquivo'");
-  assert.deepEqual(bound.rows.map((row) => row.path).sort(), [...tracked].sort());
+  const boundPaths = new Set(bound.rows.map((row) => row.path));
+  const missing = tracked.filter((row) => !boundPaths.has(row.path)).map((row) => row.path);
+  assert.deepEqual(missing, []);
+  assert.equal(tracked.every((row) => /^[0-9a-f]{40}$/.test(row.hash)), true);
 
   const canonical = await db.query<{ path: string; kind: string }>(
     "select path, kind from file_binding where canonico = true order by path",

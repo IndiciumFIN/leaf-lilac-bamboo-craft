@@ -23,6 +23,22 @@ test("a validação normativa conta a leitura, grava o rastro e não admite", as
   const names = (await readdir(base)).filter((name) => name.endsWith(".sql")).sort();
   for (const name of names) await db.exec(await readFile(new URL(name, base), "utf8"));
   const sql = asSql(db);
+  await db.exec(`
+    insert into "user" (id, name, email, "emailVerified") values
+      ('admin-1', 'Admin', 'admin-1@teste.local', true),
+      ('agent-ui', 'Agente', 'agent-ui@teste.local', true);
+    insert into access_grant (user_id, role) values
+      ('admin-1', 'admin'),
+      ('agent-ui', 'agente');
+  `);
+  const revocations = await db.query<{ id: string; reading: string }>(
+    "select id, reading from normative_revocation order by id",
+  );
+  assert.deepEqual(
+    revocations.rows.map((row) => row.id),
+    ["REV-COFEN-358-736", "REV-COFEN-429-754", "REV-COFEN-543-743"],
+  );
+  assert.equal(revocations.rows.every((row) => row.reading === "EM_ANALISE"), true);
 
   await assert.rejects(
     () => validateNormative(sql, { role: "agente", actorId: "agent-ui" }),

@@ -104,7 +104,7 @@ const files = {
         // ── forma do CKO `tool.schema.json` ──
         tool_kind: m.kind === "escala" ? "ESCALA" : "CALCULADORA",
         status: m.status ?? "CANDIDATE",
-        publicacao: m.publicacao ?? "publicada",
+        publicacao: m.publicacao === "publicada" && (m.sourceIds?.length ?? 0) > 0 ? "publicada" : "candidata",
         holds: m.holds ?? [],
         source_ids: m.sourceIds ?? [],
         authority_binding_refs: binds.map((b) => b.canonical_id),

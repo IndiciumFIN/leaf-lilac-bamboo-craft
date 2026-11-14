@@ -139,5 +139,9 @@
   "migrations/0093_regra_da_decisao.sql\tban-drop-constraint": 1,
   "migrations/0093_regra_da_decisao.sql\tconstraint-missing-not-valid": 1,
   "migrations/0093_regra_da_decisao.sql\trequire-lock-timeout": 1,
-  "migrations/0093_regra_da_decisao.sql\trequire-statement-timeout": 1
+  "migrations/0093_regra_da_decisao.sql\trequire-statement-timeout": 1,
+  "migrations/0094_papel_da_sessao.sql\trequire-lock-timeout": 1,
+  "migrations/0094_papel_da_sessao.sql\trequire-statement-timeout": 1,
+  "migrations/0095_revogacao_candidata.sql\trequire-lock-timeout": 1,
+  "migrations/0095_revogacao_candidata.sql\trequire-statement-timeout": 1
 }

@@ -22,6 +22,18 @@ test("cada ação da política é testada e quem não administra não escreve", 
   const names = (await readdir(base)).filter((name) => name.endsWith(".sql")).sort();
   for (const name of names) await db.exec(await readFile(new URL(name, base), "utf8"));
   const sql = asSql(db);
+  await db.exec(`
+    insert into "user" (id, name, email, "emailVerified") values
+      ('admin-teste', 'Admin', 'admin-teste@teste.local', true),
+      ('agente-teste', 'Agente', 'agente-teste@teste.local', true),
+      ('assinante-teste', 'Assinante', 'assinante-teste@teste.local', true),
+      ('agente-rastro', 'Rastro', 'agente-rastro@teste.local', true);
+    insert into access_grant (user_id, role) values
+      ('admin-teste', 'admin'),
+      ('agente-teste', 'agente'),
+      ('assinante-teste', 'assinante'),
+      ('agente-rastro', 'agente');
+  `);
   const rules = await db.query<{ id: string; subject_role: string; action: string; effect: string }>(
     "select id, subject_role, action, effect from policy_rule where package_id = 'acesso' order by action, subject_role",
   );

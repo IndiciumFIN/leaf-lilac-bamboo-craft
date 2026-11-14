@@ -19,10 +19,24 @@ function asSql(db: PGlite): Sql {
 test("sem regra a decisão é negação, e agente não publica", async () => {
   const db = new PGlite();
   const base = new URL("../../migrations/", import.meta.url);
-  for (const name of ["0006_governance.sql", "0008_canonical.sql", "0025_dictionary.sql", "0026_control_plane.sql"]) {
+  for (const name of ["0001_auth.sql", "0006_governance.sql", "0008_canonical.sql", "0025_dictionary.sql", "0026_control_plane.sql"]) {
     await db.exec(await readFile(new URL(name, base), "utf8"));
   }
+  await db.exec(`
+    create or replace function forbid_without_prior_layer()
+    returns trigger language plpgsql as $$ begin return new; end $$;
+  `);
+  await db.exec(await readFile(new URL("0094_papel_da_sessao.sql", base), "utf8"));
   const sql = asSql(db);
+  await db.exec(`
+    insert into "user" (id, name, email, "emailVerified") values
+      ('admin-1', 'Admin', 'admin-1@teste.local', true),
+      ('agent-ui', 'Agente', 'agent-ui@teste.local', true);
+    insert into access_grant (user_id, role) values
+      ('admin-1', 'admin'),
+      ('agent-ui', 'agente');
+  `);
+  await assert.rejects(() => decide(sql, { action: "publicar_idioma", role: "admin", actorId: "agent-ui" }), /sessão/);
   await assert.rejects(() => decide(sql, { action: "publicar_idioma", role: "agente", actorId: "agent-ui" }), /nega/);
   const allowed = await decide(sql, { action: "publicar_idioma", role: "admin", actorId: "admin-1" });
   assert.equal(allowed.effect, "allow");

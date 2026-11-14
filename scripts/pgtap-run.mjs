@@ -2,23 +2,20 @@
 /** Aplica as migrations da raiz e roda os testes pgTAP no PGLite. Sem banco remoto. */
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { PGlite } from "@electric-sql/pglite";
 import { pgtap } from "@electric-sql/pglite-pgtap";
+import { openMigrated } from "./lib/migrated-pglite.mjs";
 import { tapFailures } from "./lib/pgtap-result.mjs";
 
-if (process.env.DATABASE_URL?.trim() || process.env.PGHOST?.trim()) {
-  throw new Error("REFUSED_REMOTE_DB_ENV");
-}
-
-const migrations = (await readdir("migrations")).filter((name) => name.endsWith(".sql")).sort();
 const tests = (await readdir("pgtap")).filter((name) => name.endsWith(".sql")).sort();
 if (tests.length === 0) throw new Error("NO_PGTAP");
 
-const db = new PGlite({ extensions: { pgtap } });
-await db.exec("create schema if not exists tap; create extension if not exists pgtap schema tap cascade");
-for (const name of migrations) {
-  await db.exec(await readFile(join("migrations", name), "utf8"));
-}
+const { db, cached } = await openMigrated({
+  extensions: { pgtap },
+  async beforeMigrations(database) {
+    await database.exec("create schema if not exists tap; create extension if not exists pgtap schema tap cascade");
+  },
+});
+console.log(`[pgtap] banco ${cached ? "reusado" : "gravado"}`);
 
 const lines = [];
 for (const name of tests) {
@@ -41,6 +38,7 @@ for (const name of tests) {
   }
 }
 for (const line of lines) console.log(line);
+await db.close();
 const failed = tapFailures(lines);
 if (failed.length) {
   console.error(`[pgtap] ${failed.length} falha(s). Não é publicação.`);

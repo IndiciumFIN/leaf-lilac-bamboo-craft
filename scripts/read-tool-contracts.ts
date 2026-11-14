@@ -25,7 +25,7 @@ writeFileSync(
       kind: t.kind,
       title: t.title,
       status: t.status ?? null,
-      publicacao: candidateTools.includes(t) ? "candidata" : (t.publicacao ?? "publicada"),
+      publicacao: t.publicacao === "publicada" && (t.sourceIds?.length ?? 0) > 0 ? "publicada" : "candidata",
       holds: t.holds ?? [],
       sourceIds: t.sourceIds ?? [],
       faixa: t.bands?.length

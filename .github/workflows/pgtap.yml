@@ -1,12 +1,26 @@
 name: pgTAP on PGlite (no deploy)
 on:
+  push:
+    branches: [main]
+    paths:
+      - "migrations/*.sql"
+      - "pgtap/**"
+      - "scripts/pgtap-run.mjs"
+      - "scripts/generate-fk-pgtap.mjs"
+      - "scripts/lib/pgtap-result.mjs"
+      - "scripts/lib/migrated-pglite.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/pgtap.yml"
   pull_request:
     branches: [main]
     paths:
       - "migrations/*.sql"
       - "pgtap/**"
       - "scripts/pgtap-run.mjs"
+      - "scripts/generate-fk-pgtap.mjs"
       - "scripts/lib/pgtap-result.mjs"
+      - "scripts/lib/migrated-pglite.mjs"
       - "package.json"
       - "package-lock.json"
       - ".github/workflows/pgtap.yml"

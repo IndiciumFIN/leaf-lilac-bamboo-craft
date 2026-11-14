@@ -1,5 +1,16 @@
 name: Squawk SQL migrations (no deploy)
 on:
+  push:
+    branches: [main]
+    paths:
+      - "migrations/*.sql"
+      - ".squawk.toml"
+      - "scripts/squawk-gate.mjs"
+      - "scripts/lib/squawk-gate.mjs"
+      - "scripts/squawk-baseline.json"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/squawk.yml"
   pull_request:
     branches: [main]
     paths:

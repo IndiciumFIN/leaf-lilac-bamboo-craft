@@ -23,6 +23,16 @@ test("a política deixa o administrador extrair e nega o agente", async () => {
   const names = (await readdir(base)).filter((name) => name.endsWith(".sql")).sort();
   for (const name of names) await db.exec(await readFile(new URL(name, base), "utf8"));
   const sql = asSql(db);
+  await db.exec(`
+    insert into "user" (id, name, email, "emailVerified") values
+      ('admin-1', 'Admin', 'admin-1@teste.local', true),
+      ('agent-ui', 'Agente', 'agent-ui@teste.local', true),
+      ('assinante-1', 'Assinante', 'assinante-1@teste.local', true);
+    insert into access_grant (user_id, role) values
+      ('admin-1', 'admin'),
+      ('agent-ui', 'agente'),
+      ('assinante-1', 'assinante');
+  `);
 
   const missingNorm = await db.query<{ n: number }>(`
     select count(*)::int as n from fundamento

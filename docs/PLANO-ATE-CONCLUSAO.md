@@ -12,7 +12,7 @@ Publicar não é concluir. Admitir um pedido não publica. Copiar cláusula não
 | Arquivo anterior ao design system | `anterior_ds = true` e `canonico = false` | A ligação não promove. |
 | Camadas em ordem | `migrations/0091_camada_anterior.sql` | Conteúdo sem caminho de origem não entra. |
 | Política do pacote `acesso` | `src/lib/policy-catalog.test.ts` | Agente e assinante não escrevem. |
-| Extração governada | `migrations/0088_extracao_policy.sql` | Entra identificador e linha editorial. A cláusula não entra. |
+| Extração governada | `migrations/0088_extracao_governada.sql` | Entra identificador e linha editorial. A cláusula não entra. |
 | Validação normativa | `migrations/0089_validacao_normativa.sql` | Conta o vínculo. Não muda `CONFORME`. |
 | Mestre e kernel | `migrations/0090_mestre_kernel.sql` | O pedido nasce `em_espera`. O validador nasce `passed = false`. |
 | Rastro | `activity_event` | A linha não se altera. |

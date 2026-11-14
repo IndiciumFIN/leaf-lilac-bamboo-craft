@@ -28,6 +28,9 @@ const direto = JSON.parse(
     { encoding: "utf8", cwd: root, stdio: ["ignore", "pipe", "inherit"] },
   ),
 );
+function ferramentaNoIndice(tool) {
+  return tool.publicacao === "publicada" && (tool.sourceIds?.length ?? 0) > 0;
+}
 const ferramentasDiretas = direto.ferramentas;
 const secoesDiretas = direto.secoes;
 const artigosDiretas = direto.artigos;
@@ -58,11 +61,11 @@ test("o indice bate com o CATALOGO lido diretamente, nao com o registry", () => 
     "/",
     ...artigosDiretas.map((slug) => `/blog/${slug}`),
     ...secoesDiretas.filter((s) => (s.publicacao ?? "publicada") === "publicada").map((s) => `/secao/${s.slug}`),
-    ...ferramentasDiretas.filter((t) => (t.publicacao ?? "publicada") === "publicada").map((t) => `/ferramentas/${t.slug}`),
+    ...ferramentasDiretas.filter(ferramentaNoIndice).map((t) => `/ferramentas/${t.slug}`),
   ];
   assert.deepEqual(dump.publicPaths, esperado);
   assert.ok(dump.publicPaths.includes("/"), "a home tem de ser indexavel");
-  assert.ok(dump.publicPaths.length >= 40, `sitemap com apenas ${dump.publicPaths.length} rotas`);
+  assert.ok(dump.publicPaths.length >= 30, `sitemap com apenas ${dump.publicPaths.length} rotas`);
 });
 
 test("toda secao publicada entra no indice e nenhuma candidata entra", () => {
@@ -78,7 +81,7 @@ test("toda ferramenta publicada entra no indice e nenhuma candidata entra", () =
   for (const t of ferramentasDiretas) {
     const caminho = `/ferramentas/${t.slug}`;
     const noIndice = dump.publicPaths.includes(caminho);
-    const deveEntrar = (t.publicacao ?? "publicada") === "publicada";
+    const deveEntrar = ferramentaNoIndice(t);
     assert.equal(noIndice, deveEntrar, `${caminho}: ${noIndice ? "esta" : "nao esta"} no indice, mas publicacao=${t.publicacao ?? "publicada"}`);
   }
 });
@@ -132,6 +135,8 @@ test("a ferramenta candidata fica fora do indice", () => {
   const aldrete = dump.registry.find((r) => r.path === "/ferramentas/aldrete");
   assert.ok(aldrete, "a Aldrete deveria estar no registry");
   assert.equal(aldrete.indexavel, false, "a Aldrete nao pode ser indexavel enquanto os HOLDs estiverem abertos");
+  const braden = dump.registry.find((r) => r.path === "/ferramentas/braden");
+  assert.equal(braden.indexavel, false, "Braden sem fonte declarada nao entra no indice");
 });
 
 test("o canonical nao e montado por literal em seo.ts", () => {

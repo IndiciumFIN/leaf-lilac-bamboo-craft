@@ -71,7 +71,7 @@ function ferramentas(): RouteEntry[] {
     description: tool.lead,
     // `publicacao: "candidata"` fica FORA do indice ate a homologacao humana
     // (CKO-POL-R-005, FIND-CTR-009). Ver `clinical-tools.v1.json`.
-    indexavel: (tool.publicacao ?? "publicada") === "publicada",
+    indexavel: tool.publicacao === "publicada" && (tool.sourceIds?.length ?? 0) > 0,
   }));
 }
 

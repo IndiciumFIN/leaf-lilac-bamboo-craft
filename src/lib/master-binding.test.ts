@@ -27,7 +27,12 @@ test("o mestre abre pedido em espera e o OPA não admite", async () => {
 
   await db.exec(`
     insert into "user" (id, name, email, "emailVerified", "createdAt", "updatedAt")
-    values ('admin-1', 'Admin', 'admin@example.com', true, now(), now())
+    values
+      ('admin-1', 'Admin', 'admin@example.com', true, now(), now()),
+      ('agent-ui', 'Agente', 'agent-ui@teste.local', true, now(), now());
+    insert into access_grant (user_id, role) values
+      ('admin-1', 'admin'),
+      ('agent-ui', 'agente');
   `);
   await db.exec(`
     insert into fundamento (id, name, domain, right_name, priority, support_id) values

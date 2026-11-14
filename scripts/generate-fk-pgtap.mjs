@@ -1,16 +1,13 @@
 #!/usr/bin/env node
 /** Gera um throws_ok por chave estrangeira. Não publica e não escreve em migrations. */
 import { createHash } from "node:crypto";
-import { readdir, readFile, writeFile } from "node:fs/promises";
-import { join } from "node:path";
-import { PGlite } from "@electric-sql/pglite";
+import { writeFile } from "node:fs/promises";
+import { openMigrated } from "./lib/migrated-pglite.mjs";
 
 const out = "pgtap/chaves_estrangeiras.sql";
 const write = process.argv.includes("--write");
 
-const db = new PGlite();
-const migrations = (await readdir("migrations")).filter((name) => name.endsWith(".sql")).sort();
-for (const name of migrations) await db.exec(await readFile(join("migrations", name), "utf8"));
+const { db } = await openMigrated();
 
 const fks = (await db.query(`
   select c.conname as name,
@@ -216,6 +213,7 @@ for (const fk of fks) {
 }
 
 console.log(JSON.stringify({ foreignKeys: fks.length, proved: cases.length, failed: failures.length, failures: failures.map((item) => item.name + " " + item.constraint) }, null, 2));
+await db.close();
 if (!write) process.exit(failures.length ? 2 : 0);
 if (failures.length) process.exit(2);
 
