@@ -17,6 +17,7 @@ function current(pathname: string, dest?: Dest) {
   if (dest.kind === "tool") return pathname === `/ferramentas/${dest.slug}`;
   if (dest.kind === "page") return pathname === dest.to;
   if (dest.kind === "model") return pathname === `/modelos/${dest.id}`;
+  if (dest.kind === "article") return pathname === `/blog/${dest.slug}`;
   return pathname === `/secao/${dest.slug}`;
 }
 
@@ -74,6 +75,7 @@ function go(navigate: ReturnType<typeof useNavigate>, dest: Dest, query: string)
   else if (dest.kind === "tool") void navigate({ to: "/ferramentas/$slug", params: { slug: dest.slug } });
   else if (dest.kind === "page") void navigate({ to: dest.to });
   else if (dest.kind === "model") void navigate({ to: "/modelos/$id", params: { id: dest.id }, hash: dest.hash });
+  else if (dest.kind === "article") void navigate({ to: "/blog/$slug", params: { slug: dest.slug } });
   else void navigate({ to: "/secao/$slug", params: { slug: dest.slug }, hash: dest.hash, search: query ? { q: query } : {} });
 }
 

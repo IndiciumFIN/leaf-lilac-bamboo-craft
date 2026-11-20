@@ -2,227 +2,50 @@
   "slug": "enfermeiro-pode-prescrever-medicamentos-o-que-a-legislacao-brasileira-realmente-preve",
   "title": "Enfermeiro pode prescrever medicamentos? O que a legislação brasileira realmente prevê",
   "category": "myths",
-  "source_package": "curiosidades_v0.2.0-final",
-  "source_sha256": "2ed2ef8c84d721ea9b89f36b68155fc69e4c15c96e003e66f3253bb1a2a672db",
-  "html_source_sha256": "915b3e7cdff68662a56ce4679b3bec39e889bb0d13b7da557a3c6d01e622b424",
-  "section_count": 6,
-  "reference_count": 1,
-  "content_status": "BLOCKED_SOURCE",
-  "review_reason": "A Resolução COFEN 358/2009 não é a norma atual da SAE nem a base da prescrição. A 736/2024 a revogou. A 543/2017 é dimensionamento, revogada pela 743/2024.",
-  "updated_at": "2026-10-10 07:52:17.179791+00",
+  "source_package": "blog-enfermagem-nota-original-2026-11-14",
+  "source_sha256": null,
+  "html_source_sha256": null,
+  "section_count": 2,
+  "reference_count": 0,
+  "content_status": "ORIGINAL_NOTE",
+  "review_reason": "Nota original do Blog de Enfermagem. Não é orientação clínica.",
+  "updated_at": "2026-11-14T23:55:00Z",
   "content": {
     "slug": "enfermeiro-pode-prescrever-medicamentos-o-que-a-legislacao-brasileira-realmente-preve",
-    "intro": {
-      "lead": "O debate sobre a prescrição de medicamentos por enfermeiros é parte da regulamentação profissional no Brasil. A legislação permite a prescrição em situações específicas, com protocolos e programas, e a leitura crítica preserva o que é permitido e o que exige protocolos.",
-      "bullets": [
-        "A Lei 7.498/86 e o Decreto 94.406/87 regulamentam a profissão.",
-        "A Resolução COFEN 358/2009 tratava da SAE e foi revogada pela Resolução COFEN 736/2024. Ela não é a norma da prescrição.",
-        "A Portaria 1.625/2007 trata da atenção à saúde dos viajantes em portos, aeroportos, e passagens de fronteira.",
-        "A prescrição é permitida em situações específicas, com protocolos."
-      ],
-      "context": "Esta página documenta a legislação, a aplicação, e a leitura crítica. Fontes: COFEN, COREN, Ministério da Saúde, legislação federal."
-    },
     "title": "Enfermeiro pode prescrever medicamentos? O que a legislação brasileira realmente prevê",
-    "period": "1986–atual",
-    "region": "Brazil",
-    "top_ids": [],
+    "subtitle": "Blog de Enfermagem · nota original",
+    "hero_lead": "A Lei 7.498, de 1986, e o Decreto 94.406, de 1987, organizam o exercício da enfermagem. A prescrição de medicamento por enfermeiro, quando cabe, está amarrada a programa, rotina e protocolo, não a um cheque em branco.",
+    "seo_description": "A Lei 7.498, de 1986, e o Decreto 94.406, de 1987, organizam o exercício da enfermagem. A prescrição de medicamento por enfermeiro, quando cabe, está amarrada a programa, rotina e ",
     "category": "myths",
+    "intro": {
+      "lead": "A Lei 7.498, de 1986, e o Decreto 94.406, de 1987, organizam o exercício da enfermagem. A prescrição de medicamento por enfermeiro, quando cabe, está amarrada a programa, rotina e protocolo, não a um cheque em branco.",
+      "bullets": [
+        "A Resolução COFEN 358, de 2009, tratava do processo de enfermagem. A Resolução 736, de 2024, a revogou. Nenhuma das duas é a lei do medicamento."
+      ],
+      "context": "Texto escrito para este blog. Não reproduz obra de terceiro."
+    },
     "sections": [
       {
-        "id": "s1",
-        "title": "1. A Lei 7.498/86 e o Decreto 94.406/87",
-        "sources": [
-          "SRC-ABEN-FAB"
-        ],
-        "components": [
-          {
-            "text": "Regulamenta o exercício da enfermagem no Brasil. Define atividades privativas do enfermeiro e de outros profissionais.",
-            "type": "callout",
-            "label": "Sobre a Lei 7.498/86:",
-            "variant": "info"
-          }
-        ],
+        "id": "o-que-se-sabe",
+        "title": "O que se sabe",
+        "sources": [],
+        "components": [],
         "paragraphs": [
-          "A Lei 7.498/86 regulamenta o exercício da enfermagem no Brasil, e o Decreto 94.406/87 a regulamenta. A lei define as atividades privativas do enfermeiro, e os artigos 11 e 12 tratam do exercício profissional.",
-          "O artigo 11 define as atividades privativas do enfermeiro, e o artigo 12 lista as atividades que podem ser exercidas por outros profissionais de enfermagem. A combinação de artigos define o escopo profissional.",
-          "A leitura crítica preserva o que é documentado e contextualiza a aplicação da lei. A prescrição de medicamentos é uma das atividades que a lei permite, com protocolos e programas específicos."
+          "A Resolução COFEN 358, de 2009, tratava do processo de enfermagem. A Resolução 736, de 2024, a revogou. Nenhuma das duas é a lei do medicamento.",
+          "A Resolução 543, de 2017, era de dimensionamento e foi revogada pela 743, de 2024. Não atualizou a sistematização da assistência."
         ]
       },
       {
-        "id": "s2",
-        "title": "2. A Resolução COFEN 358/2009 foi revogada",
-        "sources": [
-          "SRC-ABEN-FAB"
-        ],
-        "components": [
-          {
-            "type": "stats",
-            "items": [
-              {
-                "f": "Regulamentação profissional",
-                "k": "1986",
-                "v": "Lei 7.498"
-              },
-              {
-                "f": "Regulamento",
-                "k": "1987",
-                "v": "Decreto 94.406"
-              },
-              {
-                "f": "SAE",
-                "k": "2024",
-                "v": "COFEN 736"
-              },
-              {
-                "f": "Prescrição de enfermagem",
-                "k": "2018",
-                "v": "COFEN 587"
-              }
-            ]
-          }
-        ],
+        "id": "limite-desta-nota",
+        "title": "Limite desta nota",
+        "sources": [],
+        "components": [],
         "paragraphs": [
-          "A Resolução COFEN 358/2009 tratava da SAE e do Processo de Enfermagem. A Resolução COFEN 736/2024 a revogou. Ela não autoriza a prescrição de medicamentos.",
-          "A SAE organiza o cuidado em etapas: histórico, diagnóstico, planejamento, implementação e avaliação. A prescrição de enfermagem não se confunde com a Resolução 358/2009.",
-          "A combinação de resoluções define o escopo da SAE e da prescrição de enfermagem. A leitura crítica preserva o que é documentado e contextualiza a aplicação."
-        ]
-      },
-      {
-        "id": "s3",
-        "title": "3. Situações em que o enfermeiro pode prescrever",
-        "sources": [
-          "SRC-ABEN-FAB"
-        ],
-        "components": [
-          {
-            "cols": 3,
-            "type": "cards",
-            "items": [
-              {
-                "text": "Pré-natal, hipertensão, diabetes, tuberculose. Protocolos.",
-                "title": "Programas de saúde"
-              },
-              {
-                "text": "Portaria 1.625/2007. Vacinas, profilaxia.",
-                "title": "Saúde do viajante"
-              },
-              {
-                "text": "Protocolos específicos. Situações de urgência.",
-                "title": "Emergência"
-              }
-            ],
-            "compact": true
-          }
-        ],
-        "paragraphs": [
-          "A legislação permite a prescrição de medicamentos por enfermeiros em situações específicas, com protocolos e programas. As principais situações são: (1) programas de saúde pública, como pré-natal, hipertensão, diabetes, e tuberculose; (2) atenção à saúde do viajante (Portaria 1.625/2007); (3) situações de emergência, com protocolos específicos.",
-          "A prescrição fora dessas situações exige receita médica, e o enfermeiro deve respeitar a legislação. A leitura crítica preserva o que é permitido e o que exige protocolos.",
-          "A combinação de protocolos e programas é parte do trabalho do enfermeiro. A leitura crítica reconhece a importância da regulamentação e contextualiza a aplicação."
-        ]
-      },
-      {
-        "id": "s4",
-        "title": "4. A leitura crítica",
-        "sources": [
-          "SRC-ABEN-FAB"
-        ],
-        "components": [
-          {
-            "type": "pair",
-            "items": [
-              {
-                "text": "Programas de saúde, saúde do viajante, emergência.",
-                "title": "Permitido (com protocolos)"
-              },
-              {
-                "text": "Prescrição livre, sem protocolos, sem receita médica.",
-                "title": "Não permitido"
-              }
-            ]
-          }
-        ],
-        "paragraphs": [
-          "A leitura crítica preserva o que é permitido e o que exige protocolos. A prescrição de medicamentos por enfermeiros é uma atividade regulada, com situações específicas e protocolos.",
-          "O debate sobre a ampliação do escopo de prescrição é parte da discussão sobre a prática avançada em enfermagem. A combinação de formação, regulamentação, e protocolos é parte do trabalho.",
-          "A leitura crítica reconhece a importância da regulamentação e contextualiza a aplicação. A combinação de legislação, protocolos, e prática é parte do cuidado de enfermagem."
-        ]
-      },
-      {
-        "id": "s5",
-        "title": "5. Onde esse tema aparece no universo",
-        "sources": [
-          "SRC-ABEN-FAB"
-        ],
-        "components": [
-          {
-            "type": "checkgrid",
-            "items": [
-              {
-                "title": "Regulamentação",
-                "bullets": [
-                  "Quantas categorias profissionais a regulamentação da enfermagem brasileira lista"
-                ]
-              },
-              {
-                "title": "Outros",
-                "bullets": [
-                  "Mito: Apgar nasceu como sigla",
-                  "Mito: uniformes de enfermagem sempre foram brancos"
-                ]
-              }
-            ]
-          }
-        ],
-        "paragraphs": [
-          "A prescrição de enfermagem conecta-se a outras páginas: as categorias profissionais, os mitos, e a SAE."
-        ]
-      },
-      {
-        "id": "s6",
-        "title": "6. Perguntas frequentes",
-        "sources": [
-          "SRC-ABEN-FAB"
-        ],
-        "components": [
-          {
-            "type": "faq",
-            "items": [
-              {
-                "q": "Enfermeiro pode prescrever medicamentos?",
-                "paragraphs": [
-                  "Sim, em situações específicas, com protocolos e programas. A base citada nesta página é a Lei 7.498/86, não a Resolução COFEN 358/2009."
-                ]
-              },
-              {
-                "q": "Quais são as situações?",
-                "paragraphs": [
-                  "Programas de saúde pública (pré-natal, hipertensão, diabetes, tuberculose), saúde do viajante (Portaria 1.625/2007), e situações de emergência com protocolos específicos."
-                ]
-              },
-              {
-                "q": "A prescrição é livre?",
-                "paragraphs": [
-                  "Não. A prescrição é permitida em situações específicas, com protocolos. Fora dessas situações, exige receita médica."
-                ]
-              }
-            ]
-          }
-        ],
-        "paragraphs": [
-          "As dúvidas mais comuns sobre a prescrição de enfermagem."
+          "Esta nota não diz o que um enfermeiro pode prescrever amanhã. Isso está no protocolo vigente e na lei, lidos juntos."
         ]
       }
     ],
-    "subtitle": "O que a Lei 7.498/86 e a Portaria 1.625/2007 tratam. A Resolução COFEN 358/2009 não é a norma da prescrição.",
-    "hero_lead": "A legislação brasileira trata da prescrição por enfermeiros em situações específicas, com protocolos e programas. A Lei 7.498/86, o Decreto 94.406/87 e a Portaria 1.625/2007 são as referências desta página. A Resolução COFEN 358/2009 foi revogada pela 736/2024 e não é a norma da prescrição.",
-    "references": [
-      {
-        "id": "SRC-ABEN-FAB",
-        "org": "ABEn / COFEN / legislação federal",
-        "year": "current",
-        "title": "Prescrição de enfermagem — legislação"
-      }
-    ],
+    "references": [],
     "related_slugs": [
       "quantas-categorias-profissionais-a-regulamentacao-da-enfermagem-brasileira-lista",
       "a-morte-nao-e-nada-quem-escreveu-o-texto-atribuido-a-santo-agostinho",
@@ -230,12 +53,10 @@
       "mito-uniformes-de-enfermagem-sempre-foram-brancos"
     ],
     "summary_items": [
-      "A legislação brasileira permite prescrição de medicamentos por enfermeiros em situações específicas.",
-      "Lei 7.498/86 e Decreto 94.406/87 são as referências desta página. A Resolução COFEN 358/2009 não autoriza a prescrição.",
-      "Situações: programas de saúde, saúde do viajante, emergência com protocolos.",
-      "A combinação de protocolos e programas é parte do trabalho do enfermeiro.",
-      "Fontes: COFEN, COREN, Ministério da Saúde, legislação federal."
+      "A Lei 7.498, de 1986, e o Decreto 94.406, de 1987, organizam o exercício da enfermagem. A prescrição de medicamento por enfermeiro, quando cabe, está amarrada a programa, rotina e protocolo, não a um cheque em branco."
     ],
-    "seo_description": "A Lei 7.498/86 trata do exercício profissional. A Resolução COFEN 358/2009 não é a norma atual da prescrição: a 736/2024 a revogou."
+    "top_ids": [],
+    "period": "1986–atual",
+    "region": "Brazil"
   }
 }

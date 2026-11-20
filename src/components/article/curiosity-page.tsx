@@ -46,7 +46,7 @@ export function CuriosityPage({ record }: { record: CuriosityRecord }) {
       content={normalizeContent(record)}
       sources={sourceMap}
       status={record.content_status}
-      publishedRelatedSlugs={[]}
+      publishedRelatedSlugs={record.content.related_slugs ?? []}
       alternativesDeferred
     />
   );

@@ -13,5 +13,7 @@
   "validators": "schema_validator",
   "kernel_policy_required": true,
   "description": "Fonte oficial: MS/DATASUS",
-  "source_contract": "contracts/fontes/sinan.json"
+  "source_contract": "contracts/fontes/sinan.json",
+  "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+  "provenance_state": "HASH_NOT_PINNED"
 }

@@ -1,0 +1,898 @@
+{
+  "schema": "CE-FILA-PLANO-20261119",
+  "plano": "programa de 19/11/2026, ordem original",
+  "branches": 137,
+  "classes": {
+    "preservar_ate_diff": 39,
+    "integrar_candidato_sem_merge": 94,
+    "preservar_canonica": 2,
+    "arquivar_preservar": 2
+  },
+  "passos": [
+    {
+      "ordem": 1,
+      "frente": "Reconciliação GitHub",
+      "estado": "EXECUTADO",
+      "entrega": "137 branches classificadas. Nenhum merge."
+    },
+    {
+      "ordem": 2,
+      "frente": "Segurança",
+      "estado": "PARCIAL",
+      "entrega": "Segredo OAuth não está literal no arquivo atual. Teste local 6/6. Rotação no broker não executada aqui."
+    },
+    {
+      "ordem": 3,
+      "frente": "Kernel e CI",
+      "estado": "EXECUTADO_NESTE_DISCO",
+      "entrega": "verify_repository_integrity.py --strict passou: 20 fontes, 20 políticas, zero pendências. python -m packages.cli.main --help responde."
+    },
+    {
+      "ordem": 4,
+      "frente": "Supabase / metamodelos",
+      "estado": "EXECUTADO_HOLD",
+      "entrega": "Duas SQL legadas conferidas por SHA-256 e mantidas em supabase/migrations. Guard 4/4. Saída HOLD_HUMAN, may_apply false. As 255 remotas não foram aplicadas. As migrations locais 0001–0097 usam _migrations e não entram nesse histórico."
+    },
+    {
+      "ordem": 5,
+      "frente": "Corpus e normativos",
+      "estado": "PARCIAL",
+      "entrega": "20 contratos locais ficam HOLD_RIGHTS_UNSPECIFIED e HASH_NOT_PINNED. Auditoria curricular: 118 fontes, 34 com rights_audit_required, publicação proibida, hash do registro não confere."
+    },
+    {
+      "ordem": 6,
+      "frente": "Grade curricular e mercado",
+      "estado": "NA_FILA"
+    },
+    {
+      "ordem": 7,
+      "frente": "Conteúdo educacional",
+      "estado": "NA_FILA"
+    },
+    {
+      "ordem": 8,
+      "frente": "Produto e integrações",
+      "estado": "NA_FILA"
+    },
+    {
+      "ordem": 9,
+      "frente": "Homologação e lançamento",
+      "estado": "NA_FILA"
+    },
+    {
+      "ordem": 10,
+      "frente": "PMO / automação",
+      "estado": "NA_FILA"
+    }
+  ],
+  "fim_da_fila": [
+    "Rotacionar no broker a credencial OAuth que já esteve no histórico. Este ambiente não tem o segredo nem a API do broker.",
+    "Homologar migrations do CE #73 em staging. Nenhuma migration remota foi aplicada.",
+    "O validador baixado de LOINC, MeSH, NCM, CATMAT, CVX, CID-11, schema e revisão humana usava a suíte do CID-10 e aceitava qualquer item. A suíte foi trocada pela regra do próprio catálogo.",
+    "Reconciliar byte a byte o registro curricular: hash atual e hash histórico do W7 não conferem. Não inferir licença nem cobertura de 100%."
+  ],
+  "itens": [
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "IndiciumFIN-patch-1",
+      "sha": "ccb21b781421",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "audit/ce04-reconciliation-tasks-20261017",
+      "sha": "2a1250d2d5c8",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "audit/ce-supabase-migration-first-20261115",
+      "sha": "6a22f7e03fe3",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "audit/cko-crossnorms-branches-20261114",
+      "sha": "c98db053a273",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "audit/cko-g6-github-review-verification-20261114",
+      "sha": "cc9bbb493b11",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "audit/p0-intake-dedup-gates-20261114",
+      "sha": "23ed1aa288f1",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-drive-kernel-bd1a",
+      "sha": "d173b6dea0b4",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-4c40",
+      "sha": "ad69ee7b5ea2",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-5d44",
+      "sha": "33c267dbf0d1",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-6bf4",
+      "sha": "e6ad352c8832",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-6e94",
+      "sha": "9b432f86dd5b",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-6eb4",
+      "sha": "b94d7f4338f0",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-6ebf",
+      "sha": "4612a81473c3",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-7f24",
+      "sha": "ecd84bf36eac",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-9b80",
+      "sha": "c6ac2f97003c",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-047a",
+      "sha": "33e1d0c87198",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-510d",
+      "sha": "77821f1e2a20",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-935e",
+      "sha": "864e45b6f803",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-2277",
+      "sha": "b8ad73613d6d",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-6190",
+      "sha": "30f22ec3cf6a",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-7314",
+      "sha": "494a1fc54659",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-8061",
+      "sha": "ce23049f8c0d",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-8968",
+      "sha": "065188b5f0ef",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-a8a8",
+      "sha": "e0d874f211be",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-a8c5",
+      "sha": "b06ce58dda38",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-a061",
+      "sha": "a06cff319818",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-aad4",
+      "sha": "add5c88cd3a7",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-b772",
+      "sha": "cf458370c150",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-c8d7",
+      "sha": "d4a7a3c8fde5",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-c8ed",
+      "sha": "7f4e0c34c023",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-d5b0",
+      "sha": "53c9fc7b189a",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-d7f8",
+      "sha": "164c7174a0a2",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-e3fe",
+      "sha": "2a3a13402e16",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-kernel-pol-ticas-f5e4",
+      "sha": "fa6e5441da8b",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/arquivos-pol-ticas-kernel-735c",
+      "sha": "53826bfee555",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/atomiza-o-arquivos-drive-eca9",
+      "sha": "b2b0748799c8",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/atomiza-o-arquivos-kernel-ebc1",
+      "sha": "f98902cb564f",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/bc-9d850a48-4546-4657-aa8a-75d3095ffdd8-91a5",
+      "sha": "93a7131a8a0f",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/drive-sa-key-refactor",
+      "sha": "750d094568b5",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/fix-governance-gaps-ec54",
+      "sha": "b6d3b48f34c1",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/wf-gdrive-sakey",
+      "sha": "4e3d4979e3da",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "cursor/wf-v3",
+      "sha": "8056d08a35cf",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "docs/ux-canais-evidencias-20261115",
+      "sha": "15fc4d44357b",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/ce-local-agent-assurance-20261019",
+      "sha": "ee4556b131c4",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/ce-tools-governed-backend-20261115",
+      "sha": "64f8e7d9cf9e",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/cko-catalog-metamodel-automated-20261114",
+      "sha": "d0197788d245",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/cko-m08-m09-corpus-atomic-20261114",
+      "sha": "d395f6e69e93",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/cko-parser-fhir-vitals-r4-20261114",
+      "sha": "2e732cfb1058",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/cko-parser-medlineplus-xml-20261114",
+      "sha": "ef8b6edafc8a",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "feat/cko-parser-mesh-xml-20261114",
+      "sha": "cc3c30777152",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "fix/canonical-structural-cli-registry-20261114",
+      "sha": "14fdc8a30369",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "fix/ce05-kernel-ci-security-20261017",
+      "sha": "e1c9ace498b6",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "fix/cko-ci-no-masked-checks-20261114",
+      "sha": "12d41a620eb5",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "fix/cko-wo-g6-preflight-20261114",
+      "sha": "c87602219300",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "fix/p0-cko-cofen-cor-safe-intake-20261114",
+      "sha": "f636ca88cd2f",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "governance/quarantine-branches-20261115",
+      "sha": "e831ea3bdf58",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "integrate/p0-cko-existing-source-parsers-20261114",
+      "sha": "a2b57abf244a",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "integration/canonical-main-20261017",
+      "sha": "c704c3cf9241",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "integration/cko-p0-ci-g6-20261114",
+      "sha": "5589d7cf7dbd",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "integration/cko-parsers-catalog-20261114",
+      "sha": "a419b90d1505",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "main",
+      "sha": "e0f62491b104",
+      "classe": "preservar_canonica"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "migration/candidate-f08-20261017",
+      "sha": "be69c19fce79",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "migration/ce01-historical-evidence-b01-20261017",
+      "sha": "4206865dc5f0",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "migration/full-directory-20261017",
+      "sha": "1b1a268595c8",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "migration/pilot-policies-20261017",
+      "sha": "2fc555f854c6",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "pmo/recovery-controlled-20261019",
+      "sha": "cbae3fead8bd",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "review/cko-w1-w2-editorial-20261114",
+      "sha": "cf0865add198",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "review/cko-w3-pe736-20261114",
+      "sha": "d18a3acb53e9",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "review/cko-w4-reuso-especialidades-20261114",
+      "sha": "4378a7cdf78c",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "review/cko-w5-cme-independente-20261114",
+      "sha": "bb882bc69a9e",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "review/cko-w6-centro-cirurgico-srpa-20261114",
+      "sha": "a3b0a2aee7e9",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "review/cko-w7-public-evidence-20261114",
+      "sha": "c9ce5c026d36",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "staging/cko-migracao-2026-10-23",
+      "sha": "e0f62491b104",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "calculadorasdeenfermagem",
+      "branch": "staging/wo-kernel-normativos-cli-20261016",
+      "sha": "c54d416b7f4c",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "archivamento",
+      "sha": "87c537fea182",
+      "classe": "arquivar_preservar"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "audit/ce-wave1-evidence-20261101",
+      "sha": "e6fc8f0178e6",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "audit/cko-atomic-intake-schema-20261114",
+      "sha": "ee2c2cb5c66f",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "audit-hardening-2026-10-24",
+      "sha": "9c9ca4640ded",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "backup/research-hub-complete-20261026",
+      "sha": "86ebd5a2d879",
+      "classe": "arquivar_preservar"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "canonical/foundation-20261101",
+      "sha": "65486491dece",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "canonical/local-20261101",
+      "sha": "8c0c4b6f9c04",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "canonical/supabase-skeleton-20261101",
+      "sha": "48188f56ca54",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "cko/cardiologia-corpus-editorial-20261114",
+      "sha": "4d44d4a5f5bf",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "cko/evidence-index-rights-20261114",
+      "sha": "25c7675b2605",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "cko/pmo-corpus-canonical-20261114",
+      "sha": "2452a4c1bea4",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/career-youth-db-first-20261026",
+      "sha": "ad4c68389077",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/curiosidades-mem-87-20261026",
+      "sha": "4131831be712",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/projection-unica-f0-suite-real",
+      "sha": "6d712dd47029",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/research-all-tools-candidate-20261101",
+      "sha": "3b813449ea26",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/research-hub-governed-20261026",
+      "sha": "01574c5bfbe3",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/research-participation-layer-20261026",
+      "sha": "53f896fd6afc",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "feat/research-supabase-bridge-20261101",
+      "sha": "9c37e6fb35fa",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/ce-admin-e2e-hierarchy-20261101",
+      "sha": "4bc814577a21",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/ce-chrome-frozen-tokens-source-20261114",
+      "sha": "288b4ff68481",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/ce-generated-contract-fresh-20261115",
+      "sha": "19ced90f3ac5",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/ce-route-component-contract-freshness-20261114",
+      "sha": "5c5cfeca440d",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/ce-tanstack-vercel-build-no-migrations-20261114",
+      "sha": "1976da6bf8cb",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/governed-activities-cli-20261026",
+      "sha": "95a416c1e4ac",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/ncos-generated-contract-sync-20261113",
+      "sha": "ace85778be5b",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/pendencias-camadas-20261101",
+      "sha": "949423ef555f",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/security-auth-env-optin-oauth-17-20261114",
+      "sha": "a4e74c30b210",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "fix/shell-consolidation",
+      "sha": "c68e3009556f",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "governance/normative-crossdomain-evaluation-20261108",
+      "sha": "de620c1ebed0",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "governance/quarantine-branches-20261115",
+      "sha": "b75866adb43c",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "grook_10_26",
+      "sha": "2eacacafd95c",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "idioma/consolidado-19",
+      "sha": "3dc979a79563",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "idioma/de-v1",
+      "sha": "9a12fad8d32f",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "idioma/pt-PT-v1",
+      "sha": "314199bc72f7",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "implementation-governed-ecosystem",
+      "sha": "e16f0fb682db",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "import/drive-cko-nurseos-20261026",
+      "sha": "cd851c4c0efe",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "integration/structural-overlay-20261101",
+      "sha": "621f73b5abde",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "main",
+      "sha": "dacfaa6bc29f",
+      "classe": "preservar_canonica"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "plan/ce-best-excellence-supabase-readonly-20261101",
+      "sha": "74b4a741b007",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "plan/ce-reconciliacao-v6-20261101",
+      "sha": "70bc1181e7c9",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "plan/pmokernel-finalization-20261031",
+      "sha": "57242ec5e813",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "planning",
+      "sha": "87c537fea182",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "preview/central-comando-20261026",
+      "sha": "3f004049945e",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "revert-26-plan/pmokernel-finalization-20261031",
+      "sha": "bfcb0333a6b1",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "review/grook-na-main",
+      "sha": "c4a6ee1f6f85",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "simulados-enfermagem-db-canonico",
+      "sha": "415a02a854a8",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "staging/bibliotecas-corpus-20261026",
+      "sha": "d81736c77852",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "viladocuidado",
+      "sha": "2a199f3943ef",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "work/editorial-canonical-learning-20261026",
+      "sha": "38a33fcec02e",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/audit-integral-20261108",
+      "sha": "cec464e5727d",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/demo-persistence-v04-20261108",
+      "sha": "b7dfb188492c",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/docs-governance-20261108",
+      "sha": "b8e711a0d90b",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/expansion-analytics-plan-20261108",
+      "sha": "b2f953aa92cf",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/expansion-spec-v02-20261108",
+      "sha": "7c8c3d17c490",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/normative-universe-v11-supabase-first-20261108",
+      "sha": "59a525cb8628",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/pmo-v1-controller-20261108",
+      "sha": "5ce90d8bd325",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/v1-nfe-xml-ingestion-20261108",
+      "sha": "107cc73ca6e7",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/v1-normative-benchmark-assurance-20261108",
+      "sha": "e14a2a0c5939",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/v1-scope-freeze-candidate-20261108",
+      "sha": "056e2309242a",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/v1-vertical-slice-dev-20261108",
+      "sha": "adca7e7cf59c",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/validators-plan-20261108",
+      "sha": "25ff879ffd6c",
+      "classe": "preservar_ate_diff"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/validators-strategy-v03-20261108",
+      "sha": "a9fadd1ef58d",
+      "classe": "integrar_candidato_sem_merge"
+    },
+    {
+      "repo": "dev-chatgpt-workspace",
+      "branch": "wutrib/web-pilot-20261108",
+      "sha": "86a34e7e5b49",
+      "classe": "preservar_ate_diff"
+    }
+  ]
+}

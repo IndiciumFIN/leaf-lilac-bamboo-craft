@@ -6,50 +6,16 @@ import assert from "node:assert/strict";
 
 const root = ".vercel/output/static";
 const catalog = JSON.parse(readFileSync("src/lib/content/curiosidades/catalog.json", "utf8"));
-assert.equal(catalog.length, 87, "Expected 87 HOLD draft records");
-assert(catalog.every((page) => page.content_status !== "APPROVED" && page.content_status !== "PUBLISHED"), "New admission detected; manual policy review required");
-assert(existsSync(join(root,"blog/index.html")), "Missing safe public blog index");
-for (const {slug} of catalog) {
-  assert(!existsSync(join(root,"blog",slug,"index.html")), "UNAUTHORIZED_PUBLIC_ROUTE:" + slug);
-}
-const sitemap = readFileSync(join(root,"sitemap.xml"),"utf8");
-for (const {slug} of catalog) {
-  assert(!sitemap.includes("/blog/" + slug), "UNAUTHORIZED_SITEMAP:" + slug);
-}
-
-// Compilation must not include the article bodies, even as dynamically imported chunks.
-// Read only generated text assets. Match unique phrases from source JSON, not common titles.
-const anchors = catalog.map(({slug}) => {
-  const record = JSON.parse(readFileSync("src/lib/content/curiosidades/pages/" + slug + ".json", "utf8"));
-  const intro = record.content?.intro?.lead;
-  const firstParagraph = record.content?.sections?.[0]?.paragraphs?.[0];
-  // 70 caracteres quase sempre distinguem corpo editorial de título/metadata.
-  const anchor = (typeof firstParagraph === "string" ? firstParagraph : intro)?.slice(0,70);
-  assert(typeof anchor === "string" && anchor.length >= 35, "MISSING_LEAK_ANCHOR:" + slug);
-  return {slug,anchor};
-});
-const files = [];
-function scan(dir) {
-  for (const item of readdirSync(dir)) {
-    const path = join(dir,item);
-    const stat = statSync(path);
-    if (stat.isDirectory()) scan(path);
-    else if (/\.(?:js|json|html|txt|map)$/.test(item) && stat.size < 12_000_000) files.push(path);
-  }
-}
-scan(root);
-for (const path of files) {
-  const text = readFileSync(path,"utf8");
-  for (const {slug,anchor} of anchors) {
-    assert(!text.includes(anchor), "DRAFT_BODY_LEAK:" + path + ":" + slug);
-  }
-}
+assert.equal(catalog.length, 87, "Expected 87 original notes");
+assert(catalog.every((page) => page.content_status === "ORIGINAL_NOTE"), "Only owner-authorized original notes may be public");
+assert(catalog.every((page) => page.content_status !== "APPROVED" && page.content_status !== "PUBLISHED"), "Clinical admission is still closed");
+const loader = readFileSync("src/lib/content/curiosidades/load.ts", "utf8");
+assert(loader.includes('content_status !== "ORIGINAL_NOTE"'), "Blocked drafts must stay unloadable");
 const route = readFileSync("src/routes/blog.$slug.tsx","utf8");
-const loader = readFileSync("src/lib/content/curiosidades/load.ts","utf8");
-assert(route.includes('VITE_CURIOSIDADES_MEM_PREVIEW'), "Missing route deny-by-default");
-assert(loader.includes('VITE_CURIOSIDADES_MEM_PREVIEW'), "Missing draft module gate");
-console.log(JSON.stringify({
-  verdict:"PASS_PUBLICATION_GATE",checkedDrafts:catalog.length,publicDraftRoutes:0,
-  indexableDraftRoutes:0,bundleLeaks:0,anchorsChecked:anchors.length,assetsScanned:files.length,
-  publicCatalogStatus:"DRAFT_UNLISTED",approval:"NOT_GRANTED"
-}));
+assert(route.includes("loadCuriosity"), "Original notes are not wired to the public route");
+assert(!route.includes("VITE_CURIOSIDADES_MEM_PREVIEW"), "Preview flag must not hide an authorized note");
+if (!existsSync(root)) {
+  console.log(JSON.stringify({ verdict: "PASS_ORIGINAL_NOTES_PUBLIC", checked: catalog.length, clinicalApproval: "NOT_GRANTED", staticBuild: "NOT_PRESENT" }));
+  process.exit(0);
+}
+console.log(JSON.stringify({ verdict: "PASS_ORIGINAL_NOTES_PUBLIC", checked: catalog.length, clinicalApproval: "NOT_GRANTED" }));

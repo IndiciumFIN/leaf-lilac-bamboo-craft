@@ -26,9 +26,9 @@ for(const meta of catalog) {
    }
  }
 }
+assert.equal(unresolved.size, 0, "A nota original não pode citar fonte sem direito avaliado");
 for(const e of register.items){
  const key=e.slug+"::"+e.originalSourceId+"::"+e.referenceLocation;
- assert(unresolved.has(key),"ALTERNATIVE_WITHOUT_ORIGINAL_FIND:"+key);
  assert(!candidateByRef.has(key),"DUPLICATE_CANDIDATE:"+key);
  candidateByRef.set(key,e);
  assert.equal(e.claimLevel,"NOT_VALIDATED");
@@ -44,7 +44,8 @@ for(const e of register.items){
  }
  sourceStatuses.add(e.verification);
 }
-assert.equal(candidateByRef.size,unresolved.size,"GAPS_IN_SOURCE_MAPPING");
+assert.equal(unresolved.size, 0, "A nota publicada não conserva citação sem direito");
+assert.equal(candidateByRef.size, register.counts.total, "O registro histórico das alternativas foi alterado");
 assert.equal(register.counts.total,48);
 assert.equal(register.counts.withCandidates,46);
 assert.equal(register.counts.stillWithoutDefensibleCandidate,2);
@@ -58,8 +59,8 @@ assert(view.includes("Sem fonte defensável; HOLD_HUMAN"));
 assert(adapter.includes("alternativesDeferred"), "CANDIDATE_SOURCES_MUST_STAY_DEFERRED");
 assert(!adapter.includes("mem-source-alternatives.v1.json"), "UNREVIEWED_CANDIDATE_SOURCES_BUNDLED");
 assert(view.includes("Alternativas bibliográficas candidatas aguardam a etapa de dados; nenhuma fonte foi substituída."), "DEFERRED_SOURCE_NOTICE_MISSING");
-const route=readFileSync("src/routes/blog.$slug.tsx","utf8");
-assert(route.includes("import.meta.env.DEV") && route.includes("VITE_CURIOSIDADES_MEM_PREVIEW"), "DEV_PREVIEW_GATE_MISSING");
+const loader = readFileSync("src/lib/content/curiosidades/load.ts", "utf8");
+assert(loader.includes('content_status !== "ORIGINAL_NOTE"'), "ONLY_ORIGINAL_NOTE_MAY_LOAD");
 console.log(JSON.stringify({
  verdict:"PASS_CANDIDATE_MAPPING_ONLY",unresolvedUses:unresolved.size,
  alternatives:register.counts.withCandidates,hold:register.counts.stillWithoutDefensibleCandidate,

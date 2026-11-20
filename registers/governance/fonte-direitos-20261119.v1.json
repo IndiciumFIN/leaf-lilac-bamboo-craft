@@ -1,0 +1,133 @@
+{
+  "schema": "CE-FONTE-DIREITOS-20261119",
+  "authorization": "HOLD_HUMAN",
+  "publication_allowed": false,
+  "drive_rights_snapshot": {
+    "source_count": 118,
+    "rights_audit_required": 34,
+    "reviews_recorded": 84,
+    "registry_hash_match": false
+  },
+  "contracts": [
+    {
+      "fonte_slug": "anvisa_dev",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/anvisa_dev.py"
+    },
+    {
+      "fonte_slug": "anvisa_dou",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/adapters/dou.py"
+    },
+    {
+      "fonte_slug": "anvisa_med",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/anvisa_med.py"
+    },
+    {
+      "fonte_slug": "atlas",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/atlas.py"
+    },
+    {
+      "fonte_slug": "catmat",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/catmat.py"
+    },
+    {
+      "fonte_slug": "cdsi",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/cdsi.py"
+    },
+    {
+      "fonte_slug": "cid10",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/cid10.py"
+    },
+    {
+      "fonte_slug": "cid11",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/icd11.py"
+    },
+    {
+      "fonte_slug": "cofen_dou",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/adapters/dou.py"
+    },
+    {
+      "fonte_slug": "esavi",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/esavi.py"
+    },
+    {
+      "fonte_slug": "fhir_vitais",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/fhir.py"
+    },
+    {
+      "fonte_slug": "lei_federal",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/adapters/dou.py"
+    },
+    {
+      "fonte_slug": "medlineplus",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/medlineplus.py"
+    },
+    {
+      "fonte_slug": "mesh",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/mesh.py"
+    },
+    {
+      "fonte_slug": "ms_portarias",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/adapters/dou.py"
+    },
+    {
+      "fonte_slug": "pni",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/pni.py"
+    },
+    {
+      "fonte_slug": "sies",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/sies.py"
+    },
+    {
+      "fonte_slug": "sinan",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/sinan.py"
+    },
+    {
+      "fonte_slug": "taco",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/taco.py"
+    },
+    {
+      "fonte_slug": "vacinas_cdc",
+      "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+      "provenance_state": "HASH_NOT_PINNED",
+      "parser": "packages/cli/parsers/vacinas.py"
+    }
+  ]
+}

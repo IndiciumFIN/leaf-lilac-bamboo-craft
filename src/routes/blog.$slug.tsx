@@ -5,6 +5,9 @@ import { BiographyView } from "@/components/templates/biography-view";
 import { ArticlePage } from "@/components/article/article-page";
 import { RelatedContent } from "@/components/site/related-content";
 import { findArticle, type ArticleSlug } from "@/lib/content/articles/index";
+import { loadCuriosity } from "@/lib/content/curiosidades/load";
+import { findCuriosityMeta } from "@/lib/content/curiosidades/catalog";
+import { CuriosityPage } from "@/components/article/curiosity-page";
 import { languageLinks } from "@/lib/seo";
 import { parseLocale } from "@/lib/translate";
 
@@ -32,49 +35,67 @@ export const Route = createFileRoute("/blog/$slug")({
     const lang = parseLocale(search.lang);
     return lang ? { lang } : {};
   },
-  loader: ({ params }) => {
+  loader: async ({ params }) => {
     const article = findArticle(params.slug);
-    // Um slug fora do catálogo é 404, não 500. `throw new Error` devolvia erro
-    // do servidor por erro do visitante.
-    if (!article) throw raiseNotFound();
-    return { slug: article.slug };
+    if (article) return { kind: "article" as const, slug: article.slug, record: null };
+    const note = await loadCuriosity(params.slug);
+    if (note) return { kind: "note" as const, slug: note.slug, record: note };
+    throw raiseNotFound();
   },
   head: ({ match, params }) => {
     const article = findArticle(params.slug);
-    if (!article) return {};
     const lang = (match.search as { lang?: unknown }).lang;
-    return {
-      meta: [
-        { title: `${article.seoTitle} · Calculadoras de Enfermagem` },
-        { name: "description", content: article.description },
-        { property: "og:type", content: "article" },
-      ],
-      links: languageLinks(`/blog/${article.slug}`, lang),
-      scripts: [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: article.seoTitle,
-            description: article.description,
-            inLanguage: typeof lang === "string" ? lang : "pt-BR",
-            dateModified: article.dateModified,
-            ...(article.schema ? { about: article.schema } : {}),
-          }),
-        },
-      ],
-    };
+    if (article) {
+      return {
+        meta: [
+          { title: `${article.seoTitle} · Calculadoras de Enfermagem` },
+          { name: "description", content: article.description },
+          { property: "og:type", content: "article" },
+        ],
+        links: languageLinks(`/blog/${article.slug}`, lang),
+        scripts: [
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: article.seoTitle,
+              description: article.description,
+              inLanguage: typeof lang === "string" ? lang : "pt-BR",
+              dateModified: article.dateModified,
+              ...(article.schema ? { about: article.schema } : {}),
+            }),
+          },
+        ],
+      };
+    }
+    const note = findCuriosityMeta(params.slug);
+    if (note) {
+      return {
+        meta: [
+          { title: `${note.title} · Blog de Enfermagem` },
+          { name: "description", content: "Nota original do Blog de Enfermagem. Não é orientação clínica." },
+          { property: "og:type", content: "article" },
+        ],
+        links: languageLinks(`/blog/${params.slug}`, lang),
+      };
+    }
   },
   component: ArticleRouteView,
 });
 
 function ArticleRouteView() {
-  const { slug } = Route.useParams();
-  const article = findArticle(slug);
-  // O loader já garantiu que existe; este guard cobre o render direto.
+  const data = Route.useLoaderData();
+  if (data.kind === "note" && data.record) {
+    return (
+      <Shell>
+        <CuriosityPage record={data.record} />
+      </Shell>
+    );
+  }
+  const article = findArticle(data.slug);
   if (!article) return <ArticleMissing />;
-  const Body = BODIES[slug as ArticleSlug];
+  const Body = BODIES[data.slug as ArticleSlug];
   if (!Body) return <ArticleMissing />;
   return (
     <Shell>

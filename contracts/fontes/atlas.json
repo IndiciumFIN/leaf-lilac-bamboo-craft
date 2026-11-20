@@ -15,5 +15,7 @@
   ],
   "kernel_policy_required": true,
   "description": "Fonte oficial: Corpus público",
-  "source_contract": "contracts/fontes/atlas.json"
+  "source_contract": "contracts/fontes/atlas.json",
+  "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+  "provenance_state": "HASH_NOT_PINNED"
 }

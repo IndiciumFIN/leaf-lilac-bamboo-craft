@@ -1,6 +1,6 @@
 # Pendencias — branch-bibliotecas
 
-Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 23:22Z**.
+Gerado por `scripts/generate-pendencias.mjs` a partir do estado MEDIDO em **2026-11-14 23:33Z**.
 Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 
 > Estes numeros sao o subconjunto local deste gerador. Nao sao o pipeline geral do GitHub Actions. Zero vermelho aqui nao e release, nao e homologacao clinica e nao admite a plataforma.
@@ -179,8 +179,8 @@ Nada aqui vem de memoria: cada item carrega a evidencia que o produziu.
 ## Conteudo (5)
 
 ### Acervo de imagem das 87 paginas de curiosidade
-- **Estado:** SLOTS RESERVADOS, SEM CONTEUDO
-- **Detalhe:** nenhuma pagina escrita — texto clinico nao se inventa
+- **Estado:** TEXTO ORIGINAL, SEM IMAGEM E SEM PUBLICAÇÃO
+- **Detalhe:** As 87 fichas tiveram o texto importado retirado. A nota atual é nossa e não reproduz obra protegida. Não há imagem e o portão público continua fechado.
 - **Evidencia:** `src/lib/content/articles/`
 
 ### 27 libraries do CKO — homologacao clinica

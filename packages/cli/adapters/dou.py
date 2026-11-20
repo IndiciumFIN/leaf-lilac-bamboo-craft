@@ -47,3 +47,8 @@ def parse(raw, *, source_id, document_id, edition, expected_sha256):
         digest=digest, fonte=fonte, documento=documento,
         contrato=f"contracts/fontes/{edition}.json", parser="dou", edicao=edition,
     )]
+
+
+def fetch_dou_federal(url: str) -> dict:
+    """A CLI antiga pedia a página na rede. Este adaptador não busca URL."""
+    raise RuntimeError("busca de rede recusada; entregue os bytes pinçados a parse()")

@@ -6,7 +6,7 @@ export type CuriosityMeta = {
   source_package: string;
   section_count: number;
   reference_count: number;
-  content_status: "BLOCKED_SOURCE" | "NEEDS_REVIEW" | string;
+  content_status: "BLOCKED_SOURCE" | "NEEDS_REVIEW" | "ORIGINAL_NOTE" | string;
   review_reason: string | null;
   updated_at: string;
 };

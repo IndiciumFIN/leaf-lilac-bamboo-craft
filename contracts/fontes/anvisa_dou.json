@@ -18,5 +18,7 @@
   ],
   "kernel_policy_required": true,
   "description": "Fonte oficial: DOU Federal",
-  "source_contract": "contracts/fontes/anvisa_dou.json"
+  "source_contract": "contracts/fontes/anvisa_dou.json",
+  "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+  "provenance_state": "HASH_NOT_PINNED"
 }

@@ -43,6 +43,13 @@ export function AppLink({
       </Link>
     );
   }
+  if (dest.kind === "article") {
+    return (
+      <Link to="/blog/$slug" params={{ slug: dest.slug }} className={className} onClick={onClick} aria-label={ariaLabel}>
+        {children}
+      </Link>
+    );
+  }
   return (
     <Link
       to="/secao/$slug"

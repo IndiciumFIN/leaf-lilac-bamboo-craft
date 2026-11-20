@@ -118,8 +118,8 @@ itens.push({
 itens.push({
   area: "Conteudo",
   titulo: "Acervo de imagem das 87 paginas de curiosidade",
-  estado: "SLOTS RESERVADOS, SEM CONTEUDO",
-  detalhe: "nenhuma pagina escrita — texto clinico nao se inventa",
+  estado: "NOTAS ORIGINAIS PUBLICADAS, SEM IMAGEM",
+  detalhe: "As 87 notas originais estão no /blog por autorização do dono. Não copiam obra protegida e não são orientação clínica. Não há imagem.",
   evidencia: "src/lib/content/articles/",
 });
 

@@ -55,7 +55,7 @@ export function CuriosityView({
     >
       <section className="inst-sec" id="introducao" aria-labelledby="curiosidade-intro-h">
         <h2 id="curiosidade-intro-h">Introdução</h2>
-        <Callout tone="warn"><strong>Prévia não homologada.</strong> Estado editorial: {status}. Este conteúdo não está aprovado para publicação pública ou orientação clínica.</Callout>
+        <Callout tone="info"><strong>Nota original publicada.</strong> Autorizada pelo responsável do acervo. Não copia obra de terceiro e não é orientação clínica.</Callout>
         {content.intro?.lead ? <p>{content.intro.lead}</p> : null}
         {content.intro?.bullets?.length ? (
           <ul className="inst-list">{content.intro.bullets.map((point, i) => <li key={i}>{point}</li>)}</ul>

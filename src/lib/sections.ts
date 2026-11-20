@@ -1,4 +1,5 @@
 import { extraSections } from "@/lib/institutional-sections";
+import { curiosityCatalog, curiosityCategoryLabels } from "@/lib/content/curiosidades/catalog";
 
 export type Dest =
   | { kind: "home" }
@@ -25,6 +26,7 @@ export type Dest =
         | "/viladocuidado"
         | "/bibliotecas";
     }
+  | { kind: "article"; slug: string }
   | { kind: "model"; id: "biblioteca" | "slides" | "guia" | "laudo"; hash?: string };
 
 export type CatalogItem = {
@@ -79,13 +81,33 @@ const coreSections: Section[] = [
   blocks: [],
 }));
 
+function blogDeEnfermagem(section: Section): Section {
+  return {
+    ...section,
+    blocks: [
+      {
+        id: "blog",
+        title: "Blog de Enfermagem",
+        text: "Notas originais. Não copiam obra de terceiro e não são orientação clínica.",
+        items: curiosityCatalog.map((item) => ({
+          id: item.slug,
+          title: item.title,
+          text: curiosityCategoryLabels[item.category] ?? item.category,
+          dest: { kind: "article", slug: item.slug },
+          live: true,
+        })),
+      },
+    ],
+  };
+}
+
 export function listSections(): Section[] {
   const seen = new Set<string>();
   const out: Section[] = [];
   for (const section of [...coreSections, ...extraSections()]) {
     if (seen.has(section.slug)) continue;
     seen.add(section.slug);
-    out.push(section);
+    out.push(section.slug === "biblioteca" ? blogDeEnfermagem(section) : section);
   }
   return out;
 }

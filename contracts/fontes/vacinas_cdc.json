@@ -13,5 +13,7 @@
   "validators": "cvx_validator",
   "kernel_policy_required": true,
   "description": "Fonte oficial: CDC",
-  "source_contract": "contracts/fontes/vacinas_cdc.json"
+  "source_contract": "contracts/fontes/vacinas_cdc.json",
+  "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+  "provenance_state": "HASH_NOT_PINNED"
 }

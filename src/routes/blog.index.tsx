@@ -8,9 +8,8 @@ import { curiosityCatalog, curiosityCategoryLabels } from "@/lib/content/curiosi
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Curiosidades de Enfermagem · Prévia editorial" },
-      { name: "description", content: "Catálogo de prévia dos 87 artigos de curiosidades de enfermagem." },
-      { name: "robots", content: "noindex, nofollow, noarchive" },
+      { title: "Curiosidades de Enfermagem · Calculadoras de Enfermagem" },
+      { name: "description", content: "87 notas originais sobre a história e a cultura da enfermagem. Não são orientação clínica." },
     ],
   }),
   component: BlogIndex,
@@ -20,40 +19,23 @@ function BlogIndex() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("all");
   const categories = Object.entries(curiosityCategoryLabels).filter(([id]) => curiosityCatalog.some((item) => item.category === id));
-  const previewEnabled = import.meta.env.DEV && import.meta.env.VITE_CURIOSIDADES_MEM_PREVIEW === "true";
   const filtered = curiosityCatalog.filter((item) => {
     const matchesCategory = category === "all" || item.category === category;
     const matchesQuery = (item.title + " " + item.category).toLocaleLowerCase("pt-BR").includes(query.trim().toLocaleLowerCase("pt-BR"));
     return matchesCategory && matchesQuery;
   });
-  if (!previewEnabled) {
-    return (
-      <Shell>
-        <ArticlePage kind="secao"
-          crumbs={[{ label: "Início", to: "/" }, { label: "Curiosidades" }]}
-          eyebrow="Blog de Enfermagem"
-          title="Curiosidades de Enfermagem"
-          lead="O acervo editorial está em preparação.">
-          <section className="inst-sec">
-            <h2>Acervo em revisão</h2>
-            <p>Os artigos estão em revisão de fontes, direitos e qualidade. Novos conteúdos aparecerão aqui após aprovação editorial.</p>
-          </section>
-        </ArticlePage>
-      </Shell>
-    );
-  }
   return (
     <Shell>
       <ArticlePage
         kind="secao"
         crumbs={[{ label: "Início", to: "/" }, { label: "Curiosidades" }]}
-        eyebrow="Blog · Acervo editorial"
+        eyebrow="Blog · Notas originais"
         title="Curiosidades de Enfermagem"
-        lead="Conheça histórias, profissionais, expressões, símbolos e fatos da enfermagem. Acervo em preparação e revisão editorial."
+        lead="Notas escritas aqui, sem obra de terceiro. Não substituem fonte clínica nem norma."
       >
         <section className="inst-sec" aria-labelledby="blog-explore">
           <h2 id="blog-explore">Explore o acervo</h2>
-          <p>São {curiosityCatalog.length} artigos preparados para prévia. Todos aguardam liberação dos controles editoriais.</p>
+          <p>São {curiosityCatalog.length} notas publicadas por autorização do responsável. Nenhuma é orientação clínica.</p>
           <div className="patient-grid">
             <label className="field">
               <span>Buscar por palavra-chave</span>
@@ -73,7 +55,7 @@ function BlogIndex() {
               <li key={item.slug}>
                 <Link className="nav-card" to="/blog/$slug" params={{ slug: item.slug }}>
                   <h3>{item.title}</h3>
-                  <p>{curiosityCategoryLabels[item.category] ?? item.category} · Prévia pendente de aprovação</p>
+                  <p>{curiosityCategoryLabels[item.category] ?? item.category}</p>
                 </Link>
               </li>
             ))}

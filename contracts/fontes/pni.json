@@ -13,5 +13,7 @@
   "validators": "schema_validator",
   "kernel_policy_required": true,
   "description": "Fonte oficial: MS/SVS",
-  "source_contract": "contracts/fontes/pni.json"
+  "source_contract": "contracts/fontes/pni.json",
+  "rights_state": "HOLD_RIGHTS_UNSPECIFIED",
+  "provenance_state": "HASH_NOT_PINNED"
 }
